@@ -2,145 +2,387 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Privacy Policy - Wee Artists</title>
+<title>Privacy Policy – Wee Artists</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --purple: #7C3AED;
+    --purple-light: #EDE9FE;
+    --purple-mid: #A78BFA;
+    --yellow: #FCD34D;
+    --pink: #F472B6;
+    --teal: #2DD4BF;
+    --green: #34D399;
+    --bg: #F5F0FF;
+    --white: #FFFFFF;
+    --text: #1E1B4B;
+    --muted: #6B7280;
+    --radius: 20px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: 'Comic Sans MS', Arial, sans-serif;
-    margin: 0;
-    background: linear-gradient(to bottom, #C8B5F8, #8B5CF6);
-    color: #333;
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
   }
 
+  /* Header */
+  .header {
+    background: var(--purple);
+    padding: 40px 24px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    bottom: -30px; left: 0; right: 0;
+    height: 60px;
+    background: var(--bg);
+    border-radius: 50% 50% 0 0 / 60px 60px 0 0;
+  }
+  .header .dots {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .logo-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .logo-icon {
+    width: 64px; height: 64px;
+    background: var(--yellow);
+    border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 0 #D97706;
+  }
+  .logo-text {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.4em;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .header-sub {
+    position: relative;
+    font-size: 1em;
+    color: rgba(255,255,255,0.75);
+    font-weight: 600;
+    margin-top: 6px;
+  }
+
+  /* Nav pills */
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 28px 24px 0;
+    flex-wrap: wrap;
+  }
+  .nav-pills a {
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 0.88em;
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--white);
+    color: var(--muted);
+    border: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .nav-pills a.active, .nav-pills a:hover {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* Container */
   .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 36px 20px 60px;
   }
 
-  h1 {
-    text-align: center;
-    color: #6D28D9;
-    font-size: 2.5em;
+  /* Safe badge */
+  .safe-banner {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 16px rgba(124,58,237,0.08);
   }
-
-  .subtitle {
-    text-align: center;
-    margin-bottom: 30px;
+  .safe-banner .icon-circle {
+    width: 48px; height: 48px; flex-shrink: 0;
+    background: #D1FAE5;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
   }
+  .safe-banner h3 { font-size: 1em; font-weight: 800; color: #065F46; margin-bottom: 2px; }
+  .safe-banner p { font-size: 0.88em; color: var(--muted); font-weight: 600; }
 
+  /* Cards */
   .card {
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 26px 28px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 16px rgba(124,58,237,0.07);
+    position: relative;
+    overflow: hidden;
   }
-
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px; height: 100%;
+    background: var(--accent, var(--purple-mid));
+    border-radius: 4px 0 0 4px;
+  }
   .card h2 {
-    color: #8B5CF6;
+    font-size: 1.08em;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card h2 .emoji { font-size: 1.1em; }
+  .card p {
+    font-size: 0.95em;
+    line-height: 1.75;
+    color: #374151;
+    margin-bottom: 10px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 8px;
+  }
+  .card ul li {
+    font-size: 0.93em;
+    line-height: 1.7;
+    color: #374151;
+    padding: 5px 0 5px 28px;
+    position: relative;
+  }
+  .card ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 6px;
+    color: var(--purple-mid);
+    font-size: 0.7em;
+    top: 7px;
   }
 
-  .emoji {
-    font-size: 1.5em;
+  /* No-collect grid */
+  .nocollect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .nocollect-item {
+    background: #FDF4FF;
+    border: 2px solid #E9D5FF;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88em;
+    font-weight: 700;
+    color: #6D28D9;
+  }
+  .nocollect-item .x {
+    width: 26px; height: 26px;
+    background: #FEE2E2;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9em;
+    flex-shrink: 0;
+    color: #DC2626;
+    font-weight: 900;
   }
 
-  ul {
-    padding-left: 20px;
+  /* Storage cards */
+  .storage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
   }
+  .storage-card {
+    background: var(--purple-light);
+    border-radius: 14px;
+    padding: 18px 14px;
+    text-align: center;
+  }
+  .storage-card .s-icon { font-size: 2em; margin-bottom: 8px; }
+  .storage-card .s-title { font-size: 0.88em; font-weight: 800; color: var(--purple); margin-bottom: 4px; }
+  .storage-card .s-desc { font-size: 0.8em; color: #5B21B6; line-height: 1.4; }
 
+  /* Accent colors per card */
+  .card.c-green { --accent: #34D399; }
+  .card.c-pink  { --accent: #F472B6; }
+  .card.c-teal  { --accent: #2DD4BF; }
+  .card.c-yellow { --accent: #FBBF24; }
+  .card.c-purple { --accent: var(--purple); }
+  .card.c-blue  { --accent: #60A5FA; }
+
+  /* Contact */
+  .contact-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--purple-light);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-top: 12px;
+  }
+  .contact-block .c-icon {
+    width: 46px; height: 46px;
+    background: var(--purple);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .contact-block p { font-size: 0.93em; line-height: 1.6; color: #4C1D95; font-weight: 600; }
+  .contact-block a { color: var(--purple); font-weight: 800; }
+
+  /* Footer */
   footer {
     text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
+    padding: 28px 20px 40px;
+    font-size: 0.88em;
+    color: var(--muted);
+    font-weight: 600;
   }
+  footer .heart { color: #F472B6; }
 
-  .badge {
-    display: inline-block;
-    background: #6ec1e4;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 0.8em;
+  @media (max-width: 500px) {
+    .logo-text { font-size: 1.9em; }
+    .card { padding: 20px 18px; }
   }
 </style>
 </head>
-
 <body>
+
+<div class="header">
+  <div class="dots"></div>
+  <div class="logo-wrap">
+    <div class="logo-icon">🎨</div>
+    <div class="logo-text">Wee Artists</div>
+  </div>
+  <p class="header-sub">Privacy Policy &nbsp;·&nbsp; Last updated: April 2026</p>
+</div>
+
+<div class="nav-pills">
+  <a href="index.html" class="active">Privacy Policy</a>
+  <a href="support.html">Support</a>
+  <a href="terms.html">Terms of Use</a>
+</div>
 
 <div class="container">
 
-<h1>🎨 Wee Artists</h1>
-<p class="subtitle">Privacy Policy | Last updated: April 2026</p>
+  <div class="safe-banner">
+    <div class="icon-circle">🛡️</div>
+    <div>
+      <h3>Zero data collected &nbsp;·&nbsp; No ads &nbsp;·&nbsp; 100% safe for children</h3>
+      <p>Everything your child creates stays on their device — always.</p>
+    </div>
+  </div>
 
-<div class="card">
-<h2>👋 Welcome</h2>
-<p>
-Wee Artists is a fun and safe drawing app made for kids to explore creativity and imagination.
-We care about your privacy and keep things simple and safe.
-</p>
-</div>
+  <div class="card c-purple">
+    <h2><span class="emoji">👋</span> About Wee Artists</h2>
+    <p>Wee Artists is a creative drawing app made for young children to explore imagination in a safe, joyful space. We built it with one principle above everything else: children deserve a private, ad-free place to create.</p>
+    <p>This Privacy Policy explains clearly what we do — and don't do — with your information.</p>
+  </div>
 
-<div class="card">
-<h2>🔒 Data Collection</h2>
-<p><strong>Good news!</strong> We do NOT collect any personal data.</p>
-<ul>
-<li>❌ No login required</li>
-<li>❌ No personal information collected</li>
-<li>❌ No data sent to servers</li>
-</ul>
-<p>
-All drawings stay safely on your device.
-</p>
-</div>
+  <div class="card c-green">
+    <h2><span class="emoji">🔒</span> Information We Collect</h2>
+    <p>We collect <strong>absolutely nothing</strong>. No account or login is needed. Wee Artists does not collect:</p>
+    <div class="nocollect-grid">
+      <div class="nocollect-item"><div class="x">✕</div> Names or emails</div>
+      <div class="nocollect-item"><div class="x">✕</div> Device identifiers</div>
+      <div class="nocollect-item"><div class="x">✕</div> Location data</div>
+      <div class="nocollect-item"><div class="x">✕</div> Usage analytics</div>
+      <div class="nocollect-item"><div class="x">✕</div> Drawings or content</div>
+      <div class="nocollect-item"><div class="x">✕</div> Children's data</div>
+    </div>
+  </div>
 
-<div class="card">
-<h2>🧒 Children's Privacy</h2>
-<p>
-This app is specially designed for children. We do not collect any information from kids under 13.
-</p>
-</div>
+  <div class="card c-teal">
+    <h2><span class="emoji">📱</span> How Data Is Stored</h2>
+    <p>All app data and artwork lives only on your device. Nothing is ever uploaded or transmitted.</p>
+    <div class="storage-grid">
+      <div class="storage-card">
+        <div class="s-icon">📱</div>
+        <div class="s-title">Local only</div>
+        <div class="s-desc">Drawings stay on your device exclusively</div>
+      </div>
+      <div class="storage-card">
+        <div class="s-icon">🚫</div>
+        <div class="s-title">No cloud sync</div>
+        <div class="s-desc">Nothing is uploaded to any server</div>
+      </div>
+      <div class="storage-card">
+        <div class="s-icon">✈️</div>
+        <div class="s-title">Works offline</div>
+        <div class="s-desc">No internet connection needed at any time</div>
+      </div>
+    </div>
+  </div>
 
-<div class="card">
-<h2>🚫 No Third-Party Services</h2>
-<p>We do NOT use:</p>
-<ul>
-<li>Ads</li>
-<li>Tracking tools</li>
-<li>Analytics services</li>
-</ul>
-<span class="badge">100% Safe for Kids</span>
-</div>
+  <div class="card c-pink">
+    <h2><span class="emoji">🧒</span> Children's Privacy (COPPA &amp; GDPR-K)</h2>
+    <p>Wee Artists is specifically built for young children. We fully comply with the Children's Online Privacy Protection Act (COPPA) and GDPR provisions for children's data protection.</p>
+    <p>Because we collect no data whatsoever, there is nothing to disclose, share, or delete. Parents and guardians can be confident that using Wee Artists leaves no digital footprint.</p>
+  </div>
 
-<div class="card">
-<h2>🛡️ Data Safety</h2>
-<p>
-Since no data is collected, your privacy is fully protected. Everything stays on your device.
-</p>
-</div>
+  <div class="card c-yellow">
+    <h2><span class="emoji">🚫</span> No Third-Party Services</h2>
+    <p>Wee Artists does not integrate with any third-party services. There are no:</p>
+    <ul>
+      <li>Advertisements or ad networks of any kind</li>
+      <li>Analytics or tracking tools (e.g. Firebase, Mixpanel, Google Analytics)</li>
+      <li>Social media integrations or sharing features</li>
+      <li>In-app purchases linked to external payment services</li>
+    </ul>
+  </div>
 
-<div class="card">
-<h2>🔄 Updates</h2>
-<p>
-We may update this policy if needed. Any changes will be shown on this page.
-</p>
-</div>
+  <div class="card c-blue">
+    <h2><span class="emoji">🔄</span> Changes to This Policy</h2>
+    <p>If we ever make changes to this policy, we will update the "Last updated" date at the top of this page. We will never introduce data collection without clearly updating this policy and seeking consent where required.</p>
+  </div>
 
-<div class="card">
-<h2>📧 Contact Us</h2>
-<p>
-Have questions? We’re happy to help!
-</p>
-<p><strong>Email:</strong> sreehari.dev@gmail.com</p>
-<p><a href="support.html">📧 Need Help? Visit Support Page</a></p>
+  <div class="card c-purple">
+    <h2><span class="emoji">📧</span> Contact Us</h2>
+    <p>Questions about this policy? We're happy to help.</p>
+    <div class="contact-block">
+      <div class="c-icon">✉️</div>
+      <p>Reach us at <a href="mailto:sreehari.dev@gmail.com">sreehari.dev@gmail.com</a><br>We aim to respond within 48 hours.</p>
+    </div>
+  </div>
+
 </div>
 
 <footer>
-<p>Made with ❤️ for little artists 🎨</p>
+  <p>Made with <span class="heart">♥</span> for little artists everywhere 🎨</p>
 </footer>
-
-</div>
 
 </body>
 </html>
