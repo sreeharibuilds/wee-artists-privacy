@@ -1,0 +1,2054 @@
+{
+    "ageGroups": [
+        {
+            "id": 1,
+            "label": "Little Artists",
+            "ageRange": "3–5",
+            "emoji": "🌟",
+            "description": "Simple shapes and fun characters"
+        },
+        {
+            "id": 2,
+            "label": "Junior Drawers",
+            "ageRange": "6–8",
+            "emoji": "✏️",
+            "description": "A bit more detail and creativity"
+        },
+        {
+            "id": 3,
+            "label": "Creative Kids",
+            "ageRange": "9–12",
+            "emoji": "🎨",
+            "description": "Complex drawings with lots of detail"
+        }
+    ],
+    "categories": [
+        {
+            "id": "animals",
+            "label": "Animals",
+            "emoji": "🐱",
+            "color": "#FFD580"
+        },
+        {
+            "id": "faces",
+            "label": "Faces",
+            "emoji": "😊",
+            "color": "#FFB3C6"
+        },
+        {
+            "id": "food",
+            "label": "Food",
+            "emoji": "🍎",
+            "color": "#B5EAD7"
+        },
+        {
+            "id": "vehicles",
+            "label": "Vehicles",
+            "emoji": "🚗",
+            "color": "#AED9F7"
+        },
+        {
+            "id": "nature",
+            "label": "Nature",
+            "emoji": "🌸",
+            "color": "#C7CEEA"
+        },
+        {
+            "id": "fantasy",
+            "label": "Fantasy",
+            "emoji": "🐉",
+            "color": "#FFDAC1"
+        }
+    ],
+    "drawings": [
+        {
+            "id": "simple_house_002",
+            "title": "Simple House",
+            "category": "fantasy",
+            "minimumAgeGroup": 1,
+            "difficulty": 1,
+            "totalSteps": 4,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the house walls",
+                    "svgPath": "M200 500 L200 300 L600 300 L600 500 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the roof",
+                    "svgPath": "M180 300 L400 120 L620 300",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the front door",
+                    "svgPath": "M350 500 L350 380 L450 380 L450 500",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw a window",
+                    "svgPath": "M230 340 L230 420 L320 420 L320 340 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "simple_star_003",
+            "title": "Star",
+            "category": "nature",
+            "minimumAgeGroup": 1,
+            "difficulty": 1,
+            "totalSteps": 2,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the top of the star",
+                    "svgPath": "M400 150 L460 340 L620 340 L490 440 L540 630 L400 520 L260 630 L310 440 L180 340 L340 340 Z",
+                    "strokeColor": "#E6A817",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Add a shine to the star",
+                    "svgPath": "M400 200 L420 270 L400 250 L380 270 Z",
+                    "strokeColor": "#E6A817",
+                    "strokeWidth": 3,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "simple_car_004",
+            "title": "Simple Car",
+            "category": "vehicles",
+            "minimumAgeGroup": 1,
+            "difficulty": 2,
+            "totalSteps": 5,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the car body",
+                    "svgPath": "M150 420 L150 320 L300 320 L420 220 L620 220 L650 320 L650 420 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the windshield",
+                    "svgPath": "M310 310 L420 230 L590 230 L620 310 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the front wheel",
+                    "svgPath": "M250 420 C250 470 310 470 310 420 C310 370 250 370 250 420 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the back wheel",
+                    "svgPath": "M520 420 C520 470 580 470 580 420 C580 370 520 370 520 420 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Add the headlight",
+                    "svgPath": "M155 360 L155 390 L185 390 L185 360 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "apple_005",
+            "title": "Apple",
+            "category": "food",
+            "minimumAgeGroup": 1,
+            "difficulty": 1,
+            "totalSteps": 3,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the apple body",
+                    "svgPath": "M400 220 C280 220 200 310 200 410 C200 520 280 590 400 590 C520 590 600 520 600 410 C600 310 520 220 400 220 Z",
+                    "strokeColor": "#CC3300",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the stem",
+                    "svgPath": "M400 220 C400 180 420 150 440 130",
+                    "strokeColor": "#663300",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the leaf",
+                    "svgPath": "M440 160 C480 130 520 150 500 190 C480 170 450 175 440 160 Z",
+                    "strokeColor": "#336600",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "cat_face_006",
+            "title": "Cat Face",
+            "category": "animals",
+            "minimumAgeGroup": 2,
+            "difficulty": 2,
+            "totalSteps": 6,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the cat face",
+                    "svgPath": "M400 180 C270 180 190 270 190 380 C190 490 270 560 400 560 C530 560 610 490 610 380 C610 270 530 180 400 180 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the left ear",
+                    "svgPath": "M240 230 L210 150 L300 200 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the right ear",
+                    "svgPath": "M560 230 L590 150 L500 200 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the eyes",
+                    "svgPath": "M300 330 C300 300 340 300 340 330 C340 360 300 360 300 330 Z M460 330 C460 300 500 300 500 330 C500 360 460 360 460 330 Z",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the nose and mouth",
+                    "svgPath": "M385 400 L400 415 L415 400 Z M370 420 C385 440 415 440 430 420",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Add the whiskers",
+                    "svgPath": "M200 390 L350 400 M200 415 L350 415 M450 400 L600 390 M450 415 L600 415",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 3,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "popsicle_007",
+            "title": "Popsicle",
+            "category": "food",
+            "minimumAgeGroup": 3,
+            "difficulty": 1,
+            "totalSteps": 8,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the left side of the popsicle",
+                    "svgPath": "M293.239 284.437C293.239 356.52 297.256 429.508 297.256 501.352",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the right side of the popsicle",
+                    "svgPath": "M477.802 278.078C477.802 351.13 477.802 424.782 477.802 498.068",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Connect the bottom of the popsicle",
+                    "svgPath": "M297.569 501.602C315.154 510.395 466.903 520.75 476.918 500.719",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the rounded top",
+                    "svgPath": "M294.571 286.084C284.177 265.296 319.327 226.236 333.558 215.563C385.897 176.309 478.039 209.054 478.039 278.63",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the left side of the stick",
+                    "svgPath": "M372.587 511.954C372.587 508.806 372.587 517.056 372.587 518.378C372.587 524.373 372.587 530.369 372.587 536.365C372.587 553.413 370.017 569.502 370.017 586.473",
+                    "strokeColor": "#8B5A2B",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Draw the right side of the stick",
+                    "svgPath": "M401.495 515.166C404.944 508.268 402.137 530.58 402.137 538.292C402.137 554.511 404.064 570.608 404.064 586.473",
+                    "strokeColor": "#8B5A2B",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 7,
+                    "label": "Draw the bottom of the stick",
+                    "svgPath": "M371.302 589.042C367.774 589.042 371.607 589.99 375.799 594.181C385.96 604.343 399.013 597.86 404.707 586.473",
+                    "strokeColor": "#8B5A2B",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 8,
+                    "label": "Add the melting drizzle detail",
+                    "svgPath": "M294.213 355.849C305.374 355.849 319.388 348.516 328.261 360.346C339.018 374.689 321.164 442.1 355.242 433.58C380.889 427.168 350.807 365.133 369.374 355.849C408.34 336.367 398.845 405.684 422.694 410.454C460.209 417.957 426.759 353.922 476.656 353.922",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+          "id": "bee_008",
+          "title": "Bee",
+          "category": "animals",
+          "minimumAgeGroup": 1,
+          "difficulty": 2,
+          "totalSteps": 15,
+          "canvasSize": { "width": 800, "height": 800 },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the head",
+              "svgPath": "M518.111 315.997C522.892 317.031 512.585 313.679 510.399 313.449C501.543 312.516 492.145 310.108 483.161 311.133C457.712 314.038 435.386 323.202 416.868 340.927C379.996 376.22 402.825 430.998 438.816 454C490.236 486.862 565.472 459.342 579.24 400.374C584.643 377.231 569.387 345.595 551.144 332.456C544.134 327.407 536.093 323.694 528.027 320.026C525.135 318.712 513.538 315.008 518.111 315.997Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Draw the body",
+              "svgPath": "M400.778 404.296C400.77 402.93 386.389 406.662 384.397 407.218C369.683 411.327 350.768 420.901 340.595 432.486C309.435 467.972 306.456 509.751 335.508 546.639C347.703 562.124 375.678 560.954 392.472 563.902C445.385 573.191 521.113 519.774 520.771 463.384",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the stinger",
+              "svgPath": "M327.889 535.764C326.21 544.623 322.812 550.532 317.252 557.831C316.709 558.544 310.948 562.704 311.158 563.131C315.953 572.904 345.172 561.656 351.776 558.415",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Draw the upper wing",
+              "svgPath": "M420.028 335.696C425.86 296.964 376.806 204.819 328.225 224.843C296.834 237.782 312.696 297.167 329.392 315.211C351.255 338.841 378.429 356.194 397.778 382.403",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the lower wing",
+              "svgPath": "M347.551 332.327C324.074 314.906 292.965 300.056 262.336 304.591C243.721 307.347 216.257 327.699 224.045 348.926C232.501 371.973 254.932 388.434 276.252 398.309C301.518 410.012 339.539 410.931 367.176 409.766C374.066 409.476 380.171 406.382 387.288 406.346",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Draw the left antenna",
+              "svgPath": "M445.183 319.729C440.845 299.385 446.175 251.184 472.312 245.612",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the left antenna tip",
+              "svgPath": "M472.607 244.476C472.034 254.778 490.143 250.535 491.793 242.174C494.176 230.097 473.37 230.737 472.607 244.476Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Draw the right antenna",
+              "svgPath": "M508.669 312.279C508.966 286.782 538.171 265.367 558.245 255.621",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Draw the right antenna tip",
+              "svgPath": "M559.288 250.333C555.101 256.5 576.111 271.437 580.01 254.226C582.701 242.346 565.268 241.525 559.288 250.333Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 10,
+              "label": "Draw the left eye",
+              "svgPath": "M449.947 399.031C449.121 390.938 456.3 382.237 465.044 389.362C466.511 390.557 467.316 394.994 468.429 395.416",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 11,
+              "label": "Draw the right eye",
+              "svgPath": "M534.096 393.212C532.943 381.908 548.463 381.474 549.571 392.325",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 12,
+              "label": "Draw the smile",
+              "svgPath": "M487.704 411.435C487.608 411.284 490.239 413.178 490.963 414.562C493.345 419.113 499.686 421.627 504.775 421.108C510.063 420.568 514.644 417.642 516.536 412.644C517.049 411.29 518.752 406.226 518.206 408.669",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 13,
+              "label": "Draw the first belly stripe",
+              "svgPath": "M505.676 505.992C447.001 525.415 367.458 485.603 348.08 427.062",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 14,
+              "label": "Draw the second belly stripe",
+              "svgPath": "M473.485 540.383C416.112 540.264 346.103 515.197 326.089 454.739",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 15,
+              "label": "Draw the third belly stripe",
+              "svgPath": "M426.568 562.218C390.536 562.143 327.533 535.283 315.366 498.526",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.46154,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+            "id": "snail_001",
+            "title": "Snail",
+            "category": "animals",
+            "minimumAgeGroup": 1,
+            "difficulty": 2,
+            "totalSteps": 11,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the snail's body",
+                    "svgPath": "M213.978 473.877C200.693 446 172.58 408.562 183.037 374.919C197.417 328.661 254.99 274.066 309.573 300.971C339.107 315.53 366.874 339.628 367.084 376.754C367.346 422.924 344.769 486.962 399.349 511.841C462.123 540.454 518.124 518.993 582.036 527.754C593.601 529.339 639.105 536.51 630.315 554.342C606.457 602.741 544.047 582.617 501.696 585.211C476.695 586.742 455.476 596.271 429.639 594.733C413.832 593.792 400.805 582.185 384.558 582.277C370.406 582.357 358.811 589.894 345.038 591.695C279.803 600.225 260.041 576.539 231.941 525.981C225.792 514.915 218.893 484.19 213.978 473.877Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the snail's shell spiral",
+                    "svgPath": "M367.172 387.894C374.274 379 377.588 362.541 383.729 352.106C396.136 331.022 419.617 313.964 441.895 304.278C525.376 267.985 611.756 339.841 610.662 425.608C609.627 506.706 509.41 557.265 449.491 501.381C435.104 487.962 422.771 474.204 419.236 453.656C406.399 379.031 512.357 318.153 551.032 395.32C580.955 455.026 490.107 506.348 468.885 444.447C467.106 439.256 469.229 432.911 471.499 428.273C496.163 377.876 525.815 440.974 496.344 434.687",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the left antennae",
+                    "svgPath": "M299.284 295.373C303.491 274.513 312.772 253.505 325.854 236.742",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the right antennae",
+                    "svgPath": "M314.677 301.816C314.726 301.997 315.472 297.842 316.077 296.256C317.735 291.905 318.519 287.206 320.163 282.891C324.92 270.413 327.714 253.589 336.006 242.962",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the snail's head",
+                    "svgPath": "M323.141 210.877C313.193 237.675 354.788 263.388 368.126 225.792C381 189.504 330.841 190.136 323.141 210.877Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Draw the left side of the neck",
+                    "svgPath": "M220.928 317.789C212.566 293.71 205.747 269.079 197.338 244.866",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 7,
+                    "label": "Draw the right side of the neck",
+                    "svgPath": "M239.434 305.376C231.469 282.442 211.919 265.118 204.047 242.449",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 8,
+                    "label": "Draw the eye",
+                    "svgPath": "M179.998 236.918C179.653 235.779 181.897 238.387 182.979 238.881C185.272 239.93 186.93 241.818 189.479 242.292C197.144 243.717 206.685 243.746 212.753 237.901C223.897 227.167 221.482 206.242 207.088 198.274C196.725 192.536 178.531 202.66 176.269 214.824C175.257 220.264 174.421 225.432 176.452 230.886C176.928 232.165 180.315 237.963 179.998 236.918Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 9,
+                    "label": "Draw the left eye dot",
+                    "svgPath": "M215.327 380.624C204.739 387.501 216.651 407.712 228.659 396.758C241.062 385.444 228.473 372.087 215.327 380.624Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 10,
+                    "label": "Draw the right eye dot",
+                    "svgPath": "M310.177 376.798C301.817 382.722 305.868 410.633 319.382 398.306C327.261 391.119 321.274 368.936 310.177 376.798Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 11,
+                    "label": "Draw the snail's smile",
+                    "svgPath": "M242.693 414.953C243.257 412.482 244.26 419.829 245.608 421.975C248.391 426.403 252.466 431.658 257.896 432.898C274.095 436.596 284.249 426.486 287.535 412.094",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "elephant_001",
+            "title": "Elephant",
+            "category": "animals",
+            "minimumAgeGroup": 1,
+            "difficulty": 2,
+            "totalSteps": 10,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the elephant's head",
+                    "svgPath": "M466.825 351.948C455.812 373.975 480.939 406.894 459.073 428.76C431.728 456.105 390.326 421.242 380.852 392.821C358.029 324.35 414.893 231.472 493.604 241.311C581.206 252.261 587.781 366.145 576.758 432.284C573.249 453.338 554.275 477.653 559.845 499.935C563.125 513.055 580.991 508.412 583.1 516.847C587.174 533.144 566.964 546.639 552.093 542.921C488.734 527.081 543.039 448.897 497.127 425.941",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the elephant's body",
+                    "svgPath": "M404.812 276.546C349.373 248.826 256.688 298.787 249.074 359.7C243.108 407.423 255.084 443.346 261.758 490.069C263.546 502.58 248.298 564.695 250.483 566.881C255.758 572.155 268.433 569.99 275.148 571.109C322.667 579.029 319.034 566.803 329.409 525.304C329.861 523.495 328.855 512.154 330.114 511.21C335.324 507.302 375.214 510.364 382.966 511.914C393.675 514.056 364.065 617.204 437.933 580.27C469.721 564.376 434.143 517.818 452.026 499.935C461.418 490.543 476.38 484.037 485.852 474.565C491.174 469.244 494.308 452.635 494.308 459.062",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the left front leg",
+                    "svgPath": "M320.248 560.538C326.962 562.776 342.709 562.831 346.322 555.606C349.544 549.162 349.134 529.499 347.731 522.485C347.223 519.942 347.731 504.749 347.731 511.21",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the right front leg",
+                    "svgPath": "M452.026 562.653C495.969 584.624 464.537 500.988 471.758 486.545",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the trunk",
+                    "svgPath": "M248.369 356.881C248.369 371.818 237.077 384.431 233.571 398.458C226.718 425.868 224.48 460.754 231.456 488.659C232.426 492.538 226.051 520.918 226.524 521.075C229.168 521.957 241.654 500.225 240.617 497.116C232.405 472.479 237.82 439.993 249.779 416.076",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Draw the eye",
+                    "svgPath": "M509.459 374.499C503.864 372.975 496.701 380.415 501.355 385.069C511.768 395.482 516.204 376.335 509.459 374.499Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 7,
+                    "label": "Draw the tusk",
+                    "svgPath": "M473.872 447.082C466.6 443.446 501.231 459.062 516.154 459.062",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 8,
+                    "label": "Draw the tail",
+                    "svgPath": "M474.674 849.081C475.538 843.466 476.607 837.878 477.266 832.234C478.12 824.912 478.708 817.559 479.209 810.204C481.669 774.13 475.061 831.863 488.281 841.306",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 9,
+                    "label": "Draw the left toes",
+                    "svgPath": "M274.586 569.877C272.716 570.534 277.035 552.545 284.34 560.078C286.594 562.402 285.643 569.701 285.643 569.701C285.643 569.701 290.073 560.309 294.466 559.784C298.67 559.281 303.56 574.043 300.966 570.696C296.13 564.458 311.069 552.179 315.794 565.638",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 10,
+                    "label": "Draw the right toes",
+                    "svgPath": "M416.824 586.947C411.473 586.269 417.385 569.995 422.517 569.381C432.788 568.153 429.141 582.832 429.633 582.894C431.038 583.072 431.865 571.929 433.377 570.757C438.97 566.421 436.945 573.915 438.684 576.158C439.708 577.479 439.143 572.834 439.623 571.233C440.941 566.834 446.66 562.986 448.744 568.92",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "fish_001",
+            "title": "Fish",
+            "category": "animals",
+            "minimumAgeGroup": 1,
+            "difficulty": 1,
+            "totalSteps": 8,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the top of the fish body",
+                    "svgPath": "M238.013 375.884C231.538 388.032 248.881 350.022 258.108 339.807C276.373 319.588 307.825 295.271 334.737 287.073C410.497 263.994 495.709 305.262 519.351 382.873",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the bottom of the fish body",
+                    "svgPath": "M237.381 378.902C231.811 411.071 280.084 447.606 306.019 457.631C404.872 495.842 458.384 464.215 518.896 382.104",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the middle body line",
+                    "svgPath": "M335.893 290.804C362.878 334.329 369.159 423.192 334.443 464.908",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the inner body curve",
+                    "svgPath": "M361.02 382.795C419.484 312.541 487.416 434.953 356.016 404.13",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the fish head",
+                    "svgPath": "M358.064 280.249C357.301 281.166 368.376 262.687 373.421 257.966C389.284 243.116 404.869 234.816 426.515 235.531C459.665 236.626 458.632 282.799 429.563 289.705",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Draw the bottom fin",
+                    "svgPath": "M380.972 475.26C414.612 483.151 472.046 532.137 453.202 452.812",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 7,
+                    "label": "Draw the tail fin",
+                    "svgPath": "M507.057 352.129C503.822 353.746 565.306 275.111 572.652 311.842C575.313 325.146 539.055 381.015 539.08 381.053C548.881 395.754 578.986 434.633 559.74 453.879C546.474 467.145 496.247 405.364 500.859 409.977",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 8,
+                    "label": "Draw the fish eye",
+                    "svgPath": "M293.519 353.542C291.548 360.815 303.334 385.36 311.171 375.563C323.796 359.782 300.853 326.492 293.519 353.542Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "swan_001",
+            "title": "Swan",
+            "category": "animals",
+            "minimumAgeGroup": 1,
+            "difficulty": 2,
+            "totalSteps": 5,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the swan's neck and head",
+                    "svgPath": "M292.179 361.547C292.457 352.324 279.506 343.338 275.736 335.193C266.644 315.547 268.815 296.036 274.1 275.24C289.188 215.871 381.841 208.665 422.969 240.519C484.857 288.452 455.391 377.574 400.642 416.109",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the swan's back and tail",
+                    "svgPath": "M400.845 416.294C401.944 417.05 440.208 410.224 448.192 410.722C482.901 412.89 509.785 436.457 544.146 438.603C561.639 439.696 575.407 436.002 592.26 432.89C598.831 431.677 612.627 425.908 612.399 425.999",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the swan's beak and face",
+                    "svgPath": "M268.271 304.305C254.282 312.712 238.515 318.366 221.866 316.656C218.885 316.35 201.388 311.09 199.717 313.042C193.943 319.788 208.63 342.171 212.508 347.252C229.171 369.089 274.465 390.944 292.337 362.815",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the swan's body",
+                    "svgPath": "M283.706 373.274C287.707 373.473 298.284 401.182 296.195 404.889C278.859 435.637 254.877 458.516 242.269 490.881C224.555 536.355 257.645 585.044 295.914 606.619C322.041 621.349 357.001 614.251 385.288 615.658C420.032 617.387 463.156 620.662 497.102 612.038C574.056 592.489 610.025 493.839 613.48 424.407",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the swan's eye",
+                    "svgPath": "M325.339 292.915C308.019 285.667 298.575 313.104 315.224 321.509C333.021 330.493 342.754 300.204 325.339 292.915Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+            "id": "crab_001",
+            "title": "Crab",
+            "category": "animals",
+            "minimumAgeGroup": 1,
+            "difficulty": 3,
+            "totalSteps": 14,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the crab's body",
+                    "svgPath": "M349.177 335.067C354.812 333.518 337.204 337.948 332.958 339.311C322.578 342.644 308.397 350.009 300.061 356.997C269.148 382.907 240.337 421.552 259.247 464.614C299.36 555.954 429.445 577.445 507.624 518.462C577.147 466.009 543.251 379.092 477.103 345.101C451.081 331.729 419.86 321.087 389.865 323.856C380.185 324.75 365.204 326.769 356.104 330.766C353.707 331.818 341.243 337.249 349.177 335.067Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the left upper claw arm",
+                    "svgPath": "M260.122 402.047C260.539 402.263 253.786 398.953 251.423 397.733C245.613 394.731 238.915 389.405 235.017 384.062C220.98 364.823 224.175 347.943 224.453 326.832",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Draw the left lower claw arm",
+                    "svgPath": "M279.379 376.366C266.735 370.753 259.831 345.943 259.266 333.613",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the left claw",
+                    "svgPath": "M273.133 212.459C217.997 212.703 173.351 309.133 229.333 329.501C267.64 343.439 290.421 320.785 305.885 288.937C309.389 281.72 314.018 251.449 304.661 245.982C303.778 245.466 301.371 248.884 300.803 249.441C296.307 253.851 268.044 282.355 260.025 274.179C253.516 267.543 266.324 246.617 266.81 239.169C267.233 232.686 273.048 225.578 272.354 219.554C272.169 217.947 275.375 212.449 273.133 212.459Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the right upper claw arm",
+                    "svgPath": "M519.514 379.567C518.881 378.309 521.399 377.215 522.125 376.069C530.924 362.17 535.872 350.333 540.89 335.161",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Draw the right lower claw arm",
+                    "svgPath": "M540.113 406.057C573.448 383.884 572.717 363.599 574.748 327.728",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 7,
+                    "label": "Draw the right claw",
+                    "svgPath": "M497.824 247.348C484.725 255.058 494.617 288.58 499.07 298.399C513.586 330.404 549.957 341.856 578.571 323.609C611.137 302.841 592.716 243.345 568.035 225.627C563.568 222.421 531.848 207.109 527.736 211.057C524.958 213.725 545.698 264.858 540.062 274.272C539.626 275 536.622 273.512 536.077 273.391C526.523 271.277 511.51 263.505 505.019 255.947C502.566 253.09 498.062 247.207 497.824 247.348Z",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 8,
+                    "label": "Draw the left upper leg",
+                    "svgPath": "M251.653 443.577C236.272 432.942 210.726 438.069 198.272 449.783C194.058 453.745 182.026 465.221 187.28 472.219C195.718 483.455 237.671 451.672 260.824 467.681",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 9,
+                    "label": "Draw the left middle leg",
+                    "svgPath": "M274.027 490.858C272.219 485.446 250.45 492.431 246.937 493.604C229.637 499.382 194.565 526.912 208.411 549.323C213.986 558.345 223.276 549.096 228.318 544.354C239.178 534.14 247.254 518.985 262.657 513.84C271.473 510.896 281.729 510.831 289.872 508.112",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 10,
+                    "label": "Draw the left lower leg",
+                    "svgPath": "M301.093 519.908C281.14 526.572 269.618 551.371 266.891 570.541C265.641 579.331 272.528 598.486 284.799 594.388C297.789 590.049 287.785 541.997 319.875 531.279",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 11,
+                    "label": "Draw the right upper leg",
+                    "svgPath": "M546.073 443.592C564.951 434.079 620.403 440.333 614.589 472.893C612.636 483.833 556.525 449.978 544.558 466.039",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 12,
+                    "label": "Draw the right middle leg",
+                    "svgPath": "M533.054 492.299C556.067 492.226 582.782 502.989 589.513 527.369C591.14 533.261 596.876 543.07 589.824 548.591C584.957 552.401 578.49 549.053 574.569 545.59C569.125 540.782 566.334 533.248 560.61 528.192C552.272 520.828 520.498 508.594 521.156 509.899",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 13,
+                    "label": "Draw the right lower leg",
+                    "svgPath": "M503.145 522.641C500.134 522.65 508.345 525.747 510.601 527.74C515.268 531.862 520.786 536.339 524.549 541.478C535.556 556.514 544.767 581.418 527.401 595.013C512.881 606.38 507.267 558.091 503.109 549.84C500.778 545.215 493.949 538.902 489.163 536.711C488.039 536.197 481.781 531.685 484.766 534.652",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 14,
+                    "label": "Draw the eyes and mouth",
+                    "svgPath": "M316.212 408.736C310.781 417.026 314.582 454.687 338.703 441.468C367.152 425.877 335.552 379.215 316.212 408.736ZM462.767 401.243C454.171 408.365 445.501 447.962 469.995 445.146C506.648 440.932 482.396 384.984 462.767 401.243ZM372.093 441.49C369.395 438.413 371.903 450.098 373.988 453.619C378.133 460.618 383.925 466.025 391.981 468.377C412.332 474.319 425.994 460.492 429.843 442.188",
+                    "strokeColor": "#000000",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+          "id": "butterfly_001",
+          "title": "Butterfly",
+          "category": "animals",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 8,
+          "canvasSize": { "width": 800, "height": 800 },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the butterfly body",
+              "svgPath": "M395.687 387.493C377.502 385.27 383.56 357.31 396.913 362.652C408.255 367.188 408.388 389.045 395.687 387.493Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Draw the abdomen",
+              "svgPath": "M392.62 387.186C391.814 385.574 384.913 407.32 384.033 411.721C381.629 423.737 377.675 471.718 391.393 478.577C413.116 489.439 409.181 416.397 409.181 409.267C409.181 401.604 402.073 379.718 405.5 386.573",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the upper right wing",
+              "svgPath": "M404.887 383.506C404.887 345.866 505.92 259.214 542.28 277.394C560.807 286.658 536.506 319.506 533.693 330.757C519.486 387.585 527.046 404.36 460.703 404.36",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Draw the lower right wing",
+              "svgPath": "M408.567 465.696C408.567 457.518 416.745 480.417 423.288 485.324C434.987 494.098 452.714 491.776 463.77 483.484C502.477 454.454 502.723 426.904 462.543 406.814",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the upper left wing",
+              "svgPath": "M383.165 372.596C383.165 338.316 276.439 251.708 245.788 282.359C242.243 285.904 240.163 290.359 241.074 295.827C244.516 316.477 265.042 333.109 270.031 353.067C273.539 367.098 269.638 387.501 282.153 397.512C292.383 405.697 312.63 402.226 324.578 402.226",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Draw the lower left wing",
+              "svgPath": "M322.557 402.226C275.769 417.823 281.82 480.68 327.271 495.831C352.891 504.371 364.57 466.743 381.818 458.12",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the right antenna",
+              "svgPath": "M397.98 361.821C397.98 344.195 419.688 317.997 435.691 312.662",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Draw the left antenna",
+              "svgPath": "M390.572 360.475C395.676 350.267 369.354 315.522 360.942 311.315",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "puppy_001",
+          "title": "Puppy",
+          "category": "animals",
+          "minimumAgeGroup": 1,
+          "difficulty": 3,
+          "totalSteps": 22,
+          "canvasSize": { "width": 800, "height": 800 },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the puppy's head",
+              "svgPath": "M375.999 156.023C375.791 156.378 320.689 171.199 312.601 176.514C281.936 196.668 250.635 329.872 266.994 362.017C299.634 426.149 398.168 425.255 457.979 411.516C480.563 406.328 513.711 396.686 525.317 374.381C543.867 338.73 534.766 306.453 522.677 271.03C518.697 259.367 519.832 246.681 514.309 235.83C506.11 219.72 508.026 192.508 488.174 181.351C461.759 166.506 431.93 146.774 399.577 154.206C395.939 155.042 377.274 153.844 375.999 156.023Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Draw the left ear",
+              "svgPath": "M321.939 169.852C306.905 164.96 297.148 158.339 280.147 160.891C267.807 162.744 254.452 174.625 244.017 181.189C207.879 203.918 160.626 223.045 188.776 278.357C204.481 309.214 243.261 362.366 264.751 296.333",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the right ear",
+              "svgPath": "M476.199 174.08C487.008 140.868 534.849 168.875 550.168 177.485C567.846 187.42 611.73 205.227 616.728 226.983C623.77 257.638 604.071 315.944 568.316 321.312C554.513 323.384 545.564 309.268 535.737 306.07",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Draw the left eye circle",
+              "svgPath": "M329.78 276.142C303.219 273.599 303.817 317.059 328.523 319.774C353.634 322.533 354.952 278.553 329.78 276.142Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the left eye pupil",
+              "svgPath": "M324.861 287.742L325.398 288.488L325.744 289.599L326.281 290.345L326.818 291.091L326.799 292.01L327.336 292.757L327.873 293.503L328.601 293.885L329.138 294.632L329.675 295.378L330.767 295.952L331.495 296.334L332.778 296.543L333.697 296.562L334.808 296.216L335.554 295.679L336.3 295.142L337.047 294.605L337.62 293.513L338.193 292.421L338.403 291.138L338.785 290.41L338.44 289.3L338.458 288.381L337.921 287.634L337.384 286.888L336.656 286.506L335.755 285.568L334.663 284.995L333.571 284.421L332.843 284.039L331.751 283.465L330.832 283.447L329.722 283.793L328.611 284.138L327.865 284.675L327.119 285.212L326.545 286.304L325.972 287.396L325.589 288.124",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Draw the right eye circle",
+              "svgPath": "M464.405 275.783C440.171 279.232 448.268 318.895 470.296 318.143C501.207 317.087 494.695 271.473 464.405 275.783Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the right eye pupil",
+              "svgPath": "M457.915 288.77C457.893 292.203 467.185 301.156 469.471 293.993C472.132 285.656 457.982 278.556 457.915 288.77Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Draw the left eyebrow",
+              "svgPath": "M332.01 241.071C321.879 235.682 315.085 244.648 308.033 249.665",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Draw the right eyebrow",
+              "svgPath": "M456.959 240.574C465.734 234.331 481.321 243.756 486.401 250.896",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 10,
+              "label": "Draw the nose",
+              "svgPath": "M393.297 343.063C346.399 314.603 397.377 294.941 422.335 310.778C442.541 323.601 402.015 348.354 393.297 343.063Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 11,
+              "label": "Draw the left mouth curve",
+              "svgPath": "M354.402 355.216C365.449 362.171 370.189 374.657 386.468 368.428C391.458 366.518 397.275 356.514 398.181 351.571C398.469 349.999 399.592 342.919 399.32 345.68",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 12,
+              "label": "Draw the right mouth curve",
+              "svgPath": "M397.9 354.911C406.705 370.418 436.034 376.299 439.077 352.483",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 13,
+              "label": "Draw the left front leg",
+              "svgPath": "M325.587 410.749C318.636 417.699 315.548 433.856 314.016 443.049C308.092 478.595 303.122 511.033 306.785 547.665C307.861 558.422 313.534 569.806 313.534 580.447C313.534 593.306 297.731 599.873 309.195 615.158C329.47 642.191 387.794 625.879 382.474 588.643C378.473 560.638 375.725 533.503 375.725 504.758",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 14,
+              "label": "Draw the right front leg",
+              "svgPath": "M472.627 410.266C481.669 414.788 484.575 438.107 487.09 446.906C500.661 494.407 492.472 532.322 483.233 578.519C481.009 589.638 501.529 600.887 491.911 613.712C481.678 627.356 428.915 633.422 419.114 617.087C412.115 605.422 414.815 584.423 416.221 571.769C418.68 549.643 420.078 527.65 420.078 505.24",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 15,
+              "label": "Draw the left back leg",
+              "svgPath": "M306.829 482.246C280.273 482.246 256.635 517.707 261.622 542.643C262.819 548.63 275.822 566.454 273.918 571.214C269.907 581.242 246.618 593.764 257.644 608.465C264.037 616.989 290.036 619.755 298.873 615.336C300.256 614.645 305.338 613.076 304.659 611.72",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 16,
+              "label": "Draw the right back leg",
+              "svgPath": "M493.892 482.017C516.767 493.454 537.879 508.042 533.522 538.547C532.057 548.799 520.117 561.037 520.117 570.018C520.117 571.305 540.455 584.306 537.31 600.031C534.325 614.955 501.369 620.088 492.144 615.475",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 17,
+              "label": "Draw the left back paw detail",
+              "svgPath": "M275.929 615.475C275.929 608.618 271.241 596.839 280.009 592.455",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 18,
+              "label": "Draw the left front paw detail",
+              "svgPath": "M329.837 627.131C324.38 616.216 324.389 605.683 329.837 594.786",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 19,
+              "label": "Draw the left paw toe detail",
+              "svgPath": "M358.394 623.926C354.176 615.491 348.811 605.81 355.189 596.243",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 20,
+              "label": "Draw the right paw toe detail",
+              "svgPath": "M438.236 625.382C442.948 615.958 448.143 610.74 448.143 599.448",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 21,
+              "label": "Draw the right front paw detail",
+              "svgPath": "M464.461 623.926C469.582 613.685 472.775 609.373 467.375 598.574",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 22,
+              "label": "Draw the tail",
+              "svgPath": "M521.574 613.144C521.574 603.621 525.252 598.936 520.7 589.832M526.691 505.123C531.54 495.425 542.18 489.977 544.336 477.041C546.787 462.332 541.729 446.333 544.584 432.058C545.781 426.074 553.608 421.965 559.247 425.348C590.547 444.128 587.253 493.074 570.928 520.283C565.694 529.007 556.321 538.827 546.821 542.899C541.861 545.025 526.016 547.869 531.413 547.869M382.757 599.124C393.216 601.449 404.644 601.657 413.849 595.799",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "dolphin_001",
+          "title": "Dolphin",
+          "category": "animals",
+          "minimumAgeGroup": 1,
+          "difficulty": 2,
+          "totalSteps": 9,
+          "canvasSize": { "width": 800, "height": 800 },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the dolphin's belly and lower body",
+              "svgPath": "M263 490.09C245.962 439.532 235.532 395.865 253.747 341.815C259.792 323.878 277.46 308.293 281.045 290.56C284.116 275.378 253.533 268.065 255.598 259.899C261.501 236.542 338.975 229.788 354.15 244.796",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Draw the dolphin's upper back and snout",
+              "svgPath": "M353.687 246.17C357.158 239.304 380.593 234.858 387.926 232.44C429.68 218.674 465.098 215.157 500.821 243.423C509.355 250.176 516.637 263.52 518.866 274.543C519.415 277.256 520.312 288.73 522.105 288.73",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the dorsal fin and tail area",
+              "svgPath": "M520.717 289.188C520.717 288.001 520.408 287.992 522.105 288.272C537.544 290.817 552.628 292.377 564.209 303.832C576.001 315.495 560.872 333.728 550.329 339.985C534.835 349.18 512.92 352.602 495.732 356.002C480.094 359.096 465.499 369.834 449.463 372.478C415.513 378.074 376.595 390.002 346.747 407.715C325.154 420.53 288.568 446.056 298.627 475.903",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Draw the tail fluke",
+              "svgPath": "M262.075 489.175C253.091 506.948 236.529 515.386 232.926 536.769C230.937 548.571 231.264 558.768 232.463 570.634C232.711 573.082 233.389 577.957 233.389 577.957C233.389 577.957 239.478 564.901 244.956 560.567C257.29 550.806 270.167 540.937 283.359 533.108C285.751 531.688 297.231 512.514 292.15 512.514C290.56 512.514 292.487 517.883 293.075 518.463C298.646 523.973 305.648 522.889 312.971 525.786C323.359 529.896 342.908 526.565 351.373 534.939C356.365 539.876 365.205 543.535 368.493 550.041C369.186 551.412 368.955 554.617 368.955 554.617C368.955 554.617 370.045 543.527 368.955 538.142C366.589 526.436 364.956 514.256 357.388 504.277C343.017 485.323 311.251 490.677 296.777 476.361",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the lower pectoral fin",
+              "svgPath": "M442.437 374.592C442.437 378.639 438.763 396.043 441.318 398.57C451.428 408.57 488.683 372.228 488.683 359.1",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Draw the upper pectoral fin",
+              "svgPath": "M383.883 334.753C380.665 333.161 375.713 351.92 375.306 353.935C374.743 356.719 366.769 365.043 368.22 366.477C383.269 381.363 439.474 348.811 427.891 325.9",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the mouth line",
+              "svgPath": "M568.495 313.727C560.27 313.727 553.536 312.038 544.998 313.727C525.222 317.639 513.674 335.863 494.65 317.047",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Draw the eye",
+              "svgPath": "M473.392 310.407C459.925 305.866 462.307 275.758 478.613 279.79C488.896 282.332 488.76 296.009 487.191 303.767C486.188 308.728 478.233 312.039 473.392 310.407Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Draw the eye pupil",
+              "svgPath": "M464.441 290.856C464.441 305.455 487.326 283.848 470.035 283.848",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.2,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "apple_001",
+          "title": "Apple",
+          "category": "food",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 6,
+          "canvasSize": { "width": 800, "height": 800 },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the left side of the apple",
+              "svgPath": "M387.601 306.551C229.222 227.361 173.363 542.99 383.192 542.99",
+              "strokeColor": "#000000",
+              "strokeWidth": 3.88462,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Draw the right side of the apple",
+              "svgPath": "M413.132 309.615C450.715 308.09 490.549 289.527 522.565 321.542C580.743 379.721 535.725 516.868 463.068 545.931C432.817 558.031 411.756 543.806 382.747 543.806",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the stem",
+              "svgPath": "M398.076 251.327C397.754 250.051 395.351 257.254 394.653 259.117C393.09 263.29 391.546 267.414 390.562 271.885C387.432 286.106 385.587 302.512 389.206 316.864C390.757 323.015 394.343 341.669 393.678 335.361",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Draw the leaf",
+              "svgPath": "M432.266 264.832C417.316 283.308 411.207 311.998 406.12 335.109",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the top of the leaf",
+              "svgPath": "M397.897 252.142C406.982 249.851 424.451 257.789 431.312 263.341",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Draw the indent at the top of the apple",
+              "svgPath": "M365.477 329.582C364.747 329.421 371.046 331.662 373.038 332.1C377.563 333.096 381.746 334.871 386.303 335.874C399.485 338.775 425.429 342.685 435.341 330.435",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.03846,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "avocado_001",
+          "title": "Avocado",
+          "category": "food",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 5,
+          "canvasSize": { "width": 800, "height": 800 },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the avocado body",
+              "svgPath": "M405.42 277.253C335.459 283.75 327.687 339.571 306.534 393.819C291.312 432.858 261.778 462.786 259.497 508.328C254.321 611.666 359.014 653.238 449.958 639.74C510.593 630.74 585.323 554.063 559.889 487.705C545.353 449.78 523.339 420.444 504.803 386.541C477.611 336.807 494.379 268.99 405.42 277.253Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Draw the bite mark on the avocado",
+              "svgPath": "M408.548 449.682C412.146 449.265 402.177 450.747 400.449 450.924C392.061 451.785 384.438 451.028 376.108 454.243C356.389 461.857 337.777 479.44 328.293 497.402C308.389 535.099 344.816 588.113 385.501 593.961C430.919 600.491 507.756 569.656 495.024 510.743C489.627 485.775 463.708 466.463 441.709 456.154C434.513 452.782 425.444 450.307 417.546 449.171C415.399 448.862 405.312 450.058 408.548 449.682Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the drip detail on the avocado",
+              "svgPath": "M407.108 475.745C382.207 470.188 353.685 497.692 348.709 519.99",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Draw the avocado stick",
+              "svgPath": "M406.702 277.569C406.702 231.528 424.667 209.881 463.664 190.383",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the avocado stick holder",
+              "svgPath": "M411.273 237.044C416.98 238.021 403.939 226.917 400.758 224.372C392.165 217.497 383.63 207.719 373.795 202.801C349.235 190.522 275.28 173.513 253.002 195.791C250.589 198.204 284.12 223.629 288.053 225.989C315.557 242.491 341.666 247.56 373.795 247.56C386.406 247.56 410.834 236.969 411.273 237.044Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+            "id": "popsicle_001",
+            "title": "Popsicle",
+            "category": "food",
+            "minimumAgeGroup": 1,
+            "difficulty": 1,
+            "totalSteps": 8,
+            "canvasSize": { "width": 800, "height": 800 },
+            "steps": [
+                {
+                    "stepNumber": 1,
+                    "label": "Draw the left side of the popsicle",
+                    "svgPath": "M293.239 284.437C293.239 356.52 297.256 429.508 297.256 501.352",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 2,
+                    "label": "Draw the right side of the popsicle",
+                    "svgPath": "M477.802 278.078C477.802 351.13 477.802 424.782 477.802 498.068",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 3,
+                    "label": "Connect the bottom of the popsicle",
+                    "svgPath": "M297.569 501.602C315.154 510.395 466.903 520.75 476.918 500.719",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 4,
+                    "label": "Draw the rounded top",
+                    "svgPath": "M294.571 286.084C284.177 265.296 319.327 226.236 333.558 215.563C385.897 176.309 478.039 209.054 478.039 278.63",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4.5,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 5,
+                    "label": "Draw the left side of the stick",
+                    "svgPath": "M372.587 511.954C372.587 508.806 372.587 517.056 372.587 518.378C372.587 524.373 372.587 530.369 372.587 536.365C372.587 553.413 370.017 569.502 370.017 586.473",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 6,
+                    "label": "Draw the right side of the stick",
+                    "svgPath": "M401.495 515.166C404.944 508.268 402.137 530.58 402.137 538.292C402.137 554.511 404.064 570.608 404.064 586.473",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 7,
+                    "label": "Draw the bottom of the stick",
+                    "svgPath": "M371.302 589.042C367.774 589.042 371.607 589.99 375.799 594.181C385.96 604.343 399.013 597.86 404.707 586.473",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                },
+                {
+                    "stepNumber": 8,
+                    "label": "Add the melting drizzle detail",
+                    "svgPath": "M294.213 355.849C305.374 355.849 319.388 348.516 328.261 360.346C339.018 374.689 321.164 442.1 355.242 433.58C380.889 427.168 350.807 365.133 369.374 355.849C408.34 336.367 398.845 405.684 422.694 410.454C460.209 417.957 426.759 353.922 476.656 353.922",
+                    "strokeColor": "#333333",
+                    "strokeWidth": 4,
+                    "fillColor": "none"
+                }
+            ]
+        },
+        {
+          "id": "food_icecream_001",
+          "title": "Icecream",
+          "category": "food",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 14,
+          "canvasSize": {
+            "width": 800,
+            "height": 800
+          },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the outline",
+              "svgPath": "M259.382 387.762C343.346 401.49 452.3 413.274 535.229 387.476",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Add the main shape",
+              "svgPath": "M258.393 388.474C257.225 395.619 262.354 424.751 268.773 429.62C299.659 453.05 424.279 453.317 463.16 444.992C481.27 441.115 508.954 439.568 521.578 423.996C527.166 417.102 532.311 407.215 534.754 398.919C535.29 397.102 538.973 386.507 536.169 389.201",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the inner details",
+              "svgPath": "M302.548 443.11C316.21 494.935 332.89 548.574 358.662 595.444C371.828 619.388 404.366 632.991 426.259 610.531C470.936 564.697 470.677 490.975 501.744 437.663",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Add more details",
+              "svgPath": "M320.2 495.695C318.775 495.603 320.214 495.156 320.612 494.988C327.877 491.919 334.788 486.045 340.924 481.257C354.489 470.671 368.438 459.897 382.863 450.456",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the accent lines",
+              "svgPath": "M335.059 542.038C344.815 532.292 361.156 526.896 372.651 518.946C404.629 496.829 438.943 472.576 466.42 445.124",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Add the finishing touches",
+              "svgPath": "M356.401 589.21C385.618 573.409 412.489 553.234 440.521 535.165C452.502 527.442 461.895 515.274 474.353 508.536",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the extra details",
+              "svgPath": "M408.536 450.579C432.443 465.602 450.887 488.839 474.456 503.649",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Complete the pattern",
+              "svgPath": "M318.72 445.775C328.981 446.777 347.33 468.632 355.862 475.199C389.622 501.183 423.834 530.774 459.373 553.106",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Add the final strokes",
+              "svgPath": "M320.541 497.772C355.693 534.932 400.403 560.865 439.941 593.417",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 10,
+              "label": "Finish the drawing",
+              "svgPath": "M258.155 386.095C233.137 374.821 248.646 334.268 271.242 325.711C326.599 304.748 392.944 326.019 448.748 301.936C463.421 295.603 492.414 277.338 486.585 257.459C484.059 248.843 472.067 236.506 464.002 233.427C460.608 232.132 451.68 227.767 451.894 228.65",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 11,
+              "label": "Draw step 11",
+              "svgPath": "M338.192 396.79C391.148 377.852 480.245 391.72 517.6 336.949C529.751 319.133 522.543 301.898 505.601 288.64C498.754 283.281 493.127 282.657 485.213 281.701C483.977 281.552 475.201 281.597 479.046 282.787",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 12,
+              "label": "Draw step 12",
+              "svgPath": "M521.014 333.334C523.001 336.405 530.674 337.612 533.755 340.077C550.268 353.289 554.565 374.757 535.249 387.254",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 13,
+              "label": "Draw step 13",
+              "svgPath": "M286.628 319.718C274.121 300.34 291.533 276.256 311.545 271.117C344.774 262.583 428.276 258.247 449.475 228.374C463.048 209.246 442.103 178.783 421.493 175.974C413.041 174.822 405.76 172.134 397.07 171.724C393.96 171.578 384.741 171.878 385.79 172.334",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 14,
+              "label": "Draw step 14",
+              "svgPath": "M318.276 269.274C311.206 265.093 324.286 243.172 328.536 239.305C349.435 220.287 390.814 207.995 387.034 173.616",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "food_cone_ice_001",
+          "title": "Cone ice",
+          "category": "food",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 16,
+          "canvasSize": {
+            "width": 800,
+            "height": 800
+          },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the outline",
+              "svgPath": "M479.516 150.342C479.538 150.337 468.145 152.701 465.529 153.5C456.861 156.147 452.487 166.655 450.248 174.116C444.54 193.133 465.973 213.655 484.668 213.091C504.903 212.48 519.419 189.416 513.698 170.685C510.71 160.902 503.798 154.271 494.263 150.822C491.491 149.819 486.459 148.377 483.457 148.845C482.28 149.028 478.965 150.455 479.516 150.342Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Add the main shape",
+              "svgPath": "M452.086 195.366C453.113 195.11 447.501 197.11 445.764 197.688C441.548 199.09 436.142 199.98 431.802 200.794C419.23 203.153 402.627 209.678 392.679 218.192C360.404 245.814 317.665 300.768 346.976 346.904",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the inner details",
+              "svgPath": "M509.949 197.753C555.441 181.966 646.222 292.142 598.452 328.893",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Add more details",
+              "svgPath": "M347.385 348.605C365.185 364.885 374.786 296.578 384.464 293.695C389.812 292.102 394.656 336.304 409.841 335.627C436.479 334.44 410.295 280.625 435.584 283.095C460.663 285.544 448.918 351.898 463.54 354.869C514.58 365.238 476.122 284.2 500.907 283.096C530.496 281.777 511.011 343.558 537.628 346.158C565.433 348.873 540.848 291.093 555.947 290.42C567.445 289.907 586.499 340.629 597.785 328.29",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the accent lines",
+              "svgPath": "M348.263 349.544C348.27 348.585 347.749 348.957 347.019 349.195C337.718 352.218 334.222 363.984 331.663 372.085C326.808 387.456 342.262 402.726 355.658 406.487C366.012 409.394 380.445 407.688 388.796 400.048C393.273 395.952 395.247 385.866 401.247 386.769C405.684 387.436 413.426 417.146 432.1 413.29C442.299 411.184 449.212 408.461 455.998 399.869C459.401 395.56 463.699 385.308 463.699 385.308C463.699 385.308 464.983 389.432 465.352 391.553C467.205 402.194 493.994 415.784 503.941 414.052C519.484 411.345 527.796 406.618 537.747 394.019C539.012 392.418 542.133 375.807 542.756 375.812C544.328 375.823 550.946 389.424 553.181 391.075C571.851 404.867 587.006 405.635 606.197 393.623C623.858 382.568 625.486 362.669 610.041 349.229C601.286 341.611 595.675 332.517 595.543 333.029",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Add the finishing touches",
+              "svgPath": "M372.097 409.753C375.199 423.616 385.678 435.979 390.407 449.158C405.855 492.205 425.565 535.62 444.684 577.167C452.908 595.04 459.49 613.117 469.628 629.957C473.061 635.658 475.386 643.525 477.863 649.786C478.486 651.361 482.576 659.393 480.133 656.396",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the extra details",
+              "svgPath": "M481.921 656.644C480.371 644.459 496.475 619.92 501.562 608.762C518.933 570.657 535.744 529.299 549.745 489.349C556.586 469.826 564.664 449.569 572.966 430.665C576.895 421.72 578.652 411.432 583.152 402.766C583.671 401.768 583.907 401.247 583.88 403.021",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Complete the pattern",
+              "svgPath": "M403.464 481.117C414.185 463.505 438.816 446.63 453.312 431.545C459.342 425.27 466.188 419.819 470.786 412.265C471.999 410.273 478.516 403.083 477.43 406.063",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Add the final strokes",
+              "svgPath": "M428.373 538.492C435.107 527.429 448.98 518.546 457.86 508.902C477.762 487.29 497.881 466.127 516.575 443.417C525.916 432.069 535.58 421.142 544.711 409.315C547.262 406.011 560.317 389.065 555.658 396.718",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 10,
+              "label": "Finish the drawing",
+              "svgPath": "M450.565 588.885C450.779 586.314 506.082 541.461 512.335 533.866C518.732 526.094 527.102 519.539 534.086 512.271C537.086 509.149 545.582 499.446 543.33 503.145",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 11,
+              "label": "Draw the top section",
+              "svgPath": "M470.849 629.51C470.677 629.511 470.842 630 471.014 629.999C474.779 629.984 487.658 618.194 491.536 614.885C494.337 612.495 504.089 607.233 501.153 609.454",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 12,
+              "label": "Draw the bottom section",
+              "svgPath": "M502.805 414.364C522.941 425.347 544.222 439.995 566.301 446.871",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 13,
+              "label": "Add the left details",
+              "svgPath": "M428.068 413.506C433.64 424.12 452.069 433.008 461.843 439.247C490.118 457.298 522.754 474.012 549.163 493.012",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 14,
+              "label": "Add the right details",
+              "svgPath": "M392.102 454.337C395.997 461.755 404.792 465.309 410.814 470.682C429.478 487.336 454.076 504.526 476.875 514.505C493.159 521.633 517.72 527.009 531.818 537.152",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 15,
+              "label": "Draw the center",
+              "svgPath": "M431.835 544.484C431.718 544.261 437.408 549.317 439.313 550.688C445.555 555.178 452.301 557.973 458.604 562.508C474.749 574.123 495.405 578.691 510.966 589.886",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 16,
+              "label": "Add small details",
+              "svgPath": "M466.919 619.344C459.93 614.316 497.3 635.172 489.08 632.612",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "fantasy_bow_001",
+          "title": "Bow",
+          "category": "fantasy",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 12,
+          "canvasSize": {
+            "width": 800,
+            "height": 800
+          },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the outline",
+              "svgPath": "M372.896 308.062C367.17 319.515 368.202 331.076 371.155 342.885C371.659 344.901 375.915 359.481 376.726 357.859",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Add the main shape",
+              "svgPath": "M426.175 307.714C431.975 325.113 433.758 339.558 425.13 356.814",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the inner details",
+              "svgPath": "M376.726 357.859C371.544 357.859 386.619 361.021 391.7 362.037C401.804 364.058 416.424 361.69 425.478 357.162",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Add more details",
+              "svgPath": "M372.896 307.017C388.408 299.261 410.164 299.36 425.478 307.017",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the accent lines",
+              "svgPath": "M371.212 308.928C373.25 292.211 305.306 240.027 290.182 230.624C281.742 225.376 261.521 214.291 253.662 226.93C236.213 254.995 318.427 283.893 333.999 290.742C344.08 295.176 370.986 310.783 371.212 308.928Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Add the finishing touches",
+              "svgPath": "M426.003 309.547C423.55 300.881 442.713 289.698 447.55 283.271C458.17 269.159 527.028 205.846 544.424 223.037C567.914 246.249 482.004 283.427 471.292 288.579C464.003 292.085 426.862 312.581 426.003 309.547Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the extra details",
+              "svgPath": "M376.758 357.915C366.305 387.659 298.814 411.976 270.856 411.523C260.285 411.352 245.073 416.187 236.369 407.196",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Complete the pattern",
+              "svgPath": "M424.308 357.9C430.513 380.848 496.001 414.403 518.1 412.209C524.162 411.607 556.274 418.499 558.317 408.397",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Add the final strokes",
+              "svgPath": "M259.817 221.094C207.292 235.214 229.951 314.341 232.021 354.484C232.728 368.187 225.584 395.286 235.693 406.668",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 10,
+              "label": "Finish the drawing",
+              "svgPath": "M541.049 221.24C541.04 221.217 545.982 222.736 547.377 223.988C550.388 226.69 553.507 229.123 556.49 231.8C565.717 240.082 570.023 253.522 570.686 265.797C571.872 287.748 565.867 309.737 565.364 331.748C564.833 355.056 575.137 389.864 557.403 409.622",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 11,
+              "label": "Draw the top section",
+              "svgPath": "M395.987 363.204C395.987 377.413 386.533 387.026 382.376 399.5C369.195 439.041 343.139 475.915 333.036 516.327C331.684 521.732 326.361 562.977 323.395 563.966C305.509 569.927 235.056 529.975 241.162 505.552C249.654 471.583 282.52 429.599 306.948 405.171",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 12,
+              "label": "Draw the bottom section",
+              "svgPath": "M404.885 362.548C411.913 409.504 446.548 452.086 460.805 497.343C465.12 511.041 467.331 524.96 471.132 538.539C472.638 543.92 467.79 563.927 474.463 562.059C495.538 556.16 561.584 537.588 558.735 505.947C556.507 481.209 531.916 452.55 516.732 435.072C511.062 428.547 506.384 421.189 500.461 414.813C498.602 412.813 492.989 405.068 493 406.663",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "vehicles_aeroplane_001",
+          "title": "“Aeroplane”",
+          "category": "vehicles",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 15,
+          "canvasSize": {
+            "width": 800,
+            "height": 800
+          },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the outline",
+              "svgPath": "M204.09 394.861C207.224 380.132 272.276 339.618 287.124 332.739C356.04 300.811 453.855 236.397 531.287 246.747C557.111 250.199 655.057 296.087 626.588 331.777",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Add the main shape",
+              "svgPath": "M203.778 396.329C202.758 401.123 204.215 404.799 206.984 407.754M251.691 428.435C275.579 435.253 303.268 436.772 325.956 437.977C334.277 438.419 342.866 438.605 351.656 438.528M469.453 422.731C532.083 406.273 591.377 376.461 627.688 330.937",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the inner details",
+              "svgPath": "M225.076 391.424C226.438 390.634 222.899 393.703 221.753 394.784C218.252 398.081 215.274 401.829 212.23 405.646C206.512 412.815 179.587 444.178 195.838 450.953C220.988 461.438 251.578 424.864 265.801 410.6C269.874 406.516 285.933 391.934 283.06 385.733C276.856 372.34 250.552 382.447 241.236 385.426C237.502 386.62 233.739 387.411 230.183 389.059C229.117 389.552 224.907 391.522 225.076 391.424Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Add more details",
+              "svgPath": "M369.632 406.748C373.159 400.134 366.944 411.707 365.948 413.891C361.796 423.002 357.245 431.524 352.288 440.297C343.72 455.46 295.063 520.078 317.307 530.215C364.88 551.894 430.144 460.961 457.844 431.188C464.856 423.65 498.434 395.296 494.886 383.919C488.021 361.907 411.385 383.356 395.592 387.746C386.91 390.158 378.454 393.841 373.029 401.359C371.855 402.987 366.755 412.141 369.632 406.748Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the accent lines",
+              "svgPath": "M214.775 379.793C212.273 376.623 187.466 297.251 187.705 295.227C188.081 292.035 202.576 284.051 205.585 283.161C228.856 276.276 243.912 302.364 258.869 315.953C263.456 320.121 269.726 325.046 273.469 329.788C274.543 331.149 280.104 337.158 278.548 335.187",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Add the finishing touches",
+              "svgPath": "M353.184 298.441C348.268 294.986 312.015 256.723 311.211 252.113C308.887 238.801 343.158 234.693 350.447 234.872C365.752 235.249 401.446 259.269 414.606 268.518",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the extra details",
+              "svgPath": "M513.615 244.893C520.355 232.816 565.016 155.655 583.306 190.155C593.887 210.113 571.662 240.574 568.048 259.649",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Complete the pattern",
+              "svgPath": "M347.606 331.328C333.15 339.932 338.046 374.713 355.095 374.624C373.349 374.529 370.793 343.376 363.083 333.57C360.932 330.834 351.621 328.938 347.606 331.328Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Add the final strokes",
+              "svgPath": "M414.205 317.33C384.526 310.706 386.918 361.548 405.79 364.071C432.75 367.674 431.358 321.159 414.205 317.33Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 10,
+              "label": "Finish the drawing",
+              "svgPath": "M471.551 303.154C446.275 291.633 440.026 343.286 461.151 347.292C493.323 353.394 487.534 310.44 471.551 303.154Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 11,
+              "label": "Draw the top section",
+              "svgPath": "M558.968 256.863C558.732 256.088 543.276 264.59 541.732 265.518C532.452 271.097 515.351 277.239 516.413 290.895C516.916 297.36 518.347 312.273 525.325 315.326C542.197 322.706 592.663 293.947 595.643 276.309",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 12,
+              "label": "Draw the bottom section",
+              "svgPath": "M608.195 351.248C597.544 326.405 585.036 305.187 596.21 277.24",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 13,
+              "label": "Add the left details",
+              "svgPath": "M452.534 440.57C440.873 455.486 450.955 518.373 475.076 490.997C495.654 467.642 478.316 409.322 449.887 445.687",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 14,
+              "label": "Add the right details",
+              "svgPath": "M461.957 453.561C455.775 457.66 462.707 485.377 469.618 480.794C477.945 475.273 473.027 446.22 461.957 453.561Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 15,
+              "label": "Draw the center",
+              "svgPath": "M401.553 494.86C426.589 503.765 441.894 500.673 466.655 497.64",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            }
+          ]
+        },
+        {
+          "id": "faces_cat_001",
+          "title": "“Cat”",
+          "category": "faces",
+          "minimumAgeGroup": 1,
+          "difficulty": 1,
+          "totalSteps": 9,
+          "canvasSize": {
+            "width": 800,
+            "height": 800
+          },
+          "steps": [
+            {
+              "stepNumber": 1,
+              "label": "Draw the outline",
+              "svgPath": "M279.159 357.353C280.488 346.238 275.542 276.006 292.349 274.982C316.459 273.513 333.766 314.671 346.982 319.312C359.413 323.676 387.967 311.334 402.366 311.942C409.451 312.242 441.536 322.643 446.121 318.009C452.967 311.089 500.03 270.8 508.91 276.651C516.44 281.613 518.386 349.343 517.074 360.322",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 2,
+              "label": "Add the main shape",
+              "svgPath": "M278.939 358.225C270.997 391.509 257.234 424.615 280.134 457.615C291.193 473.551 309.949 479.674 326.551 487.321C383.443 513.526 479.874 509.509 518.798 452.396C534.129 429.901 532.309 399.058 523.84 374.532C522.191 369.758 517.607 366.386 517.155 361.239",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 3,
+              "label": "Draw the inner details",
+              "svgPath": "M372.444 444.333C371.848 444.191 376.524 447.466 378.645 448.304C384.448 450.596 392.433 450.002 395.611 443.471C399.362 435.764 369.997 416.784 402.354 419.302C417.466 420.478 398.702 435.058 397.737 439.104C394.731 451.698 418 451.603 423.507 445.037",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 4,
+              "label": "Add more details",
+              "svgPath": "M329.987 404.306C324.633 409.746 331.896 428.611 341.029 423.063C356.518 413.655 344.305 389.756 329.987 404.306Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 5,
+              "label": "Draw the accent lines",
+              "svgPath": "M449.651 405.202C446.264 416.829 463.983 432.355 469.237 415.067C473.329 401.6 454.27 389.344 449.651 405.202Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 6,
+              "label": "Add the finishing touches",
+              "svgPath": "M234.887 412.4C252.361 408.47 275.453 412.524 292.524 416.746",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 7,
+              "label": "Draw the extra details",
+              "svgPath": "M242.324 449.099C250.125 451.028 286.24 438.828 297.934 437.899",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 8,
+              "label": "Complete the pattern",
+              "svgPath": "M507.118 412.572C523.929 408.791 549.015 412.292 565.617 416.397",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            },
+            {
+              "stepNumber": 9,
+              "label": "Add the final strokes",
+              "svgPath": "M503.039 439.451C514.625 436.845 547.662 445.89 557.072 453.914",
+              "strokeColor": "#000000",
+              "strokeWidth": 4.0,
+              "fillColor": "none"
+            }
+          ]
+        }
+
+    ]
+}
