@@ -131,6 +131,27 @@
   .safe-banner h3 { font-size: 1em; font-weight: 800; color: #065F46; margin-bottom: 2px; }
   .safe-banner p { font-size: 0.88em; color: var(--muted); font-weight: 600; }
 
+  /* Analytics notice banner */
+  .analytics-banner {
+    background: #FFFBEB;
+    border: 2px solid #FCD34D;
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .analytics-banner .icon-circle {
+    width: 48px; height: 48px; flex-shrink: 0;
+    background: #FEF3C7;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .analytics-banner h3 { font-size: 0.95em; font-weight: 800; color: #92400E; margin-bottom: 4px; }
+  .analytics-banner p { font-size: 0.85em; color: #78350F; font-weight: 600; line-height: 1.6; }
+
   /* Cards */
   .card {
     background: var(--white);
@@ -187,6 +208,38 @@
     top: 7px;
   }
 
+  /* Collect grid - now shows what IS collected */
+  .collect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .collect-item {
+    background: #F0FDF4;
+    border: 2px solid #BBF7D0;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.88em;
+    font-weight: 700;
+    color: #065F46;
+  }
+  .collect-item .check {
+    width: 26px; height: 26px;
+    background: #D1FAE5;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9em;
+    flex-shrink: 0;
+    color: #059669;
+    font-weight: 900;
+  }
+  .collect-item .label { line-height: 1.4; }
+  .collect-item .sublabel { font-size: 0.82em; font-weight: 600; color: #047857; margin-top: 2px; }
+
   /* No-collect grid */
   .nocollect-grid {
     display: grid;
@@ -234,6 +287,53 @@
   .storage-card .s-title { font-size: 0.88em; font-weight: 800; color: var(--purple); margin-bottom: 4px; }
   .storage-card .s-desc { font-size: 0.8em; color: #5B21B6; line-height: 1.4; }
 
+  /* Firebase info box */
+  .firebase-box {
+    background: #FFF7ED;
+    border: 2px solid #FED7AA;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 14px;
+  }
+  .firebase-box .fb-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .firebase-box .fb-logo {
+    width: 32px; height: 32px;
+    background: #FEF3C7;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .firebase-box .fb-title { font-size: 0.95em; font-weight: 800; color: #92400E; }
+  .firebase-box p { font-size: 0.88em; color: #78350F; line-height: 1.65; margin-bottom: 8px; }
+  .firebase-box p:last-child { margin-bottom: 0; }
+  .firebase-box a { color: #B45309; font-weight: 800; }
+
+  /* Opt out block */
+  .optout-block {
+    background: #EFF6FF;
+    border: 2px solid #BFDBFE;
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-top: 14px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .optout-block .opt-icon {
+    width: 36px; height: 36px; flex-shrink: 0;
+    background: #DBEAFE;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .optout-block p { font-size: 0.9em; color: #1E40AF; font-weight: 600; line-height: 1.65; }
+  .optout-block a { color: #1D4ED8; font-weight: 800; }
+
   /* Accent colors per card */
   .card.c-green { --accent: #34D399; }
   .card.c-pink  { --accent: #F472B6; }
@@ -241,6 +341,7 @@
   .card.c-yellow { --accent: #FBBF24; }
   .card.c-purple { --accent: var(--purple); }
   .card.c-blue  { --accent: #60A5FA; }
+  .card.c-orange { --accent: #FB923C; }
 
   /* Contact */
   .contact-block {
@@ -301,33 +402,103 @@
   <div class="safe-banner">
     <div class="icon-circle">🛡️</div>
     <div>
-      <h3>Zero data collected &nbsp;·&nbsp; No ads &nbsp;·&nbsp; 100% safe for children</h3>
-      <p>Everything your child creates stays on their device — always.</p>
+      <h3>No ads &nbsp;·&nbsp; No personal data &nbsp;·&nbsp; Safe for children</h3>
+      <p>Your child's artwork stays on their device — always. Analytics data is anonymous and never linked to any person.</p>
+    </div>
+  </div>
+
+  <div class="analytics-banner">
+    <div class="icon-circle">📊</div>
+    <div>
+      <h3>A note about analytics</h3>
+      <p>We use Firebase Analytics to collect <strong>anonymous, aggregated</strong> usage data to improve the app experience. No personal information, no children's data, no drawings — ever. You can opt out at any time in app settings.</p>
     </div>
   </div>
 
   <div class="card c-purple">
     <h2><span class="emoji">👋</span> About Wee Artists</h2>
     <p>Wee Artists is a creative drawing app made for young children to explore imagination in a safe, joyful space. We built it with one principle above everything else: children deserve a private, ad-free place to create.</p>
-    <p>This Privacy Policy explains clearly what we do — and don't do — with your information.</p>
+    <p>This Privacy Policy explains clearly what we do — and don't do — with information related to your use of the app.</p>
   </div>
 
   <div class="card c-green">
     <h2><span class="emoji">🔒</span> Information We Collect</h2>
-    <p>We collect <strong>absolutely nothing</strong>. No account or login is needed. Wee Artists does not collect:</p>
+    <p>We do <strong>not</strong> collect any personal information. No account or login is required. We use Firebase Analytics to collect only anonymous, non-personal usage data to help us improve the app.</p>
+
+    <p style="margin-top:14px; font-weight: 800; font-size: 0.93em; color: #065F46;">What Firebase Analytics collects (anonymously):</p>
+    <div class="collect-grid">
+      <div class="collect-item">
+        <div class="check">✓</div>
+        <div>
+          <div class="label">App events</div>
+          <div class="sublabel">e.g. screens opened, features used</div>
+        </div>
+      </div>
+      <div class="collect-item">
+        <div class="check">✓</div>
+        <div>
+          <div class="label">Session duration</div>
+          <div class="sublabel">How long each app session lasts</div>
+        </div>
+      </div>
+      <div class="collect-item">
+        <div class="check">✓</div>
+        <div>
+          <div class="label">Device type & OS</div>
+          <div class="sublabel">e.g. Android 14, iPhone 15</div>
+        </div>
+      </div>
+      <div class="collect-item">
+        <div class="check">✓</div>
+        <div>
+          <div class="label">Crash reports</div>
+          <div class="sublabel">To fix bugs and improve stability</div>
+        </div>
+      </div>
+      <div class="collect-item">
+        <div class="check">✓</div>
+        <div>
+          <div class="label">Country / Region</div>
+          <div class="sublabel">Approximate location only, never precise</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:16px; font-weight: 800; font-size: 0.93em; color: #6D28D9;">We never collect:</p>
     <div class="nocollect-grid">
       <div class="nocollect-item"><div class="x">✕</div> Names or emails</div>
-      <div class="nocollect-item"><div class="x">✕</div> Device identifiers</div>
-      <div class="nocollect-item"><div class="x">✕</div> Location data</div>
-      <div class="nocollect-item"><div class="x">✕</div> Usage analytics</div>
-      <div class="nocollect-item"><div class="x">✕</div> Drawings or content</div>
-      <div class="nocollect-item"><div class="x">✕</div> Children's data</div>
+      <div class="nocollect-item"><div class="x">✕</div> Precise location</div>
+      <div class="nocollect-item"><div class="x">✕</div> Children's personal data</div>
+      <div class="nocollect-item"><div class="x">✕</div> Drawings or artwork</div>
+      <div class="nocollect-item"><div class="x">✕</div> Device identifiers (IDFA / GAID)</div>
+      <div class="nocollect-item"><div class="x">✕</div> Payment information</div>
+    </div>
+  </div>
+
+  <div class="card c-orange">
+    <h2><span class="emoji">🔥</span> Firebase Analytics — How It Works</h2>
+    <p>We use Firebase Analytics, a service provided by Google LLC. It helps us understand how the app is being used in aggregate — like which drawing tools are most popular — so we can make Wee Artists better for every child.</p>
+
+    <div class="firebase-box">
+      <div class="fb-header">
+        <div class="fb-logo">🔥</div>
+        <div class="fb-title">Google Firebase / Analytics</div>
+      </div>
+      <p><strong>Data is anonymised and aggregated.</strong> Firebase does not allow us to identify individual users. All data is reported in aggregate (e.g. "500 users opened the stamp tool today").</p>
+      <p><strong>No advertising IDs are used.</strong> We have disabled all advertising-related features in Firebase. No data is used for targeted advertising of any kind.</p>
+      <p><strong>Data retention:</strong> Analytics event data is retained for 2 months, after which it is automatically deleted by Google.</p>
+      <p>Firebase is operated by Google LLC. For more details on how Google handles this data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a>.</p>
+    </div>
+
+    <div class="optout-block">
+      <div class="opt-icon">🚪</div>
+      <p><strong>You can opt out at any time.</strong> Go to <strong>Settings → Privacy → Analytics</strong> in the app to disable analytics collection entirely. Once disabled, no usage data is sent from your device.</p>
     </div>
   </div>
 
   <div class="card c-teal">
-    <h2><span class="emoji">📱</span> How Data Is Stored</h2>
-    <p>All app data and artwork lives only on your device. Nothing is ever uploaded or transmitted.</p>
+    <h2><span class="emoji">📱</span> How Your Artwork Is Stored</h2>
+    <p>All artwork and creative content lives only on your device. Drawings are <strong>never</strong> uploaded, transmitted, or shared with us or any third party.</p>
     <div class="storage-grid">
       <div class="storage-card">
         <div class="s-icon">📱</div>
@@ -342,36 +513,37 @@
       <div class="storage-card">
         <div class="s-icon">✈️</div>
         <div class="s-title">Works offline</div>
-        <div class="s-desc">No internet connection needed at any time</div>
+        <div class="s-desc">No internet needed for drawing — only analytics requires connectivity</div>
       </div>
     </div>
   </div>
 
   <div class="card c-pink">
     <h2><span class="emoji">🧒</span> Children's Privacy (COPPA &amp; GDPR-K)</h2>
-    <p>Wee Artists is specifically built for young children. We fully comply with the Children's Online Privacy Protection Act (COPPA) and GDPR provisions for children's data protection.</p>
-    <p>Because we collect no data whatsoever, there is nothing to disclose, share, or delete. Parents and guardians can be confident that using Wee Artists leaves no digital footprint.</p>
+    <p>Wee Artists is specifically built for young children. We fully comply with the Children's Online Privacy Protection Act (COPPA) and GDPR provisions for children's data protection (GDPR-K).</p>
+    <p><strong>We do not collect any personal information from children.</strong> Firebase Analytics is configured with child-directed settings enabled, which disables all personalised advertising, remarketing, and demographic data collection as required by COPPA and Google's Families Policy.</p>
+    <p>Analytics data is purely aggregate and anonymous — it is never used to identify, profile, or target individual children in any way. Parents and guardians can turn off analytics entirely in the app's Settings at any time.</p>
   </div>
 
   <div class="card c-yellow">
-    <h2><span class="emoji">🚫</span> No Third-Party Services</h2>
-    <p>Wee Artists does not integrate with any third-party services. There are no:</p>
+    <h2><span class="emoji">🤝</span> Third-Party Services</h2>
+    <p>The only third-party service integrated in Wee Artists is <strong>Firebase Analytics</strong> (by Google LLC), used solely for anonymous usage analytics as described above. There are no:</p>
     <ul>
       <li>Advertisements or ad networks of any kind</li>
-      <li>Analytics or tracking tools (e.g. Firebase, Mixpanel, Google Analytics)</li>
       <li>Social media integrations or sharing features</li>
       <li>In-app purchases linked to external payment services</li>
+      <li>Additional tracking, profiling, or marketing tools</li>
     </ul>
   </div>
 
   <div class="card c-blue">
     <h2><span class="emoji">🔄</span> Changes to This Policy</h2>
-    <p>If we ever make changes to this policy, we will update the "Last updated" date at the top of this page. We will never introduce data collection without clearly updating this policy and seeking consent where required.</p>
+    <p>If we ever make changes to this policy, we will update the "Last updated" date at the top of this page. For significant changes — such as introducing new data collection — we will notify users via an in-app notice and seek consent where required by law.</p>
   </div>
 
   <div class="card c-purple">
     <h2><span class="emoji">📧</span> Contact Us</h2>
-    <p>Questions about this policy? We're happy to help.</p>
+    <p>Questions about this policy or how we handle data? We're happy to help.</p>
     <div class="contact-block">
       <div class="c-icon">✉️</div>
       <p>Reach us at <a href="mailto:sreehari.dev@gmail.com">sreehari.dev@gmail.com</a><br>We aim to respond within 48 hours.</p>
