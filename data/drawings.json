@@ -1,5 +1,5 @@
 {
-    "version": 3.0,
+    "version": 4.0,
     "ageGroups": [
         {
             "id": 1,
@@ -220,7 +220,7 @@
         },
         {
             "id": "cat_face_006",
-            "title": "Cat Facez",
+            "title": "Cat Face",
             "category": "animals",
             "minimumAgeGroup": 2,
             "difficulty": 2,
