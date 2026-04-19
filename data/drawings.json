@@ -1,5 +1,5 @@
 {
-    "version": 1.0,
+    "version": 2.0,
     "ageGroups": [
         {
             "id": 1,
@@ -214,65 +214,6 @@
                     "svgPath": "M440 160 C480 130 520 150 500 190 C480 170 450 175 440 160 Z",
                     "strokeColor": "#336600",
                     "strokeWidth": 4,
-                    "fillColor": "none"
-                }
-            ]
-        },
-        {
-            "id": "cat_face_006",
-            "title": "Cat Face",
-            "category": "animals",
-            "minimumAgeGroup": 2,
-            "difficulty": 2,
-            "totalSteps": 6,
-            "canvasSize": { "width": 800, "height": 800 },
-            "steps": [
-                {
-                    "stepNumber": 1,
-                    "label": "Draw the cat face",
-                    "svgPath": "M400 180 C270 180 190 270 190 380 C190 490 270 560 400 560 C530 560 610 490 610 380 C610 270 530 180 400 180 Z",
-                    "strokeColor": "#333333",
-                    "strokeWidth": 5,
-                    "fillColor": "none"
-                },
-                {
-                    "stepNumber": 2,
-                    "label": "Draw the left ear",
-                    "svgPath": "M240 230 L210 150 L300 200 Z",
-                    "strokeColor": "#333333",
-                    "strokeWidth": 5,
-                    "fillColor": "none"
-                },
-                {
-                    "stepNumber": 3,
-                    "label": "Draw the right ear",
-                    "svgPath": "M560 230 L590 150 L500 200 Z",
-                    "strokeColor": "#333333",
-                    "strokeWidth": 5,
-                    "fillColor": "none"
-                },
-                {
-                    "stepNumber": 4,
-                    "label": "Draw the eyes",
-                    "svgPath": "M300 330 C300 300 340 300 340 330 C340 360 300 360 300 330 Z M460 330 C460 300 500 300 500 330 C500 360 460 360 460 330 Z",
-                    "strokeColor": "#333333",
-                    "strokeWidth": 4,
-                    "fillColor": "none"
-                },
-                {
-                    "stepNumber": 5,
-                    "label": "Draw the nose and mouth",
-                    "svgPath": "M385 400 L400 415 L415 400 Z M370 420 C385 440 415 440 430 420",
-                    "strokeColor": "#333333",
-                    "strokeWidth": 4,
-                    "fillColor": "none"
-                },
-                {
-                    "stepNumber": 6,
-                    "label": "Add the whiskers",
-                    "svgPath": "M200 390 L350 400 M200 415 L350 415 M450 400 L600 390 M450 415 L600 415",
-                    "strokeColor": "#333333",
-                    "strokeWidth": 3,
                     "fillColor": "none"
                 }
             ]
