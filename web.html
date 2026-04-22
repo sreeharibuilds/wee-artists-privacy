@@ -5,539 +5,484 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wee Artists – Draw · Create · Imagine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --purple-light: #c9b8f8;
-      --purple-mid: #a78bfa;
-      --purple-dark: #7c3aed;
-      --purple-deeper: #5b21b6;
-      --yellow: #fbbf24;
-      --orange: #f97316;
-      --pink: #ec4899;
-      --green: #22c55e;
-      --teal: #14b8a6;
-      --bg-start: #e9d8fd;
-      --bg-end: #a855f7;
-      --white: #ffffff;
-      --card-bg: rgba(255,255,255,0.18);
-      --shadow: 0 8px 32px rgba(124,58,237,0.18);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
+    :root {
+      --bg:       #f0ebff;
+      --purple1:  #7c3aed;
+      --purple2:  #a855f7;
+      --purple3:  #ddd6fe;
+      --yellow:   #fbbf24;
+      --orange:   #f97316;
+      --green:    #22c55e;
+      --pink:     #ec4899;
+      --white:    #ffffff;
+      --text:     #2d1b69;
+      --muted:    #6d4fb5;
+    }
 
     body {
       font-family: 'Nunito', sans-serif;
-      background: linear-gradient(160deg, #e9d8fd 0%, #c4b5fd 30%, #a78bfa 65%, #7c3aed 100%);
-      min-height: 100vh;
-      color: #3b0764;
+      background: var(--bg);
+      color: var(--text);
       overflow-x: hidden;
     }
 
-    /* ── FLOATING CONFETTI ── */
-    .confetti-wrap {
-      position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;
+    /* ─── BLOBS background ─── */
+    .blob-bg {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
     }
-    .dot {
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0.45;
-      animation: floatDot linear infinite;
+    .blob {
+      position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35;
     }
+    .blob1 { width: 600px; height: 600px; background: #c4b5fd; top: -150px; left: -150px; animation: drift1 18s ease-in-out infinite; }
+    .blob2 { width: 500px; height: 500px; background: #fbcfe8; top: 30%; right: -100px; animation: drift2 22s ease-in-out infinite; }
+    .blob3 { width: 450px; height: 450px; background: #bbf7d0; bottom: 10%; left: 20%; animation: drift1 26s ease-in-out infinite reverse; }
+    .blob4 { width: 350px; height: 350px; background: #fde68a; bottom: -80px; right: 15%; animation: drift2 20s ease-in-out infinite; }
 
-    @keyframes floatDot {
-      0%   { transform: translateY(110vh) rotate(0deg); }
-      100% { transform: translateY(-10vh) rotate(360deg); }
-    }
+    @keyframes drift1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,30px)} }
+    @keyframes drift2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-30px,40px)} }
 
-    /* ── NAV ── */
+    /* ─── NAV ─── */
     nav {
-      position: sticky; top: 0; z-index: 100;
+      position: sticky; top: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1rem 2.5rem;
-      background: rgba(255,255,255,0.22);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding: 1rem 3rem;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(20px);
+      border-bottom: 1.5px solid rgba(124,58,237,0.1);
     }
     .nav-logo {
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #5b21b6;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.7rem;
+      color: var(--purple1);
+      letter-spacing: 0.5px;
     }
-    .nav-logo span { color: #f59e0b; }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-logo span { color: var(--yellow); }
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
     .nav-links a {
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: #5b21b6;
-      transition: color 0.2s;
+      font-weight: 700; font-size: 0.9rem; color: var(--muted);
+      text-decoration: none; transition: color 0.2s;
     }
-    .nav-links a:hover { color: #f59e0b; }
-    .nav-cta {
-      background: linear-gradient(135deg, #7c3aed, #a855f7);
-      color: #fff !important;
-      padding: 0.5rem 1.4rem;
-      border-radius: 999px;
+    .nav-links a:hover { color: var(--purple1); }
+    .nav-dl {
+      background: var(--purple1); color: #fff !important;
+      padding: 0.5rem 1.4rem; border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(124,58,237,0.35);
       transition: transform 0.2s, box-shadow 0.2s !important;
-      box-shadow: 0 4px 14px rgba(124,58,237,0.4);
     }
-    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(124,58,237,0.55) !important; }
+    .nav-dl:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(124,58,237,0.45) !important; }
 
-    /* ── HERO ── */
+    /* ─── HERO ─── */
     .hero {
       position: relative; z-index: 1;
-      display: flex; flex-direction: column; align-items: center;
-      text-align: center;
-      padding: 5rem 2rem 3rem;
-      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5rem 3rem 2rem;
+      min-height: 90vh;
     }
-    .hero-badge {
+    .hero-text { display: flex; flex-direction: column; gap: 1.4rem; }
+    .hero-pill {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(255,255,255,0.35);
-      border: 1.5px solid rgba(255,255,255,0.55);
+      background: rgba(124,58,237,0.08);
+      border: 1.5px solid rgba(124,58,237,0.2);
       border-radius: 999px;
       padding: 0.4rem 1.1rem;
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #5b21b6;
-      backdrop-filter: blur(8px);
+      font-size: 0.82rem; font-weight: 800;
+      color: var(--purple1);
+      width: fit-content;
     }
     .hero h1 {
-      font-family: 'Baloo 2', cursive;
-      font-size: clamp(2.8rem, 7vw, 5.5rem);
-      font-weight: 800;
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2.8rem, 4.5vw, 4.4rem);
       line-height: 1.1;
-      color: #fff;
-      text-shadow: 0 4px 24px rgba(93,37,161,0.35);
+      color: var(--text);
     }
-    .hero h1 span { color: #fbbf24; }
+    .hero h1 .hl { color: var(--purple1); }
+    .hero h1 .hl2 { color: var(--orange); }
     .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.3rem);
-      color: rgba(255,255,255,0.88);
-      font-weight: 600;
-      max-width: 540px;
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--muted); line-height: 1.65;
+      max-width: 440px;
     }
-    .hero-dots { display: flex; gap: 0.7rem; justify-content: center; }
+    .hero-dots { display: flex; gap: 0.6rem; }
     .hero-dots span {
-      width: 14px; height: 14px; border-radius: 50%;
-      animation: pulse 1.8s ease-in-out infinite;
+      width: 12px; height: 12px; border-radius: 50%;
+      animation: pop 1.8s ease-in-out infinite;
     }
-    .hero-dots span:nth-child(1) { background: #ef4444; animation-delay: 0s; }
-    .hero-dots span:nth-child(2) { background: #f59e0b; animation-delay: 0.2s; }
-    .hero-dots span:nth-child(3) { background: #22c55e; animation-delay: 0.4s; }
-    .hero-dots span:nth-child(4) { background: #3b82f6; animation-delay: 0.6s; }
-    .hero-dots span:nth-child(5) { background: #ec4899; animation-delay: 0.8s; }
+    .hero-dots span:nth-child(1){background:#ef4444;animation-delay:0s}
+    .hero-dots span:nth-child(2){background:#f59e0b;animation-delay:.18s}
+    .hero-dots span:nth-child(3){background:#22c55e;animation-delay:.36s}
+    .hero-dots span:nth-child(4){background:#3b82f6;animation-delay:.54s}
+    .hero-dots span:nth-child(5){background:#ec4899;animation-delay:.72s}
+    @keyframes pop { 0%,100%{transform:scale(1);opacity:.65} 50%{transform:scale(1.5);opacity:1} }
 
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 0.7; }
-      50% { transform: scale(1.4); opacity: 1; }
-    }
-
-    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 0.5rem; }
-    .btn-primary {
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-a {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: linear-gradient(135deg, #f59e0b, #f97316);
-      color: #fff;
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.05rem;
-      font-weight: 700;
-      padding: 0.85rem 2rem;
-      border-radius: 999px;
+      background: var(--purple1); color: #fff;
+      font-family: 'Fredoka One', cursive; font-size: 1.05rem;
+      padding: 0.9rem 2rem; border-radius: 16px;
       text-decoration: none;
-      box-shadow: 0 6px 24px rgba(249,115,22,0.45);
+      box-shadow: 0 6px 24px rgba(124,58,237,0.35);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .btn-primary:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 10px 32px rgba(249,115,22,0.55); }
-    .btn-secondary {
+    .btn-a:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(124,58,237,0.45); }
+    .btn-b {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(255,255,255,0.25);
-      border: 2px solid rgba(255,255,255,0.5);
-      color: #fff;
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.05rem;
-      font-weight: 700;
-      padding: 0.85rem 2rem;
-      border-radius: 999px;
+      background: transparent;
+      border: 2px solid rgba(124,58,237,0.3);
+      color: var(--purple1);
+      font-family: 'Fredoka One', cursive; font-size: 1.05rem;
+      padding: 0.9rem 2rem; border-radius: 16px;
       text-decoration: none;
-      backdrop-filter: blur(8px);
       transition: background 0.2s, transform 0.2s;
     }
-    .btn-secondary:hover { background: rgba(255,255,255,0.4); transform: translateY(-3px); }
+    .btn-b:hover { background: rgba(124,58,237,0.06); transform: translateY(-3px); }
 
-    /* ── SCREENSHOTS ── */
-    .screenshots-section {
-      position: relative; z-index: 1;
-      display: flex; justify-content: center; align-items: flex-end;
-      padding: 0 2rem 4rem;
-      overflow: visible;
-    }
-    .phones-stage {
+    .hero-stats { display: flex; gap: 2rem; padding-top: 0.5rem; }
+    .stat { display: flex; flex-direction: column; }
+    .stat-num { font-family: 'Fredoka One', cursive; font-size: 1.6rem; color: var(--purple1); }
+    .stat-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* ─── PHONE SHOWCASE ─── */
+    .hero-phones {
       position: relative;
-      display: flex; justify-content: center; align-items: flex-end;
-      height: 480px;
-      width: 100%;
-      max-width: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 620px;
     }
-    .phone-wrap {
+    .ph {
       position: absolute;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      bottom: 0;
+      transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
     }
-    .phone-wrap img {
-      border-radius: 22px;
-      box-shadow: 0 24px 60px rgba(60,0,120,0.45), 0 4px 16px rgba(0,0,0,0.18);
+    .ph img {
       display: block;
+      border-radius: 32px;
+      box-shadow: 0 32px 80px rgba(60,0,120,0.22), 0 8px 24px rgba(0,0,0,0.12);
     }
-    .phone-main {
-      bottom: 0; left: 50%; transform: translateX(-50%);
+    /* centre phone — tall and prominent */
+    .ph-c {
+      left: 50%; transform: translateX(-50%);
       z-index: 3;
     }
-    .phone-main img { height: 480px; }
-    .phone-main:hover { transform: translateX(-50%) translateY(-10px); }
+    .ph-c img { height: 560px; }
+    .ph-c:hover { transform: translateX(-50%) translateY(-14px); }
 
-    .phone-left {
-      bottom: 20px; left: 50%;
-      transform: translateX(calc(-50% - 170px)) rotate(-10deg);
+    /* left phone */
+    .ph-l {
+      left: 50%;
+      transform: translateX(calc(-50% - 200px)) rotate(-9deg);
       z-index: 2;
+      bottom: 30px;
     }
-    .phone-left img { height: 360px; opacity: 0.82; }
-    .phone-left:hover { transform: translateX(calc(-50% - 170px)) rotate(-10deg) translateY(-8px); opacity: 1; }
+    .ph-l img { height: 400px; opacity: 0.88; }
+    .ph-l:hover { transform: translateX(calc(-50% - 200px)) rotate(-9deg) translateY(-10px); }
 
-    .phone-right {
-      bottom: 20px; left: 50%;
-      transform: translateX(calc(-50% + 170px)) rotate(10deg);
+    /* right phone */
+    .ph-r {
+      left: 50%;
+      transform: translateX(calc(-50% + 200px)) rotate(9deg);
       z-index: 2;
+      bottom: 30px;
     }
-    .phone-right img { height: 360px; opacity: 0.82; }
-    .phone-right:hover { transform: translateX(calc(-50% + 170px)) rotate(10deg) translateY(-8px); opacity: 1; }
+    .ph-r img { height: 400px; opacity: 0.88; }
+    .ph-r:hover { transform: translateX(calc(-50% + 200px)) rotate(9deg) translateY(-10px); }
 
-    /* ── SECTION COMMON ── */
-    section { position: relative; z-index: 1; }
+    /* glow under phones */
+    .phone-glow {
+      position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%);
+      width: 380px; height: 80px;
+      background: radial-gradient(ellipse, rgba(124,58,237,0.3) 0%, transparent 70%);
+      filter: blur(20px);
+      z-index: 1;
+    }
 
-    .section-label {
+    /* ─── WAVE DIVIDER ─── */
+    .wave { display: block; width: 100%; margin-bottom: -2px; }
+
+    /* ─── FEATURE STRIP ─── */
+    .features-strip {
+      background: var(--purple1);
+      padding: 5rem 2rem;
+      position: relative; z-index: 1;
+    }
+    .features-strip .inner {
+      max-width: 1100px; margin: 0 auto; text-align: center;
+    }
+    .chip {
       display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #f59e0b;
-      background: rgba(245,158,11,0.12);
-      border: 1.5px solid rgba(245,158,11,0.35);
+      color: var(--yellow);
+      background: rgba(251,191,36,0.15);
+      border: 1.5px solid rgba(251,191,36,0.4);
       border-radius: 999px;
-      padding: 0.3rem 1rem;
+      padding: 0.28rem 0.9rem;
       margin-bottom: 0.75rem;
     }
-    .section-title {
-      font-family: 'Baloo 2', cursive;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.15;
-      margin-bottom: 0.5rem;
+    .sec-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      color: #fff; margin-bottom: 0.5rem;
     }
-    .section-title span { color: #fbbf24; }
-    .section-desc {
-      color: rgba(255,255,255,0.8);
-      font-size: 1.05rem;
-      font-weight: 600;
-      max-width: 520px;
-    }
+    .sec-title span { color: var(--yellow); }
+    .sec-sub { color: rgba(255,255,255,0.7); font-size: 1rem; font-weight: 600; max-width: 480px; margin: 0 auto; }
 
-    /* ── FEATURES ── */
-    .features {
-      padding: 5rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .features-grid {
+    .feat-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
       margin-top: 3rem;
       text-align: left;
     }
-    .feat-card {
-      background: rgba(255,255,255,0.16);
-      border: 1.5px solid rgba(255,255,255,0.28);
-      border-radius: 24px;
-      padding: 2rem 1.75rem;
-      backdrop-filter: blur(12px);
-      transition: transform 0.25s, box-shadow 0.25s;
+    .fc {
+      background: rgba(255,255,255,0.08);
+      border: 1.5px solid rgba(255,255,255,0.14);
+      border-radius: 22px;
+      padding: 1.75rem 1.5rem;
+      transition: transform 0.25s, background 0.25s;
     }
-    .feat-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 40px rgba(93,37,161,0.3);
-    }
-    .feat-icon {
-      width: 56px; height: 56px;
-      border-radius: 16px;
+    .fc:hover { transform: translateY(-5px); background: rgba(255,255,255,0.13); }
+    .fc-icon {
+      width: 52px; height: 52px; border-radius: 14px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.8rem;
-      margin-bottom: 1.1rem;
+      font-size: 1.7rem; margin-bottom: 1rem;
     }
-    .feat-card h3 {
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.4rem;
-    }
-    .feat-card p {
-      color: rgba(255,255,255,0.75);
-      font-size: 0.93rem;
-      line-height: 1.65;
-    }
+    .fc h3 { font-family: 'Fredoka One', cursive; font-size: 1.15rem; color: #fff; margin-bottom: 0.35rem; }
+    .fc p { color: rgba(255,255,255,0.68); font-size: 0.88rem; line-height: 1.6; }
 
-    /* ── CATEGORIES ── */
-    .categories {
-      padding: 5rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      text-align: center;
+    /* ─── CATEGORIES ─── */
+    .cats-section {
+      padding: 6rem 2rem;
+      position: relative; z-index: 1;
     }
-    .cats-grid {
+    .cats-section .inner { max-width: 1000px; margin: 0 auto; text-align: center; }
+    .cats-section .sec-title { color: var(--text); }
+    .cats-section .sec-sub { color: var(--muted); }
+    .cats-section .chip { color: var(--purple1); background: rgba(124,58,237,0.08); border-color: rgba(124,58,237,0.2); }
+
+    .cat-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(6, 1fr);
       gap: 1rem;
       margin-top: 2.5rem;
     }
-    .cat-pill {
-      background: rgba(255,255,255,0.18);
-      border: 1.5px solid rgba(255,255,255,0.3);
+    .cat-card {
+      background: #fff;
+      border: 2px solid rgba(124,58,237,0.08);
       border-radius: 20px;
-      padding: 1.4rem 1rem;
+      padding: 1.5rem 0.75rem;
       text-align: center;
-      backdrop-filter: blur(8px);
-      transition: transform 0.2s, background 0.2s;
+      box-shadow: 0 4px 16px rgba(124,58,237,0.07);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
       cursor: default;
     }
-    .cat-pill:hover {
-      transform: scale(1.06);
-      background: rgba(255,255,255,0.28);
+    .cat-card:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 12px 32px rgba(124,58,237,0.18);
+      border-color: rgba(124,58,237,0.3);
     }
-    .cat-pill .cat-emoji { font-size: 2.2rem; display: block; margin-bottom: 0.5rem; }
-    .cat-pill span:last-child {
-      font-family: 'Baloo 2', cursive;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: #fff;
-    }
+    .cat-card .ce { font-size: 2.4rem; margin-bottom: 0.6rem; display: block; }
+    .cat-card span { font-family: 'Fredoka One', cursive; font-size: 0.95rem; color: var(--text); }
 
-    /* ── SAFE FOR KIDS ── */
+    /* ─── SAFE SECTION ─── */
     .safe-section {
-      padding: 5rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
+      background: linear-gradient(135deg, #fdf4ff 0%, #ede9fe 100%);
+      padding: 6rem 2rem;
+      position: relative; z-index: 1;
     }
-    .safe-text { }
-    .safe-list { list-style: none; margin-top: 1.75rem; display: flex; flex-direction: column; gap: 1rem; }
+    .safe-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; align-items: center;
+    }
+    .safe-text .chip { color: var(--green); background: rgba(34,197,94,0.1); border-color: rgba(34,197,94,0.3); }
+    .safe-text .sec-title { color: var(--text); }
+    .safe-list { list-style: none; margin-top: 1.75rem; display: flex; flex-direction: column; gap: 0.9rem; }
     .safe-list li {
-      display: flex; align-items: flex-start; gap: 0.9rem;
-      background: rgba(255,255,255,0.14);
-      border: 1.5px solid rgba(255,255,255,0.25);
-      border-radius: 16px;
-      padding: 1rem 1.2rem;
-      backdrop-filter: blur(8px);
+      display: flex; align-items: flex-start; gap: 0.85rem;
+      background: #fff;
+      border: 1.5px solid rgba(124,58,237,0.1);
+      border-radius: 16px; padding: 1rem 1.2rem;
+      box-shadow: 0 2px 12px rgba(124,58,237,0.06);
     }
-    .safe-list li .check {
-      width: 32px; height: 32px; min-width: 32px;
+    .ck {
+      width: 30px; height: 30px; min-width: 30px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #22c55e, #16a34a);
+      background: linear-gradient(135deg, var(--green), #16a34a);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1rem;
-      box-shadow: 0 4px 10px rgba(34,197,94,0.4);
+      font-size: 0.85rem; color: #fff;
+      box-shadow: 0 3px 10px rgba(34,197,94,0.35);
     }
-    .safe-list li div strong {
-      display: block;
-      color: #fff;
-      font-size: 0.95rem;
-      margin-bottom: 0.2rem;
-    }
-    .safe-list li div span {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.85rem;
-    }
+    .safe-list li strong { display: block; font-size: 0.93rem; color: var(--text); margin-bottom: 0.15rem; }
+    .safe-list li em { font-style: normal; font-size: 0.82rem; color: var(--muted); }
+
     .safe-visual {
-      display: flex; flex-direction: column; gap: 1rem; align-items: center;
+      display: flex; flex-direction: column; gap: 1.2rem; align-items: center;
     }
-    .safe-badge-big {
-      background: rgba(255,255,255,0.2);
-      border: 2px solid rgba(255,255,255,0.4);
+    .shield-card {
+      background: var(--purple1);
       border-radius: 28px;
-      padding: 2.5rem 2rem;
+      padding: 2.75rem 2rem;
       text-align: center;
-      backdrop-filter: blur(12px);
-      width: 100%;
-      max-width: 300px;
+      width: 100%; max-width: 300px;
+      box-shadow: 0 16px 48px rgba(124,58,237,0.35);
     }
-    .safe-badge-big .shield { font-size: 4rem; margin-bottom: 0.75rem; }
-    .safe-badge-big h3 {
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.4rem;
-    }
-    .safe-badge-big p { color: rgba(255,255,255,0.75); font-size: 0.88rem; }
-    .safe-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
-    .safe-tag {
-      background: rgba(255,255,255,0.22);
-      border: 1px solid rgba(255,255,255,0.35);
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
+    .shield-card .sh { font-size: 4rem; margin-bottom: 0.75rem; }
+    .shield-card h3 { font-family: 'Fredoka One', cursive; font-size: 1.5rem; color: #fff; margin-bottom: 0.4rem; }
+    .shield-card p { color: rgba(255,255,255,0.72); font-size: 0.85rem; line-height: 1.5; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; max-width: 300px; }
+    .tag {
+      background: #fff;
+      border: 1.5px solid rgba(124,58,237,0.15);
+      color: var(--purple1);
+      font-size: 0.78rem; font-weight: 800;
+      padding: 0.32rem 0.8rem; border-radius: 999px;
     }
 
-    /* ── HOW IT WORKS ── */
-    .how {
-      padding: 5rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
+    /* ─── HOW IT WORKS ─── */
+    .how-section {
+      padding: 6rem 2rem;
+      position: relative; z-index: 1;
     }
+    .how-section .inner { max-width: 960px; margin: 0 auto; text-align: center; }
+    .how-section .chip { color: var(--orange); background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.25); }
+    .how-section .sec-title { color: var(--text); }
+    .how-section .sec-sub { color: var(--muted); }
     .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem; margin-top: 3rem;
     }
     .step {
-      background: rgba(255,255,255,0.15);
-      border: 1.5px solid rgba(255,255,255,0.25);
-      border-radius: 24px;
-      padding: 2rem 1.5rem;
-      backdrop-filter: blur(10px);
+      background: #fff;
+      border: 2px solid rgba(124,58,237,0.08);
+      border-radius: 22px; padding: 2rem 1.25rem;
       position: relative;
-      transition: transform 0.25s;
+      box-shadow: 0 4px 20px rgba(124,58,237,0.07);
+      transition: transform 0.25s, box-shadow 0.25s;
     }
-    .step:hover { transform: translateY(-5px); }
-    .step-num {
-      position: absolute;
-      top: -16px; left: 50%; transform: translateX(-50%);
-      width: 34px; height: 34px;
-      background: linear-gradient(135deg, #7c3aed, #a855f7);
-      color: #fff;
+    .step:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(124,58,237,0.14); }
+    .sn {
+      position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+      width: 32px; height: 32px;
+      background: var(--purple1); color: #fff;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Baloo 2', cursive;
-      font-weight: 800;
-      font-size: 1rem;
-      box-shadow: 0 4px 14px rgba(124,58,237,0.5);
+      font-family: 'Fredoka One', cursive; font-size: 1rem;
+      box-shadow: 0 4px 12px rgba(124,58,237,0.4);
     }
-    .step-icon { font-size: 2.4rem; margin: 0.5rem 0 1rem; }
-    .step h3 {
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.4rem;
-    }
-    .step p { color: rgba(255,255,255,0.72); font-size: 0.88rem; line-height: 1.6; }
+    .si { font-size: 2.4rem; margin: 0.5rem 0 0.9rem; }
+    .step h3 { font-family: 'Fredoka One', cursive; font-size: 1.1rem; color: var(--text); margin-bottom: 0.4rem; }
+    .step p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
 
-    /* ── CTA BANNER ── */
-    .cta-banner {
-      padding: 5rem 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
+    /* ─── CTA ─── */
+    .cta-section {
+      padding: 5rem 2rem 7rem;
+      position: relative; z-index: 1;
     }
     .cta-card {
-      background: rgba(255,255,255,0.18);
-      border: 2px solid rgba(255,255,255,0.35);
-      border-radius: 36px;
-      padding: 4rem 3rem;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 20px 60px rgba(93,37,161,0.2);
+      max-width: 700px; margin: 0 auto; text-align: center;
+      background: var(--purple1);
+      border-radius: 36px; padding: 4rem 3rem;
+      box-shadow: 0 24px 64px rgba(124,58,237,0.35);
+      position: relative; overflow: hidden;
+    }
+    .cta-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.12) 0%, transparent 60%);
     }
     .cta-card h2 {
-      font-family: 'Baloo 2', cursive;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.75rem;
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 3.5vw, 2.8rem); color: #fff;
+      margin-bottom: 0.75rem; position: relative;
     }
-    .cta-card h2 span { color: #fbbf24; }
-    .cta-card p { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 2rem; }
-    .store-badges { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .store-badge {
-      display: inline-flex; align-items: center; gap: 0.65rem;
-      background: #fff;
-      color: #3b0764;
-      font-family: 'Baloo 2', cursive;
-      font-weight: 700;
-      font-size: 1rem;
-      padding: 0.85rem 1.75rem;
-      border-radius: 16px;
+    .cta-card h2 span { color: var(--yellow); }
+    .cta-card p { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 2.25rem; position: relative; }
+    .store-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: #fff; color: var(--text);
+      padding: 1rem 2rem; border-radius: 18px;
       text-decoration: none;
-      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
       transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
     }
-    .store-badge:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(0,0,0,0.2); }
-    .store-badge .s-icon { font-size: 1.5rem; }
+    .store-btn:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,0.22); }
+    .store-btn .si2 { font-size: 2rem; }
+    .store-btn .st { text-align: left; }
+    .store-btn .st small { display: block; font-size: 0.7rem; color: var(--muted); font-weight: 700; }
+    .store-btn .st strong { font-family: 'Fredoka One', cursive; font-size: 1.1rem; color: var(--text); }
+    .cta-note { margin-top: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.45); position: relative; }
+    .cta-note a { color: var(--yellow); }
 
-    /* ── FOOTER ── */
+    /* ─── FOOTER ─── */
     footer {
-      position: relative; z-index: 1;
-      background: rgba(0,0,0,0.18);
-      backdrop-filter: blur(16px);
-      border-top: 1px solid rgba(255,255,255,0.15);
+      background: #1e0a4a;
       padding: 3rem 2rem 2rem;
+      position: relative; z-index: 1;
     }
-    .footer-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      text-align: center;
+    .foot-inner {
+      max-width: 1000px; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 1.4rem; text-align: center;
     }
-    .footer-logo {
-      font-family: 'Baloo 2', cursive;
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: #fff;
-    }
-    .footer-logo span { color: #fbbf24; }
-    .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
-    .footer-links { display: flex; gap: 1.75rem; flex-wrap: wrap; justify-content: center; }
-    .footer-links a {
-      color: rgba(255,255,255,0.7);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: #fbbf24; }
-    .footer-copy { color: rgba(255,255,255,0.45); font-size: 0.82rem; }
+    .foot-logo { font-family: 'Fredoka One', cursive; font-size: 1.9rem; color: #fff; }
+    .foot-logo span { color: var(--yellow); }
+    .foot-tag { color: rgba(255,255,255,0.45); font-size: 0.88rem; }
+    .foot-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+    .foot-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; font-weight: 700; transition: color 0.2s; }
+    .foot-links a:hover { color: var(--yellow); }
+    .foot-copy { color: rgba(255,255,255,0.25); font-size: 0.78rem; }
+    .foot-divider { width: 100%; height: 1px; background: rgba(255,255,255,0.08); }
 
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .feat-grid { grid-template-columns: repeat(2, 1fr); }
+      .cat-grid { grid-template-columns: repeat(3, 1fr); }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem 0; min-height: auto; text-align: center; }
+      .hero-text { align-items: center; }
+      .hero-sub { text-align: center; }
+      .hero-stats { justify-content: center; }
+      .hero-phones { height: 420px; margin-top: 1rem; }
+      .ph-c img { height: 380px; }
+      .ph-l, .ph-r { display: none; }
       nav { padding: 0.9rem 1.25rem; }
       .nav-links { display: none; }
-      .safe-section { grid-template-columns: 1fr; gap: 2rem; }
+      .safe-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .safe-visual { display: none; }
-      .phones-stage { height: 540px; max-width: 340px; }
-      .phone-main img { height: 340px; }
-      .phone-left, .phone-right { display: none; }
+      .feat-grid { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps { grid-template-columns: repeat(2, 1fr); }
       .cta-card { padding: 2.5rem 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .steps { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
 <body>
 
-  <!-- CONFETTI -->
-  <div class="confetti-wrap" id="confetti"></div>
+  <div class="blob-bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="blob blob4"></div>
+  </div>
 
   <!-- NAV -->
   <nav>
@@ -545,223 +490,233 @@
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
       <li><a href="#categories">Categories</a></li>
-      <li><a href="#safe">Safe for Kids</a></li>
+      <li><a href="#safe">Safety</a></li>
       <li><a href="https://sreeharibuilds.github.io/wee-artists-privacy/support.html">Support</a></li>
-      <li><a href="#download" class="nav-cta">Download Free</a></li>
+      <li><a href="#download" class="nav-dl">Download Free</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge">🎨 Free · No Ads · Safe for Children</div>
-    <h1>Where Little Hands<br>Become <span>Big Artists</span></h1>
-    <p class="hero-sub">Step-by-step drawing lessons that make every child feel like a creative genius.</p>
-    <div class="hero-dots">
-      <span></span><span></span><span></span><span></span><span></span>
+    <div class="hero-text">
+      <div class="hero-pill">🎨 Free · No Ads · Safe for Children</div>
+      <h1>Where Little Hands<br>Become <span class="hl">Big</span> <span class="hl2">Artists</span></h1>
+      <p class="hero-sub">Step-by-step drawing lessons that guide children from blank page to masterpiece — one joyful stroke at a time.</p>
+      <div class="hero-dots">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-btns">
+        <a href="#download" class="btn-a">🍎 Download Free</a>
+        <a href="#features" class="btn-b">✨ See Features</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Ads Ever</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Kid Safe</span>
+        </div>
+      </div>
     </div>
-    <div class="hero-btns">
-      <a href="#download" class="btn-primary">🍎 Download on App Store</a>
-      <a href="#features" class="btn-secondary">✨ See How It Works</a>
+
+    <!-- PHONES -->
+    <div class="hero-phones">
+      <div class="ph ph-l">
+        <img src="images/screen1.png" alt="Category screen" />
+      </div>
+      <div class="ph ph-c">
+        <img src="images/screen2.png" alt="Drawing lesson" />
+      </div>
+      <div class="ph ph-r">
+        <img src="images/screen3.png" alt="Step complete" />
+      </div>
+      <div class="phone-glow"></div>
     </div>
   </section>
 
-  <!-- SCREENSHOTS -->
-  <div class="screenshots-section">
-    <div class="phones-stage">
-      <div class="phone-wrap phone-left">
-        <img src="images/screen1.png">
-      </div>
-      <div class="phone-wrap phone-main">
-        <img src="images/screen2.png">
-      </div>
-      <div class="phone-wrap phone-right">
-        <img src="images/screen3.png">
-      </div>
-    </div>
-  </div>
+  <!-- WAVE -->
+  <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="position:relative;z-index:1;">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#7c3aed"/>
+  </svg>
 
   <!-- FEATURES -->
-  <section class="features" id="features">
-    <div class="section-label">Why Wee Artists?</div>
-    <h2 class="section-title">Everything a Young Artist <span>Needs</span></h2>
-    <p class="section-desc">Fun, structured, and safe — designed from the ground up for children.</p>
-    <div class="features-grid">
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(251,191,36,0.2);">🎓</div>
-        <h3>Step-by-Step Lessons</h3>
-        <p>Every drawing is broken into simple, easy-to-follow steps so kids always feel confident and never frustrated.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(34,197,94,0.18);">🌈</div>
-        <h3>6 Drawing Worlds</h3>
-        <p>From Animals to Fantasy — six curated categories packed with dozens of adorable characters to learn and draw.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(59,130,246,0.18);">⭐</div>
-        <h3>Stars & Rewards</h3>
-        <p>Children earn star points as they complete lessons, keeping them motivated and excited to draw more.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(236,72,153,0.18);">🖼️</div>
-        <h3>Gallery of Creations</h3>
-        <p>Every finished drawing is saved to a personal gallery — a precious collection of their artistic journey.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(124,58,237,0.2);">📱</div>
-        <h3>iPhone & iPad</h3>
-        <p>Beautifully optimised for all screen sizes — works perfectly on both iPhone and iPad with adaptive layouts.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(249,115,22,0.18);">✈️</div>
-        <h3>Works Offline</h3>
-        <p>No internet? No problem. All drawing lessons are available fully offline — perfect for travel and school.</p>
+  <section class="features-strip" id="features">
+    <div class="inner">
+      <div class="chip">Why Wee Artists?</div>
+      <h2 class="sec-title">Everything a Young Artist <span>Needs</span></h2>
+      <p class="sec-sub">Fun, structured, and safe — designed from the ground up for children.</p>
+      <div class="feat-grid">
+        <div class="fc">
+          <div class="fc-icon" style="background:rgba(251,191,36,0.18)">🎓</div>
+          <h3>Step-by-Step Lessons</h3>
+          <p>Every drawing broken into simple guided steps — kids always feel confident, never frustrated.</p>
+        </div>
+        <div class="fc">
+          <div class="fc-icon" style="background:rgba(34,197,94,0.15)">🌈</div>
+          <h3>6 Drawing Worlds</h3>
+          <p>Animals to Fantasy — six curated categories packed with adorable characters to discover.</p>
+        </div>
+        <div class="fc">
+          <div class="fc-icon" style="background:rgba(251,191,36,0.18)">⭐</div>
+          <h3>Stars & Rewards</h3>
+          <p>Children earn star points as they complete lessons, keeping motivation high and spirits higher.</p>
+        </div>
+        <div class="fc">
+          <div class="fc-icon" style="background:rgba(236,72,153,0.15)">🖼️</div>
+          <h3>Personal Gallery</h3>
+          <p>Every finished drawing saved to a personal gallery — a precious record of their artistic growth.</p>
+        </div>
+        <div class="fc">
+          <div class="fc-icon" style="background:rgba(59,130,246,0.15)">📱</div>
+          <h3>iPhone & iPad</h3>
+          <p>Beautifully optimised for every screen size — layouts adapt perfectly on both devices.</p>
+        </div>
+        <div class="fc">
+          <div class="fc-icon" style="background:rgba(249,115,22,0.15)">✈️</div>
+          <h3>Works Offline</h3>
+          <p>No internet needed for drawing lessons — perfect for travel, school, or anywhere in between.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- WAVE bottom of features -->
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;margin-top:-1px;position:relative;z-index:1;">
+    <path d="M0,30 C360,0 1080,60 1440,30 L1440,0 L0,0 Z" fill="#7c3aed"/>
+  </svg>
+
   <!-- CATEGORIES -->
-  <section class="categories" id="categories">
-    <div class="section-label">Explore Worlds</div>
-    <h2 class="section-title">6 Amazing <span>Drawing Categories</span></h2>
-    <p class="section-desc">Pick a world and start creating your next masterpiece right away.</p>
-    <div class="cats-grid">
-      <div class="cat-pill"><span class="cat-emoji">🦁</span><span>Animals</span></div>
-      <div class="cat-pill"><span class="cat-emoji">😄</span><span>Faces</span></div>
-      <div class="cat-pill"><span class="cat-emoji">🍩</span><span>Food</span></div>
-      <div class="cat-pill"><span class="cat-emoji">🚀</span><span>Vehicles</span></div>
-      <div class="cat-pill"><span class="cat-emoji">🌿</span><span>Nature</span></div>
-      <div class="cat-pill"><span class="cat-emoji">🏰</span><span>Fantasy</span></div>
+  <section class="cats-section" id="categories">
+    <div class="inner">
+      <div class="chip">Explore Worlds</div>
+      <h2 class="sec-title">6 Amazing <span style="color:var(--purple1)">Drawing Categories</span></h2>
+      <p class="sec-sub">Pick a world and start creating your next masterpiece right away.</p>
+      <div class="cat-grid">
+        <div class="cat-card"><span class="ce">🦁</span><span>Animals</span></div>
+        <div class="cat-card"><span class="ce">😄</span><span>Faces</span></div>
+        <div class="cat-card"><span class="ce">🍩</span><span>Food</span></div>
+        <div class="cat-card"><span class="ce">🚀</span><span>Vehicles</span></div>
+        <div class="cat-card"><span class="ce">🌿</span><span>Nature</span></div>
+        <div class="cat-card"><span class="ce">🏰</span><span>Fantasy</span></div>
+      </div>
     </div>
   </section>
 
   <!-- SAFE FOR KIDS -->
   <section class="safe-section" id="safe">
-    <div class="safe-text">
-      <div class="section-label">Child Safety</div>
-      <h2 class="section-title">Built Safe,<br><span>By Design</span></h2>
-      <p class="section-desc">Your child's privacy and safety is our number one priority — always.</p>
-      <ul class="safe-list">
-        <li>
-          <div class="check">✓</div>
-          <div><strong>Completely Ad-Free</strong><span>No advertisements, pop-ups, or promotional content of any kind.</span></div>
-        </li>
-        <li>
-          <div class="check">✓</div>
-          <div><strong>No Personal Data Collected</strong><span>We never collect names, emails, or any personal information from children.</span></div>
-        </li>
-        <li>
-          <div class="check">✓</div>
-          <div><strong>Artwork Stays on Device</strong><span>Drawings are never uploaded to any server — they live only on your device.</span></div>
-        </li>
-        <li>
-          <div class="check">✓</div>
-          <div><strong>COPPA & GDPR-K Compliant</strong><span>Fully compliant with children's privacy laws worldwide.</span></div>
-        </li>
-      </ul>
-    </div>
-    <div class="safe-visual">
-      <div class="safe-badge-big">
-        <div class="shield">🛡️</div>
-        <h3>100% Safe for Kids</h3>
-        <p>Designed with children's wellbeing at the heart of every decision.</p>
+    <div class="safe-inner">
+      <div class="safe-text">
+        <div class="chip">Child Safety</div>
+        <h2 class="sec-title">Built Safe,<br><span style="color:var(--purple1)">By Design</span></h2>
+        <ul class="safe-list">
+          <li>
+            <div class="ck">✓</div>
+            <div><strong>Completely Ad-Free</strong><em>No advertisements, pop-ups, or promotional content of any kind.</em></div>
+          </li>
+          <li>
+            <div class="ck">✓</div>
+            <div><strong>No Personal Data Collected</strong><em>We never collect names, emails, or any personal information from children.</em></div>
+          </li>
+          <li>
+            <div class="ck">✓</div>
+            <div><strong>Artwork Stays on Device</strong><em>Drawings are never uploaded to any server — they live only on your device.</em></div>
+          </li>
+          <li>
+            <div class="ck">✓</div>
+            <div><strong>COPPA & GDPR-K Compliant</strong><em>Fully compliant with children's privacy laws worldwide.</em></div>
+          </li>
+        </ul>
       </div>
-      <div class="safe-tags">
-        <span class="safe-tag">No Ads</span>
-        <span class="safe-tag">No Sign-up</span>
-        <span class="safe-tag">No In-App Purchases</span>
-        <span class="safe-tag">Offline Mode</span>
-        <span class="safe-tag">COPPA Compliant</span>
-        <span class="safe-tag">GDPR-K Compliant</span>
+      <div class="safe-visual">
+        <div class="shield-card">
+          <div class="sh">🛡️</div>
+          <h3>100% Safe for Kids</h3>
+          <p>Designed with children's wellbeing at the heart of every decision.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">No Ads</span>
+          <span class="tag">No Sign-up</span>
+          <span class="tag">No IAP</span>
+          <span class="tag">Offline Mode</span>
+          <span class="tag">COPPA</span>
+          <span class="tag">GDPR-K</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how" id="how">
-    <div class="section-label">How It Works</div>
-    <h2 class="section-title">Drawing Made <span>Easy & Fun</span></h2>
-    <p class="section-desc">From launch to masterpiece in just a few taps.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-icon">🌍</div>
-        <h3>Pick a Category</h3>
-        <p>Choose from Animals, Faces, Food, Vehicles, Nature, or Fantasy to find what inspires you.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-icon">🎯</div>
-        <h3>Choose a Drawing</h3>
-        <p>Browse a library of adorable characters and subjects — there's always something new to discover.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-icon">📖</div>
-        <h3>Follow the Steps</h3>
-        <p>Simple guided steps show exactly what to draw, making every lesson approachable and fun.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-icon">✏️</div>
-        <h3>Draw on Paper!</h3>
-        <p>Grab a pencil and recreate it on paper. Real drawing skills, real creativity — real pride!</p>
+  <section class="how-section" id="how">
+    <div class="inner">
+      <div class="chip">How It Works</div>
+      <h2 class="sec-title">Drawing Made <span style="color:var(--purple1)">Easy & Fun</span></h2>
+      <p class="sec-sub">From launch to masterpiece in just a few taps.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="sn">1</div>
+          <div class="si">🌍</div>
+          <h3>Pick a Category</h3>
+          <p>Choose from Animals, Faces, Food, Vehicles, Nature, or Fantasy to find what inspires you.</p>
+        </div>
+        <div class="step">
+          <div class="sn">2</div>
+          <div class="si">🎯</div>
+          <h3>Choose a Drawing</h3>
+          <p>Browse a library of adorable characters and subjects — there's always something new to discover.</p>
+        </div>
+        <div class="step">
+          <div class="sn">3</div>
+          <div class="si">📖</div>
+          <h3>Follow the Steps</h3>
+          <p>Simple guided steps show exactly what to draw — every lesson is approachable and fun.</p>
+        </div>
+        <div class="step">
+          <div class="sn">4</div>
+          <div class="si">✏️</div>
+          <h3>Draw on Paper!</h3>
+          <p>Grab a pencil and recreate it. Real drawing skills, real creativity — real pride!</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- DOWNLOAD CTA -->
-  <section class="cta-banner" id="download">
+  <!-- CTA -->
+  <section class="cta-section" id="download">
     <div class="cta-card">
       <h2>Ready to <span>Create Magic?</span></h2>
-      <p>Wee Artists is free to download on iPhone and iPad. No account needed — just open and draw!</p>
-      <div class="store-badges">
-        <a href="#" class="store-badge">
-          <span class="s-icon">🍎</span>
-          <div>
-            <div style="font-size:0.7rem;opacity:0.6;font-family:Nunito">Download on the</div>
-            <div>App Store</div>
-          </div>
-        </a>
-      </div>
-      <p style="margin-top:1.5rem;font-size:0.82rem;color:rgba(255,255,255,0.5);">
-        Questions? <a href="mailto:sreeharibuilds@gmail.com" style="color:#fbbf24;">sreeharibuilds@gmail.com</a>
-      </p>
+      <p>Free to download on iPhone and iPad. No account needed — just open and draw!</p>
+      <a href="#" class="store-btn">
+        <span class="si2">🍎</span>
+        <div class="st">
+          <small>Download on the</small>
+          <strong>App Store</strong>
+        </div>
+      </a>
+      <p class="cta-note">Questions? <a href="mailto:sreeharibuilds@gmail.com">sreeharibuilds@gmail.com</a></p>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-logo">Wee <span>Artists</span></div>
-      <p class="footer-tagline">✏️ Draw · Create · Imagine 🎨</p>
-      <div class="footer-links">
+    <div class="foot-inner">
+      <div class="foot-logo">Wee <span>Artists</span></div>
+      <p class="foot-tag">✏️ Draw · Create · Imagine 🎨</p>
+      <div class="foot-divider"></div>
+      <div class="foot-links">
         <a href="https://sreeharibuilds.github.io/wee-artists-privacy/index.html">Privacy Policy</a>
         <a href="https://sreeharibuilds.github.io/wee-artists-privacy/terms.html">Terms of Use</a>
         <a href="https://sreeharibuilds.github.io/wee-artists-privacy/support.html">Support</a>
         <a href="mailto:sreeharibuilds@gmail.com">Contact</a>
       </div>
-      <p class="footer-copy">Made with ♥ for little artists everywhere · © 2026 Wee Artists</p>
+      <p class="foot-copy">Made with ♥ for little artists everywhere · © 2026 Wee Artists</p>
     </div>
   </footer>
 
-  <script>
-    // Generate floating confetti dots
-    const wrap = document.getElementById('confetti');
-    const colors = ['#ef4444','#f59e0b','#22c55e','#3b82f6','#ec4899','#a78bfa','#14b8a6','#f97316'];
-    for (let i = 0; i < 28; i++) {
-      const el = document.createElement('div');
-      el.classList.add('dot');
-      const size = Math.random() * 14 + 6;
-      el.style.cssText = `
-        width:${size}px;height:${size}px;
-        left:${Math.random()*100}%;
-        bottom:${Math.random()*-20}%;
-        background:${colors[Math.floor(Math.random()*colors.length)]};
-        animation-duration:${8 + Math.random()*14}s;
-        animation-delay:${Math.random()*8}s;
-      `;
-      wrap.appendChild(el);
-    }
-  </script>
 </body>
 </html>
