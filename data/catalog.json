@@ -1,0 +1,2042 @@
+{
+  "version": 1,
+  "ageGroups": [
+    {
+      "id": 1,
+      "label": "Little Artists",
+      "ageRange": "3–5",
+      "emoji": "🌟",
+      "description": "Easy drawings"
+    },
+    {
+      "id": 2,
+      "label": "Junior Drawers",
+      "ageRange": "6–8",
+      "emoji": "✏️",
+      "description": "Medium detail"
+    },
+    {
+      "id": 3,
+      "label": "Creative Kids",
+      "ageRange": "9–12",
+      "emoji": "🎨",
+      "description": "Advanced drawings"
+    }
+  ],
+  "categories": [
+    {
+      "id": "animals",
+      "label": "Animals",
+      "emoji": "🐱",
+      "color": "#FFD580"
+    },
+    {
+      "id": "faces",
+      "label": "Faces",
+      "emoji": "😊",
+      "color": "#FFB3C6"
+    },
+    {
+      "id": "food",
+      "label": "Food",
+      "emoji": "🍎",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": "vehicles",
+      "label": "Vehicles",
+      "emoji": "🚗",
+      "color": "#AED9F7"
+    },
+    {
+      "id": "nature",
+      "label": "Nature",
+      "emoji": "🌸",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": "fantasy",
+      "label": "Fantasy",
+      "emoji": "🐉",
+      "color": "#FFDAC1"
+    }
+  ],
+  "drawings": [
+    {
+      "id": "popsicle_007",
+      "title": "Popsicle",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "bee_008",
+      "title": "Bee",
+      "category": "nature",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "snail_001",
+      "title": "Snail",
+      "category": "nature",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "elephant_001",
+      "title": "Elephant",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "duckling_001",
+      "title": "Duckling",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 5,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "crab_001",
+      "title": "Crab",
+      "category": "nature",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 14,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "dolphin_001",
+      "title": "Dolphin",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 9,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "apple_001",
+      "title": "Apple",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "avocado_001",
+      "title": "Avocado",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 5,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "food_icecream_001",
+      "title": "Icecream",
+      "category": "food",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 14,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_aeroplane_001",
+      "title": "Aeroplane",
+      "category": "vehicles",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_cat_001",
+      "title": "Cat Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 9,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "fantasy_ball_001",
+      "title": "Ball",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_boy_face_001",
+      "title": "Boy Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_butterfly_001",
+      "title": "Butterfly",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "vehicles_car_001",
+      "title": "Car",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "faces_cow_face_001",
+      "title": "Cow Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_donkey_face_001",
+      "title": "Donkey Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 17,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "faces_elephant_face_001",
+      "title": "Elephant Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_frog_001",
+      "title": "Frog",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 16,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_girl_face_001",
+      "title": "Girl Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_plane_001",
+      "title": "Plane",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "animals_rabbit_001",
+      "title": "Rabbit",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "faces_sleepy_face_001",
+      "title": "Sleepy Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_tiger_face_001",
+      "title": "Tiger Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_cow_001",
+      "title": "Cow",
+      "category": "animals",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 35,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_elephant_face_002",
+      "title": "Elephant Face",
+      "category": "faces",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 16,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_fish_002",
+      "title": "Fish",
+      "category": "animals",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_pig_face_001",
+      "title": "Pig Face",
+      "category": "faces",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 17,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_pup_face_001",
+      "title": "Pup Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 16,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "animals_snake_001",
+      "title": "Snake",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_tulip_001",
+      "title": "Tulip",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_cat_001",
+      "title": "Cat",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 21,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_duck_001",
+      "title": "Duck",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_hen_001",
+      "title": "Hen",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_monkey_001",
+      "title": "Monkey",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 29,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_mushroom_001",
+      "title": "Mushroom",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 9,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "animals_penguin_001",
+      "title": "Penguin",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_pig_001",
+      "title": "Pig",
+      "category": "animals",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_pumpkin_001",
+      "title": "Pumpkin",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_rocket_001",
+      "title": "Rocket",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_sailing_boat_001",
+      "title": "Sailing Boat",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "nature_sun_001",
+      "title": "Sun",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_tortoise_001",
+      "title": "Tortoise",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 21,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_truck_001",
+      "title": "Truck",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "objects_umbrella_001",
+      "title": "Umbrella",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_unicorn_001",
+      "title": "Unicorn",
+      "category": "fantasy",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 16,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_bell_pepper_001",
+      "title": "Bell Pepper",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_cherry_001",
+      "title": "Cherry",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_cupcake_001",
+      "title": "Cupcake",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_donut_001",
+      "title": "Donut",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "food_strawberry_001",
+      "title": "Strawberry",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_ironman_001",
+      "title": "Ironman",
+      "category": "fantasy",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 22,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "insects_ladybug_001",
+      "title": "Ladybug",
+      "category": "nature",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 28,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_cone_icecream_001",
+      "title": "Cone Icecream",
+      "category": "food",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_dinosaur_001",
+      "title": "Dinosaur",
+      "category": "fantasy",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 24,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_fish_001",
+      "title": "Fish",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_helicopter_001",
+      "title": "Helicopter",
+      "category": "vehicles",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 26,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "buildings_house_001",
+      "title": "House",
+      "category": "nature",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_burger_001",
+      "title": "Burger",
+      "category": "food",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 14,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_cake_001",
+      "title": "Cake",
+      "category": "food",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 26,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "objects_candle_001",
+      "title": "Candle",
+      "category": "fantasy",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 4,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "objects_cap_001",
+      "title": "Cap",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 5,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_beach_001",
+      "title": "Beach",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "isPremium": true,
+      "difficulty": 1,
+      "totalSteps": 26,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "animals_bird_001",
+      "title": "Bird",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "isPremium": true,
+      "totalSteps": 22,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "fantasy_bow_001",
+      "title": "Bow",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "isPremium": false,
+      "difficulty": 1,
+      "totalSteps": 9,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "food_grapes_001",
+      "title": "Grapes",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "isPremium": true,
+      "difficulty": 1,
+      "totalSteps": 16,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "faces_hello_kitty_001",
+      "title": "Hello Kitty",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "isPremium": true,
+      "difficulty": 1,
+      "totalSteps": 28,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "vehicles_hot_air_balloon_001",
+      "title": "Hot Air Balloon",
+      "category": "vehicles",
+      "isPremium": true,
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "animals_owl_001",
+      "title": "Owl",
+      "category": "animals",
+      "isPremium": false,
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "nature_rainbow_001",
+      "title": "Rainbow",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "isPremium": true,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "faces_santa_claus_001",
+      "title": "Santa Claus",
+      "category": "fantasy",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "isPremium": true,
+      "totalSteps": 25,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "nature_shell_001",
+      "title": "Shell",
+      "category": "nature",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 9,
+      "isPremium": true,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "fantasy_snowman_001",
+      "title": "Snowman",
+      "category": "fantasy",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "isPremium": true,
+      "totalSteps": 31,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "fantasy_christmas_tree_001",
+      "title": "Christmas Tree",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "isPremium": true,
+      "difficulty": 1,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "animals_seahorse_001",
+      "title": "Seahorse",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "isPremium": true,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "fantasy_basketball_001",
+      "title": "Basketball",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 5,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_football_001",
+      "title": "Football",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_joystick_001",
+      "title": "Joystick",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 7,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "fantasy_key_001",
+      "title": "Key",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_rugby_001",
+      "title": "Rugby",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "fantasy_scissors_001",
+      "title": "Scissors",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_skating_board_001",
+      "title": "Skating Board",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_ufo_001",
+      "title": "UFO",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_volleyball_001",
+      "title": "Volleyball",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 7,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_whistle_001",
+      "title": "Whistle",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 9,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_banana_001",
+      "title": "Banana",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 4,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "vehicles_ambulance_001",
+      "title": "Ambulance",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 25,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_boat_001",
+      "title": "Boat",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_crane_truck_001",
+      "title": "Crane Truck",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 27,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_fighter_jet_001",
+      "title": "Fighter Jet",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 14,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_police_car_001",
+      "title": "Police Car",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 17,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_scooter_001",
+      "title": "Scooter",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_ship_001",
+      "title": "Ship",
+      "category": "vehicles",
+      "minimumAgeGroup": 3,
+      "difficulty": 3,
+      "totalSteps": 35,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_submarine_001",
+      "title": "Submarine",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_pear_001",
+      "title": "Pear",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 5,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_cheese_001",
+      "title": "Cheese",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_croissant_001",
+      "title": "Croissant",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_crown_001",
+      "title": "Crown",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_french_fries_001",
+      "title": "French Fries",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_kiwi_001",
+      "title": "Kiwi",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_leaf_001",
+      "title": "Leaf",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_lightbulb_001",
+      "title": "Lightbulb",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 19,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_lollipop_001",
+      "title": "Lollipop",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 3,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_mango_001",
+      "title": "Mango",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_nest_001",
+      "title": "Nest",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": false
+    },
+    {
+      "id": "animals_octopus_001",
+      "title": "Octopus",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_pineapple_001",
+      "title": "Pineapple",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_popcorn_001",
+      "title": "Popcorn",
+      "category": "food",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_porcupine_001",
+      "title": "Porcupine",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_present_001",
+      "title": "Present",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_toffee_001",
+      "title": "Toffee",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 7,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_trophy_001",
+      "title": "Trophy",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_watermelon_001",
+      "title": "Watermelon",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_ship_002",
+      "title": "Ship",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 11,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_balloons_001",
+      "title": "Balloons",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_bear_face_001",
+      "title": "Bear Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 14,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_bear_001",
+      "title": "Bear",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 33,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_cup_001",
+      "title": "Cup",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 6,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_deer_face_001",
+      "title": "Deer Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_eagle_face_001",
+      "title": "Eagle Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 7,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_fox_001",
+      "title": "Fox",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_knife_001",
+      "title": "Knife",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 8,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_koala_001",
+      "title": "Koala",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 21,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_lion_face_001",
+      "title": "Lion Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_lion_001",
+      "title": "Lion",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 34,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_lizard_001",
+      "title": "Lizard",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 13,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_rat_001",
+      "title": "Rat",
+      "category": "animals",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 25,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_rhino_face_001",
+      "title": "Rhino Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 19,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_seal_pup_001",
+      "title": "Seal Pup",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 26,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_spectacles_001",
+      "title": "Spectacles",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_spoon_001",
+      "title": "Spoon",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 3,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_squirrel_001",
+      "title": "Squirrel",
+      "category": "animals",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 19,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "animals_worm_001",
+      "title": "Worm",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 23,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_pretzel_001",
+      "title": "Pretzel",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 26,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_horse_face_001",
+      "title": "Horse Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_ant_001",
+      "title": "Ant",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 23,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_moon_001",
+      "title": "Moon",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 2,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_rabbit_face_001",
+      "title": "Rabbit Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 17,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_bicycle_001",
+      "title": "Bicycle",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 23,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_bus_001",
+      "title": "Bus",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_spider_web_001",
+      "title": "Spider Web",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_fire_truck_001",
+      "title": "Fire Truck",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 38,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_pizza_001",
+      "title": "Pizza",
+      "category": "food",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_star_001",
+      "title": "Star",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_cement_truck_001",
+      "title": "Cement Truck",
+      "category": "vehicles",
+      "minimumAgeGroup": 2,
+      "difficulty": 2,
+      "totalSteps": 20,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "food_fork_001",
+      "title": "Fork",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 12,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_excavator_001",
+      "title": "Excavator",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 18,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "vehicles_train_001",
+      "title": "Train",
+      "category": "vehicles",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 32,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "faces_frog_face_001",
+      "title": "Frog Face",
+      "category": "faces",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 9,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "nature_snowflake_001",
+      "title": "Snowflake",
+      "category": "nature",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 15,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    },
+    {
+      "id": "fantasy_kettle_001",
+      "title": "Kettle",
+      "category": "fantasy",
+      "minimumAgeGroup": 1,
+      "difficulty": 1,
+      "totalSteps": 10,
+      "canvasSize": {
+        "width": 800,
+        "height": 800
+      },
+      "isPremium": true
+    }
+  ]
+}
