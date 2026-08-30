@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wee Artists – Draw · Create · Imagine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -165,8 +166,10 @@
       bottom: 0;
       transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
     }
+    .ph picture { display: block; line-height: 0; }
     .ph img {
       display: block;
+      width: auto;
       border-radius: 32px;
       box-shadow: 0 32px 80px rgba(60,0,120,0.22), 0 8px 24px rgba(0,0,0,0.12);
     }
@@ -409,20 +412,18 @@
     }
     .cta-card h2 span { color: var(--yellow); }
     .cta-card p { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 2.25rem; position: relative; }
+    /* Official Apple App Store badge — artwork is used unmodified */
     .store-btn {
-      display: inline-flex; align-items: center; gap: 0.75rem;
-      background: #fff; color: var(--text);
-      padding: 1rem 2rem; border-radius: 18px;
-      text-decoration: none;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
-      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
       position: relative;
+      line-height: 0;
+      border-radius: 8px;
+      transition: transform 0.2s;
     }
-    .store-btn:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,0.22); }
-    .store-btn .si2 { font-size: 2rem; }
-    .store-btn .st { text-align: left; }
-    .store-btn .st small { display: block; font-size: 0.7rem; color: var(--muted); font-weight: 700; }
-    .store-btn .st strong { font-family: 'Fredoka One', cursive; font-size: 1.1rem; color: var(--text); }
+    .store-btn:hover { transform: translateY(-3px); }
+    .store-btn:focus-visible { outline: 3px solid var(--yellow); outline-offset: 5px; }
+    .store-btn img { display: block; width: 180px; height: 60px; }
+    @media (max-width: 480px) { .store-btn img { width: 150px; height: 50px; } }
     .cta-note { margin-top: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.45); position: relative; }
     .cta-note a { color: var(--yellow); }
 
@@ -491,7 +492,7 @@
       <li><a href="#features">Features</a></li>
       <li><a href="#categories">Categories</a></li>
       <li><a href="#safe">Safety</a></li>
-      <li><a href="https://weeartists.github.io/wee-artists-app/support.html">Support</a></li>
+      <li><a href="support.html">Support</a></li>
       <li><a href="#download" class="nav-dl">Download Free</a></li>
     </ul>
   </nav>
@@ -528,13 +529,25 @@
     <!-- PHONES -->
     <div class="hero-phones">
       <div class="ph ph-l">
-        <img src="images/screen1.png" alt="Category screen" />
+        <picture>
+          <source srcset="images/screen1.webp" type="image/webp" />
+          <img src="images/screen1.png" alt="The Wee Artists welcome screen with the teddy bear mascot"
+               width="369" height="800" loading="lazy" decoding="async" />
+        </picture>
       </div>
       <div class="ph ph-c">
-        <img src="images/screen2.png" alt="Drawing lesson" />
+        <picture>
+          <source srcset="images/screen2.webp" type="image/webp" />
+          <img src="images/screen2.png" alt="A finished drawing lesson - step 5 of 5 of a duckling, with 250 stars earned"
+               width="516" height="1120" decoding="async" fetchpriority="high" />
+        </picture>
       </div>
       <div class="ph ph-r">
-        <img src="images/screen3.png" alt="Step complete" />
+        <picture>
+          <source srcset="images/screen3.webp" type="image/webp" />
+          <img src="images/screen3.png" alt="Choosing from six categories: Animals, Faces, Food, Vehicles, Nature and Fantasy"
+               width="369" height="800" loading="lazy" decoding="async" />
+        </picture>
       </div>
       <div class="phone-glow"></div>
     </div>
@@ -691,12 +704,8 @@
     <div class="cta-card">
       <h2>Ready to <span>Create Magic?</span></h2>
       <p>Free to download on iPhone and iPad. No account needed — just open and draw!</p>
-      <a href="#" class="store-btn">
-        <span class="si2">🍎</span>
-        <div class="st">
-          <small>Download on the</small>
-          <strong>App Store</strong>
-        </div>
+      <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="store-btn">
+        <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="180" height="60" />
       </a>
       <p class="cta-note">Questions? <a href="mailto:weekidsartists@gmail.com">weekidsartists@gmail.com</a></p>
     </div>
@@ -709,9 +718,9 @@
       <p class="foot-tag">✏️ Draw · Create · Imagine 🎨</p>
       <div class="foot-divider"></div>
       <div class="foot-links">
-        <a href="https://weeartists.github.io/wee-artists-app/privacy.html">Privacy Policy</a>
-        <a href="https://weeartists.github.io/wee-artists-app/terms.html">Terms of Use</a>
-        <a href="https://weeartists.github.io/wee-artists-app/support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
         <a href="mailto:weekidsartists@gmail.com">Contact</a>
       </div>
       <p class="foot-copy">Made with ♥ for little artists everywhere · © 2026 Wee Artists</p>
