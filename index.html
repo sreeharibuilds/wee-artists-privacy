@@ -69,13 +69,10 @@
       text-decoration: none; transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--purple1); }
-    .nav-dl {
-      background: var(--purple1); color: #fff !important;
-      padding: 0.5rem 1.4rem; border-radius: 999px;
-      box-shadow: 0 4px 14px rgba(124,58,237,0.35);
-      transition: transform 0.2s, box-shadow 0.2s !important;
-    }
-    .nav-dl:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(124,58,237,0.45) !important; }
+    .nav-dl { display: block; line-height: 0; transition: transform 0.2s !important; }
+    .nav-dl:hover { transform: translateY(-2px); }
+    .nav-dl:focus-visible { outline: 3px solid var(--purple1); outline-offset: 4px; border-radius: 6px; }
+    .nav-dl img { display: block; width: 108px; height: 36px; }
 
     /* ─── HERO ─── */
     .hero {
@@ -125,17 +122,12 @@
     .hero-dots span:nth-child(5){background:#ec4899;animation-delay:.72s}
     @keyframes pop { 0%,100%{transform:scale(1);opacity:.65} 50%{transform:scale(1.5);opacity:1} }
 
-    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .btn-a {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: var(--purple1); color: #fff;
-      font-family: 'Fredoka One', cursive; font-size: 1.05rem;
-      padding: 0.9rem 2rem; border-radius: 16px;
-      text-decoration: none;
-      box-shadow: 0 6px 24px rgba(124,58,237,0.35);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .btn-a:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(124,58,237,0.45); }
+    .hero-btns { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .btn-a { display: inline-block; line-height: 0; transition: transform 0.2s; }
+    .btn-a:hover { transform: translateY(-3px); }
+    .btn-a:focus-visible { outline: 3px solid var(--purple1); outline-offset: 5px; border-radius: 8px; }
+    .btn-a img { display: block; width: 180px; height: 60px; }
+    @media (max-width: 480px) { .btn-a img { width: 155px; height: 52px; } }
     .btn-b {
       display: inline-flex; align-items: center; gap: 0.5rem;
       background: transparent;
@@ -493,7 +485,9 @@
       <li><a href="#categories">Categories</a></li>
       <li><a href="#safe">Safety</a></li>
       <li><a href="support.html">Support</a></li>
-      <li><a href="#download" class="nav-dl">Download Free</a></li>
+      <li><a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="nav-dl">
+        <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="108" height="36" />
+      </a></li>
     </ul>
   </nav>
 
@@ -507,7 +501,9 @@
         <span></span><span></span><span></span><span></span><span></span>
       </div>
       <div class="hero-btns">
-        <a href="#download" class="btn-a">🍎 Download Free</a>
+        <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="btn-a">
+          <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="180" height="60" />
+        </a>
         <a href="#features" class="btn-b">✨ See Features</a>
       </div>
       <div class="hero-stats">
