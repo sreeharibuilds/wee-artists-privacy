@@ -21,6 +21,8 @@
 <meta name="twitter:description" content="Help for Wee Artists: answers on safety, privacy, offline use and saved drawings, plus troubleshooting steps and how to reach us." />
 <meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -233,6 +235,32 @@
     .logo-text { font-size: 1.9em; }
     .contact-hero { flex-direction: column; text-align: center; }
   }
+
+  /* ─── site navigation + accessibility ─── */
+  .logo-link { text-decoration: none; display: inline-block; }
+  h1.page-label { font-size: 0.88em; font-weight: 700; }
+  .site-links {
+    display: flex; flex-wrap: wrap; gap: 18px;
+    justify-content: center; margin-bottom: 14px;
+  }
+  .site-links a {
+    color: var(--purple); text-decoration: none;
+    font-weight: 800; font-size: 0.92em;
+  }
+  .site-links a:hover { text-decoration: underline; }
+  .site-links span { color: var(--muted); font-weight: 800; font-size: 0.92em; }
+  a:focus-visible {
+    outline: 3px solid var(--purple);
+    outline-offset: 3px; border-radius: 4px;
+  }
+  .header a:focus-visible { outline-color: #fde68a; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -295,12 +323,12 @@
 
 <div class="header">
   <div class="dots"></div>
-  <div class="logo-wrap">
+  <a class="logo-link" href="index.html"><div class="logo-wrap">
     <div class="logo-icon">🎨</div>
     <div class="logo-text">Wee Artists</div>
-  </div>
+  </div></a>
   <p class="header-sub">We're here to help</p>
-  <div class="page-label">Support</div>
+  <h1 class="page-label">Support</h1>
 </div>
 
 <div class="container">
@@ -314,39 +342,39 @@
     </div>
   </div>
 
-  <div class="section-title">❓ Frequently asked questions</div>
+  <h2 class="section-title">❓ Frequently asked questions</h2>
 
   <div class="faq-item">
-    <div class="faq-q">Is Wee Artists safe for my child? <span class="arrow">▼</span></div>
+    <h3 class="faq-q">Is Wee Artists safe for my child? <span class="arrow">▼</span></h3>
     <div class="faq-a">Yes. The app has no ads, no social features, and no third-party tracking. Your child draws in a totally safe, distraction-free space. The optional subscription sits behind a parental gate, so a child cannot buy anything on their own, and we collect no personal data from children — see our Privacy Policy for full details.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-q">Does the app collect any information? <span class="arrow">▼</span></div>
+    <h3 class="faq-q">Does the app collect any information? <span class="arrow">▼</span></h3>
     <div class="faq-a">We collect no personal data — no names, no email addresses, no usage or analytics data — and drawings never leave your device. The one exception is a purchase: if you subscribe or restore a subscription, Apple’s receipt and an anonymous device identifier go to RevenueCat purely to check whether the subscription is active. Nothing about your child is sent. We are fully COPPA and GDPR-K compliant.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-q">Where are drawings saved? <span class="arrow">▼</span></div>
+    <h3 class="faq-q">Where are drawings saved? <span class="arrow">▼</span></h3>
     <div class="faq-a">All artwork is saved locally on your device only. Nothing is uploaded to the cloud or any server. Use the save button inside the app to store a drawing.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-q">Does it work without internet? <span class="arrow">▼</span></div>
+    <h3 class="faq-q">Does it work without internet? <span class="arrow">▼</span></h3>
     <div class="faq-a">Drawing and saving work fully offline once lessons are on your device. An internet connection is only needed to download new drawing lessons and, if you subscribe, to verify that subscription.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-q">What age group is the app for? <span class="arrow">▼</span></div>
+    <h3 class="faq-q">What age group is the app for? <span class="arrow">▼</span></h3>
     <div class="faq-a">Wee Artists is designed for young children, typically ages 2–8. The interface is simple, colourful, and built for little hands and big imaginations.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-q">Will I lose drawings if I delete the app? <span class="arrow">▼</span></div>
+    <h3 class="faq-q">Will I lose drawings if I delete the app? <span class="arrow">▼</span></h3>
     <div class="faq-a">Yes. Because all data is stored locally on your device, uninstalling the app removes all saved drawings. We recommend sharing or exporting any artwork you'd like to keep before uninstalling.</div>
   </div>
 
-  <div class="section-title">🛠 Troubleshooting</div>
+  <h2 class="section-title">🛠 Troubleshooting</h2>
 
   <div class="trouble-grid">
     <div class="trouble-card">
@@ -394,6 +422,13 @@
 </div>
 
 <footer>
+  <div class="site-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <span aria-current="page">Support</span>
+    <a href="mailto:weekidsartists@gmail.com">Contact</a>
+  </div>
   <p>Made with <span class="heart">♥</span> for little artists everywhere 🎨</p>
 </footer>
 

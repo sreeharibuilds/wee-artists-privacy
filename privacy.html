@@ -21,9 +21,12 @@
 <meta name="twitter:description" content="How Wee Artists handles privacy: no personal data collected from children, artwork stays on the device, and full COPPA, GDPR-K and KOSA compliance." />
 <meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
   :root {
-    --purple: #6D28D9;
+    --purple: #7C3AED;
     --purple-light: #EDE9FE;
     --purple-mid: #A78BFA;
     --yellow: #FCD34D;
@@ -40,7 +43,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Nunito', 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
@@ -81,11 +84,11 @@
     border-radius: 18px;
     display: flex; align-items: center; justify-content: center;
     font-size: 34px;
-    box-shadow: 0 5px 0 #B45309;
+    box-shadow: 0 4px 0 #D97706;
   }
   .logo-text {
-    font-size: 2.5em;
-    font-weight: 900;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.4em;
     color: #fff;
     letter-spacing: 1px;
   }
@@ -95,6 +98,18 @@
     color: rgba(255,255,255,0.75);
     font-weight: 600;
     margin-top: 8px;
+  }
+
+  .page-label {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 0.88em;
+    font-weight: 700;
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    position: relative;
   }
 
   .container {
@@ -120,7 +135,7 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 24px;
   }
-  .safe-banner h3 { font-size: 1em; font-weight: 800; color: #065F46; margin-bottom: 3px; }
+  .safe-banner .sb-title { font-size: 1em; font-weight: 800; color: #065F46; margin-bottom: 3px; }
   .safe-banner p  { font-size: 0.88em; color: var(--muted); font-weight: 600; line-height: 1.5; }
 
   .badge-strip {
@@ -260,7 +275,7 @@
     padding: 18px 20px;
     margin-top: 14px;
   }
-  .compliance-box h4 {
+  .compliance-box h3 {
     font-size: 0.93em; font-weight: 800; color: #0369A1; margin-bottom: 8px;
   }
   .compliance-box p {
@@ -276,7 +291,7 @@
     padding: 18px 20px;
     margin-top: 16px;
   }
-  .rc-box h4 {
+  .rc-box h3 {
     font-size: 0.93em; font-weight: 800; color: #92400E; margin-bottom: 8px;
     display: flex; align-items: center; gap: 8px;
   }
@@ -348,17 +363,44 @@
     .card { padding: 20px 16px; }
     .badge-strip { gap: 8px; }
   }
+
+  /* ─── site navigation + accessibility ─── */
+  .logo-link { text-decoration: none; display: inline-block; }
+  h1.page-label { font-size: 0.88em; font-weight: 700; }
+  .site-links {
+    display: flex; flex-wrap: wrap; gap: 18px;
+    justify-content: center; margin-bottom: 14px;
+  }
+  .site-links a {
+    color: var(--purple); text-decoration: none;
+    font-weight: 800; font-size: 0.92em;
+  }
+  .site-links a:hover { text-decoration: underline; }
+  .site-links span { color: var(--muted); font-weight: 800; font-size: 0.92em; }
+  a:focus-visible {
+    outline: 3px solid var(--purple);
+    outline-offset: 3px; border-radius: 4px;
+  }
+  .header a:focus-visible { outline-color: #fde68a; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 </style>
 </head>
 <body>
 
 <div class="header">
   <div class="dots"></div>
-  <div class="logo-wrap">
+  <a class="logo-link" href="index.html"><div class="logo-wrap">
     <div class="logo-icon">🎨</div>
     <div class="logo-text">Wee Artists</div>
-  </div>
-  <p class="header-sub">Privacy Policy &nbsp;·&nbsp; Last updated: May 2026</p>
+  </div></a>
+  <p class="header-sub">Last updated: May 2026</p>
+  <h1 class="page-label">Privacy Policy</h1>
 </div>
 
 <div class="container">
@@ -367,7 +409,7 @@
   <div class="safe-banner">
     <div class="icon-circle">🛡️</div>
     <div>
-      <h3>No ads &nbsp;·&nbsp; No personal data collected &nbsp;·&nbsp; Safe for children</h3>
+      <p class="sb-title">No ads &nbsp;·&nbsp; No personal data collected &nbsp;·&nbsp; Safe for children</p>
       <p>Your child's artwork stays on their device. We do not collect any personal data from children.</p>
     </div>
   </div>
@@ -441,7 +483,7 @@
     </ul>
 
     <div class="compliance-box">
-      <h4>🍎 Apple App Store Compliance</h4>
+      <h3>🍎 Apple App Store Compliance</h3>
       <p>Wee Artists is listed in the Apple App Store <strong>Education category</strong> with a 4+ age rating. In accordance with Apple's requirements: the app contains no behavioural advertising, no analytics or tracking SDKs, no social features accessible to children, and all in-app purchase flows require parental involvement via a parental gate.</p>
     </div>
   </div>
@@ -453,7 +495,7 @@
     <p>To manage subscription status, the app uses <strong>RevenueCat</strong>, a third-party subscription management service. When you make or restore a purchase, RevenueCat receives your Apple purchase receipt and an anonymous device identifier solely to verify whether a subscription is active.</p>
 
     <div class="rc-box">
-      <h4>📋 What RevenueCat receives</h4>
+      <h3>📋 What RevenueCat receives</h3>
       <p><strong>Purchase receipt:</strong> Sent to RevenueCat's servers to verify your subscription status. This receipt is provided by Apple and contains your subscription details but not your name or payment information.</p>
       <p><strong>Anonymous device identifier:</strong> Used only to link your subscription to your device. It is not used for advertising or tracking.</p>
       <p><strong>No children's personal data</strong> is sent to RevenueCat at any time. The purchase flow is protected by a parental gate requiring a parent to complete the transaction.</p>
@@ -530,6 +572,13 @@
 </div>
 
 <footer>
+  <div class="site-links">
+    <a href="index.html">Home</a>
+    <span aria-current="page">Privacy Policy</span>
+    <a href="terms.html">Terms of Use</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:weekidsartists@gmail.com">Contact</a>
+  </div>
   <p>Made with <span class="heart">♥</span> for little artists everywhere 🎨</p>
   <p style="margin-top:6px; font-size:0.85em;">Wee Artists &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Last updated May 2026</p>
 </footer>

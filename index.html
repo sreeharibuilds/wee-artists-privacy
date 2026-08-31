@@ -235,7 +235,7 @@
       display: inline-block;
       font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--yellow);
+      color: #fde68a;
       background: rgba(251,191,36,0.15);
       border: 1.5px solid rgba(251,191,36,0.4);
       border-radius: 999px;
@@ -248,7 +248,7 @@
       color: #fff; margin-bottom: 0.5rem;
     }
     .sec-title span { color: var(--yellow); }
-    .sec-sub { color: rgba(255,255,255,0.7); font-size: 1rem; font-weight: 600; max-width: 480px; margin: 0 auto; }
+    .sec-sub { color: rgba(255,255,255,0.88); font-size: 1rem; font-weight: 600; max-width: 480px; margin: 0 auto; }
 
     .feat-grid {
       display: grid;
@@ -271,7 +271,7 @@
       font-size: 1.7rem; margin-bottom: 1rem;
     }
     .fc h3 { font-family: 'Fredoka One', cursive; font-size: 1.15rem; color: #fff; margin-bottom: 0.35rem; }
-    .fc p { color: rgba(255,255,255,0.68); font-size: 0.88rem; line-height: 1.6; }
+    .fc p { color: rgba(255,255,255,0.88); font-size: 0.88rem; line-height: 1.6; }
 
     /* ─── CATEGORIES ─── */
     .cats-section {
@@ -352,7 +352,7 @@
     }
     .shield-card .sh { font-size: 4rem; margin-bottom: 0.75rem; }
     .shield-card h3 { font-family: 'Fredoka One', cursive; font-size: 1.5rem; color: #fff; margin-bottom: 0.4rem; }
-    .shield-card p { color: rgba(255,255,255,0.72); font-size: 0.85rem; line-height: 1.5; }
+    .shield-card p { color: rgba(255,255,255,0.88); font-size: 0.85rem; line-height: 1.5; }
     .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; max-width: 300px; }
     .tag {
       background: #fff;
@@ -420,7 +420,7 @@
       margin-bottom: 0.75rem; position: relative;
     }
     .cta-card h2 span { color: var(--yellow); }
-    .cta-card p { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 2.25rem; position: relative; }
+    .cta-card p { color: rgba(255,255,255,0.88); font-size: 1rem; margin-bottom: 2.25rem; position: relative; }
     /* Official Apple App Store badge — artwork is used unmodified */
     .store-btn {
       display: inline-block;
@@ -433,8 +433,8 @@
     .store-btn:focus-visible { outline: 3px solid var(--yellow); outline-offset: 5px; }
     .store-btn img { display: block; width: 180px; height: 60px; }
     @media (max-width: 480px) { .store-btn img { width: 150px; height: 50px; } }
-    .cta-note { margin-top: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.45); position: relative; }
-    .cta-note a { color: var(--yellow); }
+    .cta-note { margin-top: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.88); position: relative; }
+    .cta-note a { color: #fde68a; }
 
     /* ─── FOOTER ─── */
     footer {
@@ -449,12 +449,31 @@
     }
     .foot-logo { font-family: 'Fredoka One', cursive; font-size: 1.9rem; color: #fff; }
     .foot-logo span { color: var(--yellow); }
-    .foot-tag { color: rgba(255,255,255,0.45); font-size: 0.88rem; }
+    .foot-tag { color: rgba(255,255,255,0.62); font-size: 0.88rem; }
     .foot-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
     .foot-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; font-weight: 700; transition: color 0.2s; }
     .foot-links a:hover { color: var(--yellow); }
-    .foot-copy { color: rgba(255,255,255,0.25); font-size: 0.78rem; }
+    .foot-copy { color: rgba(255,255,255,0.62); font-size: 0.78rem; }
     .foot-divider { width: 100%; height: 1px; background: rgba(255,255,255,0.08); }
+
+    /* ─── ACCESSIBILITY ─── */
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--purple1);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .features-strip a:focus-visible, .cta-card a:focus-visible, footer a:focus-visible {
+      outline-color: #fde68a;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1024px) {

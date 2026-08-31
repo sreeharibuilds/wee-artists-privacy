@@ -21,6 +21,8 @@
 <meta name="twitter:description" content="Terms of Use for the Wee Artists children's drawing app, covering permitted use, intellectual property, disclaimers and Apple's standard EULA." />
 <meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -301,18 +303,44 @@
     .card { padding: 20px 18px; }
     .owner-grid { grid-template-columns: 1fr; }
   }
+
+  /* ─── site navigation + accessibility ─── */
+  .logo-link { text-decoration: none; display: inline-block; }
+  h1.page-label { font-size: 0.88em; font-weight: 700; }
+  .site-links {
+    display: flex; flex-wrap: wrap; gap: 18px;
+    justify-content: center; margin-bottom: 14px;
+  }
+  .site-links a {
+    color: var(--purple); text-decoration: none;
+    font-weight: 800; font-size: 0.92em;
+  }
+  .site-links a:hover { text-decoration: underline; }
+  .site-links span { color: var(--muted); font-weight: 800; font-size: 0.92em; }
+  a:focus-visible {
+    outline: 3px solid var(--purple);
+    outline-offset: 3px; border-radius: 4px;
+  }
+  .header a:focus-visible { outline-color: #fde68a; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 </style>
 </head>
 <body>
 
 <div class="header">
   <div class="dots"></div>
-  <div class="logo-wrap">
+  <a class="logo-link" href="index.html"><div class="logo-wrap">
     <div class="logo-icon">🎨</div>
     <div class="logo-text">Wee Artists</div>
-  </div>
+  </div></a>
   <p class="header-sub">Last updated: June 2026</p>
-  <div class="page-label">Terms of Use</div>
+  <h1 class="page-label">Terms of Use</h1>
 </div>
 
 <div class="container">
@@ -409,6 +437,13 @@
 </div>
 
 <footer>
+  <div class="site-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <span aria-current="page">Terms of Use</span>
+    <a href="support.html">Support</a>
+    <a href="mailto:weekidsartists@gmail.com">Contact</a>
+  </div>
   <p>Made with <span class="heart">♥</span> for little artists everywhere 🎨</p>
 </footer>
 
