@@ -4,6 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wee Artists – Draw · Create · Imagine</title>
+<meta name="description" content="Wee Artists is a step-by-step drawing app for children on iPhone and iPad. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<link rel="canonical" href="https://weeartist.com/" />
+<meta name="theme-color" content="#7c3aed" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Wee Artists" />
+<meta property="og:title" content="Wee Artists – Draw · Create · Imagine" />
+<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children on iPhone and iPad. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta property="og:url" content="https://weeartist.com/" />
+<meta property="og:image" content="https://weeartist.com/images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Wee Artists category screen showing six drawing worlds" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Wee Artists – Draw · Create · Imagine" />
+<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children on iPhone and iPad. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -50,7 +67,7 @@
     /* ─── NAV ─── */
     nav {
       position: sticky; top: 0; z-index: 200;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between; gap: 2rem;
       padding: 1rem 3rem;
       background: rgba(255,255,255,0.75);
       backdrop-filter: blur(20px);
@@ -63,7 +80,7 @@
       letter-spacing: 0.5px;
     }
     .nav-logo span { color: var(--yellow); }
-    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; margin-left: auto; }
     .nav-links a {
       font-weight: 700; font-size: 0.9rem; color: var(--muted);
       text-decoration: none; transition: color 0.2s;
@@ -453,8 +470,16 @@
       .hero-phones { height: 420px; margin-top: 1rem; }
       .ph-c img { height: 380px; }
       .ph-l, .ph-r { display: none; }
-      nav { padding: 0.9rem 1.25rem; }
-      .nav-links { display: none; }
+      /* two-row nav: logo + download badge on top, links beneath */
+      nav { flex-wrap: wrap; row-gap: 0.55rem; padding: 0.7rem 1.25rem; }
+      .nav-logo { font-size: 1.4rem; }
+      .nav-links {
+        order: 3; width: 100%; margin-left: 0;
+        justify-content: center; gap: 1.4rem;
+        border-top: 1.5px solid rgba(124,58,237,0.09);
+        padding-top: 0.55rem;
+      }
+      .nav-links a { font-size: 0.82rem; }
       .safe-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .safe-visual { display: none; }
       .feat-grid { grid-template-columns: 1fr; }
@@ -463,10 +488,29 @@
       .cta-card { padding: 2.5rem 1.5rem; }
     }
     @media (max-width: 480px) {
+      nav { padding: 0.7rem 0.9rem; }
+      .nav-logo { font-size: 1.25rem; }
+      .nav-dl img { width: 96px; height: 32px; }
+      .nav-links { gap: 0.95rem; }
+      .nav-links a { font-size: 0.76rem; }
       .steps { grid-template-columns: 1fr; }
       .cat-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Wee Artists",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "iOS, iPadOS",
+  "description": "Step-by-step drawing lessons for children across six categories, with no ads and no data collected from children.",
+  "url": "https://weeartist.com/",
+  "image": "https://weeartist.com/images/og-image.jpg",
+  "installUrl": "https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464",
+  "publisher": { "@type": "Organization", "name": "Wee Artists", "email": "weekidsartists@gmail.com" }
+}
+</script>
 </head>
 <body>
 
@@ -485,10 +529,10 @@
       <li><a href="#categories">Categories</a></li>
       <li><a href="#safe">Safety</a></li>
       <li><a href="support.html">Support</a></li>
-      <li><a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="nav-dl">
-        <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="108" height="36" />
-      </a></li>
     </ul>
+    <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="nav-dl">
+      <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="108" height="36" />
+    </a>
   </nav>
 
   <!-- HERO -->
@@ -533,15 +577,15 @@
       </div>
       <div class="ph ph-c">
         <picture>
-          <source srcset="images/screen2.webp" type="image/webp" />
-          <img src="images/screen2.png" alt="A finished drawing lesson - step 5 of 5 of a duckling, with 250 stars earned"
+          <source srcset="images/screen3.webp" type="image/webp" />
+          <img src="images/screen3.png" alt="Choosing from six categories: Animals, Faces, Food, Vehicles, Nature and Fantasy"
                width="516" height="1120" decoding="async" fetchpriority="high" />
         </picture>
       </div>
       <div class="ph ph-r">
         <picture>
-          <source srcset="images/screen3.webp" type="image/webp" />
-          <img src="images/screen3.png" alt="Choosing from six categories: Animals, Faces, Food, Vehicles, Nature and Fantasy"
+          <source srcset="images/screen2.webp" type="image/webp" />
+          <img src="images/screen2.png" alt="A finished drawing lesson - step 5 of 5 of a duckling, with 250 stars earned"
                width="369" height="800" loading="lazy" decoding="async" />
         </picture>
       </div>
