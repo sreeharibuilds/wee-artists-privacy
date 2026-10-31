@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wee Artists – Draw · Create · Imagine</title>
-<meta name="description" content="Wee Artists is a step-by-step drawing app for children on iPhone and iPad. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta name="description" content="Wee Artists is a step-by-step drawing app for children on iPhone, iPad and Android. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
 <link rel="canonical" href="https://weeartist.com/" />
 <meta name="theme-color" content="#7c3aed" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Wee Artists" />
 <meta property="og:title" content="Wee Artists – Draw · Create · Imagine" />
-<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children on iPhone and iPad. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children on iPhone, iPad and Android. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
 <meta property="og:url" content="https://weeartist.com/" />
 <meta property="og:image" content="https://weeartist.com/images/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -19,7 +19,7 @@
 <meta property="og:image:alt" content="The Wee Artists category screen showing six drawing worlds" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Wee Artists – Draw · Create · Imagine" />
-<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children on iPhone and iPad. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children on iPhone, iPad and Android. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
 <meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,12 +54,12 @@
       position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
     }
     .blob {
-      position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35;
+      position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.22;
     }
-    .blob1 { width: 600px; height: 600px; background: #c4b5fd; top: -150px; left: -150px; animation: drift1 18s ease-in-out infinite; }
-    .blob2 { width: 500px; height: 500px; background: #fbcfe8; top: 30%; right: -100px; animation: drift2 22s ease-in-out infinite; }
-    .blob3 { width: 450px; height: 450px; background: #bbf7d0; bottom: 10%; left: 20%; animation: drift1 26s ease-in-out infinite reverse; }
-    .blob4 { width: 350px; height: 350px; background: #fde68a; bottom: -80px; right: 15%; animation: drift2 20s ease-in-out infinite; }
+    .blob1 { width: 600px; height: 600px; background: #c4b5fd; top: -150px; left: -150px; animation: drift1 28s ease-in-out infinite; }
+    .blob2 { width: 500px; height: 500px; background: #fbcfe8; top: 30%; right: -100px; animation: drift2 34s ease-in-out infinite; }
+    .blob3 { width: 450px; height: 450px; background: #bbf7d0; bottom: 10%; left: 20%; animation: drift1 38s ease-in-out infinite reverse; }
+    .blob4 { width: 350px; height: 350px; background: #fde68a; bottom: -80px; right: 15%; animation: drift2 31s ease-in-out infinite; }
 
     @keyframes drift1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,30px)} }
     @keyframes drift2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-30px,40px)} }
@@ -86,10 +86,20 @@
       text-decoration: none; transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--purple1); }
-    .nav-dl { display: block; line-height: 0; transition: transform 0.2s !important; }
-    .nav-dl:hover { transform: translateY(-2px); }
-    .nav-dl:focus-visible { outline: 3px solid var(--purple1); outline-offset: 4px; border-radius: 6px; }
-    .nav-dl img { display: block; width: 108px; height: 36px; }
+    /* ─── STORE BADGES (App Store + Google Play) ─── */
+    /* Google's badge ships with 41px of transparent padding baked in; that is
+       cropped out of the asset so both badges match on visible height, and the
+       clear space Google's guidelines ask for comes from the gap instead. */
+    .store-badges { display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap; }
+    .store-badges--center { justify-content: center; }
+    .store-badge { display: inline-block; line-height: 0; border-radius: 9px;
+                   transition: transform 0.2s; }
+    .store-badge:hover { transform: translateY(-3px); }
+    .store-badge:focus-visible { outline: 3px solid var(--purple1); outline-offset: 5px; }
+    .store-badge img { display: block; height: 54px; width: auto; }
+    .store-badges--sm { gap: 0.6rem; }
+    .store-badges--sm .store-badge img { height: 30px; }
+    .cta-card .store-badge:focus-visible { outline-color: #fde68a; }
 
     /* ─── HERO ─── */
     .hero {
@@ -116,8 +126,10 @@
     }
     .hero h1 {
       font-family: 'Fredoka One', cursive;
-      font-size: clamp(2.8rem, 4.5vw, 4.4rem);
-      line-height: 1.1;
+      font-size: clamp(2.1rem, 8vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
       color: var(--text);
     }
     .hero h1 .hl { color: var(--purple1); }
@@ -139,23 +151,17 @@
     .hero-dots span:nth-child(5){background:#ec4899;animation-delay:.72s}
     @keyframes pop { 0%,100%{transform:scale(1);opacity:.65} 50%{transform:scale(1.5);opacity:1} }
 
-    .hero-btns { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    .btn-a { display: inline-block; line-height: 0; transition: transform 0.2s; }
-    .btn-a:hover { transform: translateY(-3px); }
-    .btn-a:focus-visible { outline: 3px solid var(--purple1); outline-offset: 5px; border-radius: 8px; }
-    .btn-a img { display: block; width: 180px; height: 60px; }
-    @media (max-width: 480px) { .btn-a img { width: 155px; height: 52px; } }
-    .btn-b {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: transparent;
-      border: 2px solid rgba(124,58,237,0.3);
-      color: var(--purple1);
-      font-family: 'Fredoka One', cursive; font-size: 1.05rem;
-      padding: 0.9rem 2rem; border-radius: 16px;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.2s;
+    /* secondary action, text weight - the badges are the primary one */
+    .btn-link {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      color: var(--purple1); font-weight: 800; font-size: 0.95rem;
+      text-decoration: none; padding: 0.35rem 0;
+      border-bottom: 2px solid rgba(124,58,237,0.25);
+      transition: border-color 0.2s, gap 0.2s;
+      width: fit-content;
     }
-    .btn-b:hover { background: rgba(124,58,237,0.06); transform: translateY(-3px); }
+    .btn-link:hover { border-bottom-color: var(--purple1); gap: 0.6rem; }
+    .hero-text .btn-link { margin-top: -0.6rem; }
 
     .hero-stats { display: flex; gap: 2rem; padding-top: 0.5rem; }
     .stat { display: flex; flex-direction: column; }
@@ -245,6 +251,7 @@
     .sec-title {
       font-family: 'Fredoka One', cursive;
       font-size: clamp(2rem, 3.5vw, 2.8rem);
+      letter-spacing: -0.01em;
       color: #fff; margin-bottom: 0.5rem;
     }
     .sec-title span { color: var(--yellow); }
@@ -421,18 +428,6 @@
     }
     .cta-card h2 span { color: var(--yellow); }
     .cta-card p { color: rgba(255,255,255,0.88); font-size: 1rem; margin-bottom: 2.25rem; position: relative; }
-    /* Official Apple App Store badge — artwork is used unmodified */
-    .store-btn {
-      display: inline-block;
-      position: relative;
-      line-height: 0;
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-    .store-btn:hover { transform: translateY(-3px); }
-    .store-btn:focus-visible { outline: 3px solid var(--yellow); outline-offset: 5px; }
-    .store-btn img { display: block; width: 180px; height: 60px; }
-    @media (max-width: 480px) { .store-btn img { width: 150px; height: 50px; } }
     .cta-note { margin-top: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.88); position: relative; }
     .cta-note a { color: #fde68a; }
 
@@ -455,6 +450,17 @@
     .foot-links a:hover { color: var(--yellow); }
     .foot-copy { color: rgba(255,255,255,0.62); font-size: 0.78rem; }
     .foot-divider { width: 100%; height: 1px; background: rgba(255,255,255,0.08); }
+
+    /* ─── ICON SET ─── */
+    /* SVG rather than emoji: emoji resolve to a different glyph on every OS,
+       so the icon row never looked the same twice. */
+    .ic { width: 1em; height: 1em; display: block;
+          fill: none; stroke: currentColor; stroke-width: 1.8;
+          stroke-linecap: round; stroke-linejoin: round; }
+    .fc-icon .ic { font-size: 1.7rem; }
+    .si .ic     { font-size: 2.1rem; margin-inline: auto; }
+    .sh .ic     { font-size: 3.6rem; margin-inline: auto; stroke-width: 1.4; }
+    .ck .ic     { font-size: 0.95rem; stroke-width: 2.6; }
 
     /* ─── ACCESSIBILITY ─── */
     a:focus-visible, button:focus-visible {
@@ -483,6 +489,9 @@
     }
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem 0; min-height: auto; text-align: center; }
+      /* the hard line break cannot fit on a phone - wrap naturally instead */
+      .hero h1 br { display: none; }
+      .hero-stats { flex-wrap: wrap; gap: 1.1rem 1.6rem; }
       .hero-text { align-items: center; }
       .hero-sub { text-align: center; }
       .hero-stats { justify-content: center; }
@@ -507,14 +516,49 @@
       .cta-card { padding: 2.5rem 1.5rem; }
     }
     @media (max-width: 480px) {
+      .store-badge img { height: 44px; }
+      .store-badges--sm .store-badge img { height: 27px; }
       nav { padding: 0.7rem 0.9rem; }
       .nav-logo { font-size: 1.25rem; }
-      .nav-dl img { width: 96px; height: 32px; }
       .nav-links { gap: 0.95rem; }
       .nav-links a { font-size: 0.76rem; }
       .steps { grid-template-columns: 1fr; }
       .cat-grid { grid-template-columns: repeat(2, 1fr); }
     }
+    /* ─── TABLET ─── */
+    /* 861-1080px: the side phones are offset a fixed 200px from centre, so as the
+       hero column narrows they slide over the headline. Scale them down and pull
+       them in so they stay inside their own column. */
+    @media (min-width: 861px) and (max-width: 1080px) {
+      .hero { padding: 3.5rem 2rem 2rem; gap: 1rem; }
+      .hero-phones { height: 470px; }
+      .ph-c img { height: 420px; }
+      .ph-l img, .ph-r img { height: 290px; }
+      .ph-l { transform: translateX(calc(-50% - 112px)) rotate(-9deg); }
+      .ph-r { transform: translateX(calc(-50% + 112px)) rotate(9deg); }
+      .ph-l:hover { transform: translateX(calc(-50% - 112px)) rotate(-9deg) translateY(-10px); }
+      .ph-r:hover { transform: translateX(calc(-50% + 112px)) rotate(9deg) translateY(-10px); }
+      .phone-glow { width: 280px; }
+    }
+
+    /* 700-860px (iPad portrait): sits below the phone breakpoint, but there is
+       ample width here - keep the nav on one row, use two feature columns, and
+       show the trust badges instead of hiding them. */
+    @media (min-width: 700px) and (max-width: 860px) {
+      nav { flex-wrap: nowrap; padding: 0.9rem 1.75rem; }
+      .nav-logo { font-size: 1.6rem; }
+      .nav-links {
+        order: 0; width: auto; margin-left: auto;
+        border-top: none; padding-top: 0; gap: 1.6rem;
+      }
+      .nav-links a { font-size: 0.88rem; }
+      .hero { padding: 3.5rem 2.5rem 0; }
+      .feat-grid { grid-template-columns: repeat(2, 1fr); }
+      .cat-grid { grid-template-columns: repeat(3, 1fr); }
+      .safe-visual { display: flex; }
+      .safe-inner { gap: 3rem; }
+    }
+
   </style>
 <script type="application/ld+json">
 {
@@ -522,16 +566,35 @@
   "@type": "MobileApplication",
   "name": "Wee Artists",
   "applicationCategory": "EducationalApplication",
-  "operatingSystem": "iOS, iPadOS",
+  "operatingSystem": "iOS, iPadOS, Android",
   "description": "Step-by-step drawing lessons for children across six categories, with no ads and no data collected from children.",
   "url": "https://weeartist.com/",
   "image": "https://weeartist.com/images/og-image.jpg",
-  "installUrl": "https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464",
+  "installUrl": [
+    "https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464",
+    "https://play.google.com/store/apps/details?id=com.weeartists.android"
+  ],
   "publisher": { "@type": "Organization", "name": "Wee Artists", "email": "weekidsartists@gmail.com" }
 }
 </script>
 </head>
 <body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-lessons" viewBox="0 0 24 24"><path d="M12 3.5 21.5 8 12 12.5 2.5 8 12 3.5Z"/><path d="M7 10.3v4.4c0 1.2 2.2 2.3 5 2.3s5-1.1 5-2.3v-4.4"/><path d="M21.5 8v5"/></symbol>
+  <symbol id="i-worlds" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3c2.6 3.3 2.6 14.7 0 18M12 3c-2.6 3.3-2.6 14.7 0 18M3.4 9h17.2M3.4 15h17.2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.2 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3.2Z"/></symbol>
+  <symbol id="i-gallery" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.5" cy="10" r="1.6"/><path d="m3.5 17 4.8-4.1 3.5 2.8 3.2-2.4L20.5 17"/></symbol>
+  <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="4" width="11" height="16" rx="2"/><rect x="15.5" y="9" width="6" height="11" rx="1.5"/><path d="M6.5 17h3"/></symbol>
+  <symbol id="i-offline" viewBox="0 0 24 24"><path d="M12 2.8c.9 0 1.6.7 1.6 1.6v4.8l7.9 4.4v2.1l-7.9-2.4v4.3l2.8 1.9v1.7L12 20.1l-4.4 1.1v-1.7l2.8-1.9v-4.3l-7.9 2.4v-2.1l7.9-4.4V4.4c0-.9.7-1.6 1.6-1.6Z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="2"/><rect x="13" y="13" width="7.5" height="7.5" rx="2"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2.6 4.2h5.6c1.9 0 3.5 1.5 3.5 3.4v12.2a2.6 2.6 0 0 0-2.6-2.4H2.6V4.2Z"/><path d="M21.4 4.2h-5.6c-1.9 0-3.5 1.5-3.5 3.4v12.2a2.6 2.6 0 0 1 2.6-2.4h6.5V4.2Z"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M12.5 20.5h8.3"/><path d="M16.1 3.6a2.2 2.2 0 0 1 3.1 3.1L7.6 18.4l-4.1 1 1-4.1L16.1 3.6Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.6 4.4 5.4v6.2c0 5.4 7.6 9.8 7.6 9.8s7.6-4.4 7.6-9.8V5.4L12 2.6Z"/><path d="m8.7 11.8 2.3 2.3 4.3-4.3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+</svg>
+
 
   <div class="blob-bg">
     <div class="blob blob1"></div>
@@ -549,26 +612,34 @@
       <li><a href="#safe">Safety</a></li>
       <li><a href="support.html">Support</a></li>
     </ul>
-    <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="nav-dl">
-      <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="108" height="36" />
-    </a>
+    <div class="store-badges store-badges--sm">
+      <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="store-badge">
+        <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="90" height="30" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.weeartists.android" class="store-badge">
+        <img src="images/google-play-badge.png" alt="Get Wee Artists on Google Play" width="101" height="30" />
+      </a>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
       <div class="hero-pill">🎨 Free · No Ads · Safe for Children</div>
-      <h1>Where Little Hands<br>Become <span class="hl">Big</span> <span class="hl2">Artists</span></h1>
+      <h1>Where Little Hands<br> Become <span class="hl">Big</span> <span class="hl2">Artists</span></h1>
       <p class="hero-sub">Step-by-step drawing lessons that guide children from blank page to masterpiece — one joyful stroke at a time.</p>
       <div class="hero-dots">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
-      <div class="hero-btns">
-        <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="btn-a">
-          <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="180" height="60" />
+      <div class="store-badges">
+        <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="store-badge">
+          <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="162" height="54" />
         </a>
-        <a href="#features" class="btn-b">✨ See Features</a>
+        <a href="https://play.google.com/store/apps/details?id=com.weeartists.android" class="store-badge">
+          <img src="images/google-play-badge.png" alt="Get Wee Artists on Google Play" width="181" height="54" />
+        </a>
       </div>
+      <a href="#features" class="btn-link">See what’s inside →</a>
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-num">6</span>
@@ -625,32 +696,32 @@
       <p class="sec-sub">Fun, structured, and safe — designed from the ground up for children.</p>
       <div class="feat-grid">
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(251,191,36,0.18)">🎓</div>
+          <div class="fc-icon" style="background:rgba(251,191,36,0.18);color:#fbbf24"><svg class="ic" aria-hidden="true"><use href="#i-lessons"/></svg></div>
           <h3>Step-by-Step Lessons</h3>
           <p>Every drawing broken into simple guided steps — kids always feel confident, never frustrated.</p>
         </div>
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(34,197,94,0.15)">🌈</div>
+          <div class="fc-icon" style="background:rgba(34,197,94,0.15);color:#4ade80"><svg class="ic" aria-hidden="true"><use href="#i-worlds"/></svg></div>
           <h3>6 Drawing Worlds</h3>
           <p>Animals to Fantasy — six curated categories packed with adorable characters to discover.</p>
         </div>
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(251,191,36,0.18)">⭐</div>
+          <div class="fc-icon" style="background:rgba(251,191,36,0.18);color:#fbbf24"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></div>
           <h3>Stars & Rewards</h3>
           <p>Children earn star points as they complete lessons, keeping motivation high and spirits higher.</p>
         </div>
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(236,72,153,0.15)">🖼️</div>
+          <div class="fc-icon" style="background:rgba(236,72,153,0.15);color:#f472b6"><svg class="ic" aria-hidden="true"><use href="#i-gallery"/></svg></div>
           <h3>Personal Gallery</h3>
           <p>Every finished drawing saved to a personal gallery — a precious record of their artistic growth.</p>
         </div>
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(59,130,246,0.15)">📱</div>
-          <h3>iPhone & iPad</h3>
-          <p>Beautifully optimised for every screen size — layouts adapt perfectly on both devices.</p>
+          <div class="fc-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa"><svg class="ic" aria-hidden="true"><use href="#i-devices"/></svg></div>
+          <h3>iPhone, iPad &amp; Android</h3>
+          <p>One app across iPhone, iPad and Android — layouts adapt perfectly to every screen size.</p>
         </div>
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(249,115,22,0.15)">✈️</div>
+          <div class="fc-icon" style="background:rgba(249,115,22,0.15);color:#fb923c"><svg class="ic" aria-hidden="true"><use href="#i-offline"/></svg></div>
           <h3>Works Offline</h3>
           <p>No internet needed for drawing lessons — perfect for travel, school, or anywhere in between.</p>
         </div>
@@ -688,26 +759,26 @@
         <h2 class="sec-title">Built Safe,<br><span style="color:var(--purple1)">By Design</span></h2>
         <ul class="safe-list">
           <li>
-            <div class="ck">✓</div>
+            <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
             <div><strong>Completely Ad-Free</strong><em>No advertisements, pop-ups, or promotional content of any kind.</em></div>
           </li>
           <li>
-            <div class="ck">✓</div>
+            <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
             <div><strong>No Personal Data Collected</strong><em>We never collect names, emails, or any personal information from children.</em></div>
           </li>
           <li>
-            <div class="ck">✓</div>
+            <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
             <div><strong>Artwork Stays on Device</strong><em>Drawings are never uploaded to any server — they live only on your device.</em></div>
           </li>
           <li>
-            <div class="ck">✓</div>
+            <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
             <div><strong>COPPA & GDPR-K Compliant</strong><em>Fully compliant with children's privacy laws worldwide.</em></div>
           </li>
         </ul>
       </div>
       <div class="safe-visual">
         <div class="shield-card">
-          <div class="sh">🛡️</div>
+          <div class="sh"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></div>
           <h3>100% Safe for Kids</h3>
           <p>Designed with children's wellbeing at the heart of every decision.</p>
         </div>
@@ -732,25 +803,25 @@
       <div class="steps">
         <div class="step">
           <div class="sn">1</div>
-          <div class="si">🌍</div>
+          <div class="si"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg></div>
           <h3>Pick a Category</h3>
           <p>Choose from Animals, Faces, Food, Vehicles, Nature, or Fantasy to find what inspires you.</p>
         </div>
         <div class="step">
           <div class="sn">2</div>
-          <div class="si">🎯</div>
+          <div class="si"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg></div>
           <h3>Choose a Drawing</h3>
           <p>Browse a library of adorable characters and subjects — there's always something new to discover.</p>
         </div>
         <div class="step">
           <div class="sn">3</div>
-          <div class="si">📖</div>
+          <div class="si"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></div>
           <h3>Follow the Steps</h3>
           <p>Simple guided steps show exactly what to draw — every lesson is approachable and fun.</p>
         </div>
         <div class="step">
           <div class="sn">4</div>
-          <div class="si">✏️</div>
+          <div class="si"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg></div>
           <h3>Draw on Paper!</h3>
           <p>Grab a pencil and recreate it. Real drawing skills, real creativity — real pride!</p>
         </div>
@@ -762,10 +833,15 @@
   <section class="cta-section" id="download">
     <div class="cta-card">
       <h2>Ready to <span>Create Magic?</span></h2>
-      <p>Free to download on iPhone and iPad. No account needed — just open and draw!</p>
-      <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="store-btn">
-        <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="180" height="60" />
-      </a>
+      <p>Free to download on iPhone, iPad and Android. No account needed — just open and draw!</p>
+      <div class="store-badges store-badges--center">
+        <a href="https://apps.apple.com/app/weeartists-learn-to-draw/id6765836464" class="store-badge">
+          <img src="images/app-store-badge.svg" alt="Download Wee Artists on the App Store" width="162" height="54" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.weeartists.android" class="store-badge">
+          <img src="images/google-play-badge.png" alt="Get Wee Artists on Google Play" width="181" height="54" />
+        </a>
+      </div>
       <p class="cta-note">Questions? <a href="mailto:weekidsartists@gmail.com">weekidsartists@gmail.com</a></p>
     </div>
   </section>
@@ -774,7 +850,7 @@
   <footer>
     <div class="foot-inner">
       <div class="foot-logo">Wee <span>Artists</span></div>
-      <p class="foot-tag">✏️ Draw · Create · Imagine 🎨</p>
+      <p class="foot-tag">Draw · Create · Imagine</p>
       <div class="foot-divider"></div>
       <div class="foot-links">
         <a href="privacy.html">Privacy Policy</a>
