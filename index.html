@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wee Artists – Draw · Create · Imagine</title>
-<meta name="description" content="Wee Artists is a step-by-step drawing app for children on iPhone, iPad and Android. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta name="description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across six worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
 <link rel="canonical" href="https://weeartist.com/" />
 <meta name="theme-color" content="#7c3aed" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Wee Artists" />
 <meta property="og:title" content="Wee Artists – Draw · Create · Imagine" />
-<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children on iPhone, iPad and Android. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across six worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
 <meta property="og:url" content="https://weeartist.com/" />
 <meta property="og:image" content="https://weeartist.com/images/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -19,7 +19,7 @@
 <meta property="og:image:alt" content="The Wee Artists category screen showing six drawing worlds" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Wee Artists – Draw · Create · Imagine" />
-<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children on iPhone, iPad and Android. Guided lessons across six worlds - animals, faces, food, vehicles, nature and fantasy - with no ads and no data collected from children." />
+<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across six worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
 <meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -126,7 +126,7 @@
     }
     .hero h1 {
       font-family: 'Fredoka One', cursive;
-      font-size: clamp(2.1rem, 8vw, 4.4rem);
+      font-size: clamp(2.1rem, 4.5vw, 4.4rem);
       line-height: 1.08;
       letter-spacing: -0.015em;
       text-wrap: balance;
@@ -451,6 +451,33 @@
     .foot-copy { color: rgba(255,255,255,0.62); font-size: 0.78rem; }
     .foot-divider { width: 100%; height: 1px; background: rgba(255,255,255,0.08); }
 
+    /* ─── FOR GROWN-UPS ─── */
+    .parent-section { padding: 6rem 2rem; position: relative; z-index: 1; }
+    .parent-section .inner { max-width: 1050px; margin: 0 auto; text-align: center; }
+    .parent-section .chip { color: #2563eb; background: rgba(37,99,235,0.08); border-color: rgba(37,99,235,0.22); }
+    .parent-section .sec-title { color: var(--text); }
+    .parent-section .sec-sub { color: var(--muted); }
+    .parent-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem; margin-top: 3rem; text-align: left;
+    }
+    .pc {
+      background: #fff; border: 2px solid rgba(124,58,237,0.08);
+      border-radius: 22px; padding: 1.75rem 1.4rem;
+      box-shadow: 0 4px 20px rgba(124,58,237,0.07);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .pc:hover { transform: translateY(-5px); box-shadow: 0 14px 36px rgba(124,58,237,0.14); }
+    .pc-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem; color: var(--purple1);
+      background: rgba(124,58,237,0.09);
+    }
+    .pc-icon .ic { font-size: 1.5rem; }
+    .pc h3 { font-family: 'Fredoka One', cursive; font-size: 1.05rem; color: var(--text); margin-bottom: 0.4rem; }
+    .pc p { font-size: 0.86rem; color: var(--muted); line-height: 1.6; }
+
     /* ─── ICON SET ─── */
     /* SVG rather than emoji: emoji resolve to a different glyph on every OS,
        so the icon row never looked the same twice. */
@@ -486,6 +513,7 @@
       .feat-grid { grid-template-columns: repeat(2, 1fr); }
       .cat-grid { grid-template-columns: repeat(3, 1fr); }
       .steps { grid-template-columns: repeat(2, 1fr); }
+      .parent-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem 0; min-height: auto; text-align: center; }
@@ -511,6 +539,7 @@
       .safe-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .safe-visual { display: none; }
       .feat-grid { grid-template-columns: 1fr; }
+      .parent-grid { grid-template-columns: 1fr; }
       .cat-grid { grid-template-columns: repeat(2, 1fr); }
       .steps { grid-template-columns: repeat(2, 1fr); }
       .cta-card { padding: 2.5rem 1.5rem; }
@@ -554,6 +583,7 @@
       .nav-links a { font-size: 0.88rem; }
       .hero { padding: 3.5rem 2.5rem 0; }
       .feat-grid { grid-template-columns: repeat(2, 1fr); }
+      .parent-grid { grid-template-columns: repeat(2, 1fr); }
       .cat-grid { grid-template-columns: repeat(3, 1fr); }
       .safe-visual { display: flex; }
       .safe-inner { gap: 3rem; }
@@ -567,7 +597,7 @@
   "name": "Wee Artists",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "iOS, iPadOS, Android",
-  "description": "Step-by-step drawing lessons for children across six categories, with no ads and no data collected from children.",
+  "description": "150+ step-by-step drawing lessons for children aged 3-12 across six categories, with drawing helpers, an Art Wall for real paper drawings, parental controls and no ads.",
   "url": "https://weeartist.com/",
   "image": "https://weeartist.com/images/og-image.jpg",
   "installUrl": [
@@ -592,6 +622,10 @@
   <symbol id="i-book" viewBox="0 0 24 24"><path d="M2.6 4.2h5.6c1.9 0 3.5 1.5 3.5 3.4v12.2a2.6 2.6 0 0 0-2.6-2.4H2.6V4.2Z"/><path d="M21.4 4.2h-5.6c-1.9 0-3.5 1.5-3.5 3.4v12.2a2.6 2.6 0 0 1 2.6-2.4h6.5V4.2Z"/></symbol>
   <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M12.5 20.5h8.3"/><path d="M16.1 3.6a2.2 2.2 0 0 1 3.1 3.1L7.6 18.4l-4.1 1 1-4.1L16.1 3.6Z"/></symbol>
   <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.6 4.4 5.4v6.2c0 5.4 7.6 9.8 7.6 9.8s7.6-4.4 7.6-9.8V5.4L12 2.6Z"/><path d="m8.7 11.8 2.3 2.3 4.3-4.3"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 3.5v15a2 2 0 0 0 2 2h15"/><path d="M7.5 15.5v-3M12 15.5v-7M16.5 15.5v-5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8"/><path d="M12 7v5.3l3.3 2"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.2" y="10.2" width="15.6" height="10.6" rx="2.4"/><path d="M8 10.2V7.4a4 4 0 0 1 8 0v2.8"/><path d="M12 14.4v2.2"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5.5" r="2.8"/><circle cx="6" cy="12" r="2.8"/><circle cx="18" cy="18.5" r="2.8"/><path d="m8.5 10.7 7-3.4M8.5 13.3l7 3.4"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
 </svg>
 
@@ -610,6 +644,7 @@
       <li><a href="#features">Features</a></li>
       <li><a href="#categories">Categories</a></li>
       <li><a href="#safe">Safety</a></li>
+      <li><a href="#parents">Parents</a></li>
       <li><a href="support.html">Support</a></li>
     </ul>
     <div class="store-badges store-badges--sm">
@@ -627,7 +662,7 @@
     <div class="hero-text">
       <div class="hero-pill">🎨 Free · No Ads · Safe for Children</div>
       <h1>Where Little Hands<br> Become <span class="hl">Big</span> <span class="hl2">Artists</span></h1>
-      <p class="hero-sub">Step-by-step drawing lessons that guide children from blank page to masterpiece — one joyful stroke at a time.</p>
+      <p class="hero-sub">Screen time that ends on paper. We show your child how to draw, one easy step at a time — they copy it with a real pencil, then photograph it for their Art Wall.</p>
       <div class="hero-dots">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
@@ -642,16 +677,20 @@
       <a href="#features" class="btn-link">See what’s inside →</a>
       <div class="hero-stats">
         <div class="stat">
+          <span class="stat-num">150+</span>
+          <span class="stat-label">Lessons</span>
+        </div>
+        <div class="stat">
           <span class="stat-num">6</span>
-          <span class="stat-label">Categories</span>
+          <span class="stat-label">Worlds</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3–12</span>
+          <span class="stat-label">Ages</span>
         </div>
         <div class="stat">
           <span class="stat-num">0</span>
           <span class="stat-label">Ads Ever</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">100%</span>
-          <span class="stat-label">Kid Safe</span>
         </div>
       </div>
     </div>
@@ -701,19 +740,19 @@
           <p>Every drawing broken into simple guided steps — kids always feel confident, never frustrated.</p>
         </div>
         <div class="fc">
-          <div class="fc-icon" style="background:rgba(34,197,94,0.15);color:#4ade80"><svg class="ic" aria-hidden="true"><use href="#i-worlds"/></svg></div>
-          <h3>6 Drawing Worlds</h3>
-          <p>Animals to Fantasy — six curated categories packed with adorable characters to discover.</p>
+          <div class="fc-icon" style="background:rgba(34,197,94,0.15);color:#4ade80"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg></div>
+          <h3>Drawing Helpers</h3>
+          <p>A faint outline shows where each line goes, a green dot marks where to start, and a 9 or 16 square grid helps copy the picture square by square.</p>
         </div>
         <div class="fc">
           <div class="fc-icon" style="background:rgba(251,191,36,0.18);color:#fbbf24"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></div>
-          <h3>Stars & Rewards</h3>
-          <p>Children earn star points as they complete lessons, keeping motivation high and spirits higher.</p>
+          <h3>Levels &amp; Badges</h3>
+          <p>Every finished drawing moves your child up the ranks — from First Steps to Legendary Artist — with badges and daily streaks along the way.</p>
         </div>
         <div class="fc">
           <div class="fc-icon" style="background:rgba(236,72,153,0.15);color:#f472b6"><svg class="ic" aria-hidden="true"><use href="#i-gallery"/></svg></div>
-          <h3>Personal Gallery</h3>
-          <p>Every finished drawing saved to a personal gallery — a precious record of their artistic growth.</p>
+          <h3>Their Art Wall</h3>
+          <p>Snap a photo of the finished paper drawing and it joins their Art Wall — a growing record of real work made by hand.</p>
         </div>
         <div class="fc">
           <div class="fc-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa"><svg class="ic" aria-hidden="true"><use href="#i-devices"/></svg></div>
@@ -739,7 +778,7 @@
     <div class="inner">
       <div class="chip">Explore Worlds</div>
       <h2 class="sec-title">6 Amazing <span style="color:var(--purple1)">Drawing Categories</span></h2>
-      <p class="sec-sub">Pick a world and start creating your next masterpiece right away.</p>
+      <p class="sec-sub">Pick a world and start creating right away. Every world has three levels — Little Artists (3–5), Junior Drawers (6–8) and Creative Kids (9–12) — so the steps always suit your child.</p>
       <div class="cat-grid">
         <div class="cat-card"><span class="ce">🦁</span><span>Animals</span></div>
         <div class="cat-card"><span class="ce">😄</span><span>Faces</span></div>
@@ -764,7 +803,7 @@
           </li>
           <li>
             <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
-            <div><strong>No Personal Data Collected</strong><em>We never collect names, emails, or any personal information from children.</em></div>
+            <div><strong>No Names, Emails or Photos</strong><em>We never collect names, emails, photos or location from children — only anonymous statistics that improve the lessons.</em></div>
           </li>
           <li>
             <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
@@ -772,7 +811,11 @@
           </li>
           <li>
             <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
-            <div><strong>COPPA & GDPR-K Compliant</strong><em>Fully compliant with children's privacy laws worldwide.</em></div>
+            <div><strong>Parental PIN &amp; Time Limits</strong><em>Settings, purchases and sharing sit behind a parental gate, with an optional daily time limit.</em></div>
+          </li>
+          <li>
+            <div class="ck"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+            <div><strong>COPPA &amp; GDPR-K Compliant</strong><em>Fully compliant with children's privacy laws worldwide.</em></div>
           </li>
         </ul>
       </div>
@@ -789,6 +832,38 @@
           <span class="tag">Offline Mode</span>
           <span class="tag">COPPA</span>
           <span class="tag">GDPR-K</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOR GROWN-UPS -->
+  <section class="parent-section" id="parents">
+    <div class="inner">
+      <div class="chip">For Grown-Ups</div>
+      <h2 class="sec-title">Built for <span style="color:var(--purple1)">Parents, Too</span></h2>
+      <p class="sec-sub">See how your child is getting on, and keep healthy limits around it.</p>
+      <div class="parent-grid">
+        <div class="pc">
+          <div class="pc-icon"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></div>
+          <h3>Progress Report</h3>
+          <p>How often they draw, the skills they are practising, and the subjects they come back to most.</p>
+        </div>
+        <div class="pc">
+          <div class="pc-icon"><svg class="ic" aria-hidden="true"><use href="#i-gallery"/></svg></div>
+          <h3>Then &amp; Now</h3>
+          <p>Their very first drawing beside their latest — the clearest picture of how far they have come.</p>
+        </div>
+        <div class="pc">
+          <div class="pc-icon"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg></div>
+          <h3>PIN &amp; Time Limits</h3>
+          <p>A parental PIN protects settings and purchases, and a daily time limit keeps sessions in check.</p>
+        </div>
+        <div class="pc">
+          <div class="pc-icon"><svg class="ic" aria-hidden="true"><use href="#i-share"/></svg></div>
+          <h3>Share with Family</h3>
+          <p>Send their Art Wall to grandparents in a tap — sharing sits behind the parental gate.</p>
         </div>
       </div>
     </div>
@@ -822,8 +897,8 @@
         <div class="step">
           <div class="sn">4</div>
           <div class="si"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg></div>
-          <h3>Draw on Paper!</h3>
-          <p>Grab a pencil and recreate it. Real drawing skills, real creativity — real pride!</p>
+          <h3>Draw &amp; Snap It</h3>
+          <p>Copy it with a real pencil, then photograph the finished drawing to hang on their Art Wall.</p>
         </div>
       </div>
     </div>
