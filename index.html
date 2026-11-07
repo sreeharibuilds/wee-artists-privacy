@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wee Artists – Draw · Create · Imagine</title>
-<meta name="description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across six worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
+<meta name="description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across seven worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
 <link rel="canonical" href="https://weeartist.com/" />
 <meta name="theme-color" content="#7c3aed" />
 <link rel="icon" type="image/png" sizes="32x32" href="/images/icon-32.png" />
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Wee Artists" />
 <meta property="og:title" content="Wee Artists – Draw · Create · Imagine" />
-<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across six worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
+<meta property="og:description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across seven worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
 <meta property="og:url" content="https://weeartist.com/" />
 <meta property="og:image" content="https://weeartist.com/images/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -21,7 +21,7 @@
 <meta property="og:image:alt" content="The Wee Artists category screen showing six drawing worlds" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Wee Artists – Draw · Create · Imagine" />
-<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across six worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
+<meta name="twitter:description" content="Wee Artists is a step-by-step drawing app for children aged 3-12 on iPhone, iPad and Android. 150+ guided lessons across seven worlds, drawing helpers, an Art Wall for their real paper drawings, and a progress report for parents. No ads." />
 <meta name="twitter:image" content="https://weeartist.com/images/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -294,7 +294,7 @@
 
     .cat-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
       margin-top: 2.5rem;
     }
@@ -302,7 +302,8 @@
       background: #fff;
       border: 2px solid rgba(124,58,237,0.08);
       border-radius: 20px;
-      padding: 1.5rem 0.75rem;
+      padding: 0 0 1rem;
+      overflow: hidden;
       text-align: center;
       box-shadow: 0 4px 16px rgba(124,58,237,0.07);
       transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
@@ -313,7 +314,11 @@
       box-shadow: 0 12px 32px rgba(124,58,237,0.18);
       border-color: rgba(124,58,237,0.3);
     }
-    .cat-card .ce { font-size: 2.4rem; margin-bottom: 0.6rem; display: block; }
+    .cat-card picture { display: block; }
+    .cat-card img {
+      width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover;
+      display: block; margin-bottom: 0.75rem;
+    }
     .cat-card span { font-family: 'Fredoka One', cursive; font-size: 0.95rem; color: var(--text); }
 
     /* ─── SAFE SECTION ─── */
@@ -599,7 +604,7 @@
   "name": "Wee Artists",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "iOS, iPadOS, Android",
-  "description": "150+ step-by-step drawing lessons for children aged 3-12 across six categories, with drawing helpers, an Art Wall for real paper drawings, parental controls and no ads.",
+  "description": "150+ step-by-step drawing lessons for children aged 3-12 across seven categories, with drawing helpers, an Art Wall for real paper drawings, parental controls and no ads.",
   "url": "https://weeartist.com/",
   "image": "https://weeartist.com/images/og-image.jpg",
   "installUrl": [
@@ -689,7 +694,7 @@
           <span class="stat-label">Lessons</span>
         </div>
         <div class="stat">
-          <span class="stat-num">6</span>
+          <span class="stat-num">7</span>
           <span class="stat-label">Worlds</span>
         </div>
         <div class="stat">
@@ -785,15 +790,58 @@
   <section class="cats-section" id="categories">
     <div class="inner">
       <div class="chip">Explore Worlds</div>
-      <h2 class="sec-title">6 Amazing <span style="color:var(--purple1)">Drawing Categories</span></h2>
+      <h2 class="sec-title">7 Amazing <span style="color:var(--purple1)">Drawing Categories</span></h2>
       <p class="sec-sub">Pick a world and start creating right away. Every world has three levels — Little Artists (3–5), Junior Drawers (6–8) and Creative Kids (9–12) — so the steps always suit your child.</p>
       <div class="cat-grid">
-        <div class="cat-card"><span class="ce">🦁</span><span>Animals</span></div>
-        <div class="cat-card"><span class="ce">😄</span><span>Faces</span></div>
-        <div class="cat-card"><span class="ce">🍩</span><span>Food</span></div>
-        <div class="cat-card"><span class="ce">🚀</span><span>Vehicles</span></div>
-        <div class="cat-card"><span class="ce">🌿</span><span>Nature</span></div>
-        <div class="cat-card"><span class="ce">🏰</span><span>Fantasy</span></div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/animals.webp" type="image/webp" />
+            <img src="images/cat/animals.png" width="400" height="300" loading="lazy" decoding="async" alt="An orange cat sitting beside a yellow duckling" />
+          </picture>
+          <span>Animals</span>
+        </div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/faces.webp" type="image/webp" />
+            <img src="images/cat/faces.png" width="400" height="300" loading="lazy" decoding="async" alt="A smiling dog face next to a grey cat face" />
+          </picture>
+          <span>Faces</span>
+        </div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/food.webp" type="image/webp" />
+            <img src="images/cat/food.png" width="400" height="300" loading="lazy" decoding="async" alt="An avocado half, a pink sprinkled donut and a red apple" />
+          </picture>
+          <span>Food</span>
+        </div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/vehicles.webp" type="image/webp" />
+            <img src="images/cat/vehicles.png" width="400" height="300" loading="lazy" decoding="async" alt="A yellow car on a road with an aeroplane flying above" />
+          </picture>
+          <span>Vehicles</span>
+        </div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/nature.webp" type="image/webp" />
+            <img src="images/cat/nature.png" width="400" height="300" loading="lazy" decoding="async" alt="A red spotted mushroom with a butterfly, sun and flowers" />
+          </picture>
+          <span>Nature</span>
+        </div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/fantasy.webp" type="image/webp" />
+            <img src="images/cat/fantasy.png" width="400" height="300" loading="lazy" decoding="async" alt="A purple flying saucer hovering over a gold crown" />
+          </picture>
+          <span>Fantasy</span>
+        </div>
+        <div class="cat-card">
+          <picture>
+            <source srcset="images/cat/christmas.webp" type="image/webp" />
+            <img src="images/cat/christmas.png" width="400" height="300" loading="lazy" decoding="async" alt="A decorated Christmas tree with wrapped presents" />
+          </picture>
+          <span>Christmas</span>
+        </div>
       </div>
     </div>
   </section>
